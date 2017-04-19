@@ -75,18 +75,7 @@ header #main-nav ul li a {
   text-align: center;
   padding: 10px 0; }
 
-footer .others .fixCen .content span {
-  background: #00642c;
-  color: #fff;
-  font-family: firstFont,sans-serif;
-  font-size: 18px;
-  text-align: center;
-  display: block;
-  width: 80%;
-  height: 30px;
-  line-height: 30px; }
-
-.body .block-1, .body .block-1 .group-banner-sm, .body .groups, .body .groups .left-content .block-2 .tabs, .body .groups .left-content .block-4, .body .experience #slider-2 .owl-item .item {
+.body .block-1, .body .block-1 .group-banner-sm, .body .groups, .body .groups .left-content .block-2 .tabs, .body .groups .left-content .block-4, .body .experience #slider-2 .owl-item .item, .others .fixCen, .others .fixCen .content:nth-child(3), .others .fixCen .content:nth-child(3) .btn-groups, .others .fixCen .content:nth-child(3) .text {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -684,60 +673,73 @@ header #main-nav {
       margin-top: 60px; } }
 
 footer {
-  height: 50px;
+  height: 40px;
   background: #00642c;
   margin-top: 0;
   font-size: 12px;
-  color: #ffffff; }
-  footer .fixCen {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    line-height: 50px; }
-    footer .fixCen .copyright {
-      font-family: firstFont, sans-serif; }
-  footer .others {
-    background: #00ad34;
-    margin-top: 20px;
-    padding: 20px 0 10px 0; }
-    footer .others .fixCen .content {
-      width: 20%;
-      border-right: thin solid #ffffff;
-      display: inline-block;
-      vertical-align: top; }
-      footer .others .fixCen .content:nth-child(3) {
-        border: none; }
-      footer .others .fixCen .content .links {
-        width: 80%;
-        margin: 0 auto 5px auto; }
-        footer .others .fixCen .content .links a {
-          color: #ffffff;
-          line-height: 25px;
-          height: 25px;
-          display: block; }
-          footer .others .fixCen .content .links a:hover {
-            color: #00642c; }
-    footer .others .fixCen .about-us .links {
-      margin: 0; }
-    footer .others .fixCen .medicines span {
+  color: #ffffff;
+  line-height: 40px; }
+  footer .copyright {
+    font-family: firstFont, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 20px; }
+
+.others {
+  background: #7e7d7b;
+  padding: 20px 0 10px 0; }
+  .others .fixCen .content {
+    width: 22%;
+    border-right: thin solid #ffffff;
+    display: inline-block;
+    vertical-align: top; }
+    .others .fixCen .content .links {
+      width: 80%;
+      margin: 0 auto 5px auto; }
+      .others .fixCen .content .links a {
+        color: #ffffff;
+        line-height: 25px;
+        height: 25px;
+        display: block; }
+        .others .fixCen .content .links a:hover {
+          color: #00642c; }
+    .others .fixCen .content .btn-groups {
+      width: 86%;
       margin: auto; }
-    footer .others .fixCen .searchByDisease span, footer .others .fixCen .searchByDisease .links {
-      margin: 0 0 0 20%; }
-    footer .others .fixCen .fanpage {
-      width: 33%;
-      margin: 0 0 0 6%;
-      overflow: hidden; }
-      footer .others .fixCen .fanpage img {
+    .others .fixCen .content:nth-child(3) {
+      width: 56%;
+      border: none;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap; }
+      .others .fixCen .content:nth-child(3) .btn-groups {
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+        .others .fixCen .content:nth-child(3) .btn-groups a {
+          width: 48%;
+          display: block; }
+      .others .fixCen .content:nth-child(3) .text {
         width: 100%;
-        height: auto; }
+        color: #009d36;
+        font-size: 23px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 3%;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center; }
+        .others .fixCen .content:nth-child(3) .text span {
+          width: 80%; }
+          .others .fixCen .content:nth-child(3) .text span i {
+            width: 100%;
+            display: block; }
+        .others .fixCen .content:nth-child(3) .text brown {
+          font-size: 15px;
+          color: #5f5c59; }
+        .others .fixCen .content:nth-child(3) .text i {
+          font-style: normal;
+          display: block;
+          width: 71px; }
 
 .banner-ads {
   position: absolute;
