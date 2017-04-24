@@ -1,30 +1,11 @@
-$(document).ready(function(){
+$(document).ready(function () {
     closeHotline('#close-hotline');
-    clickChangeVideo('.video-group .tabs a',".video-group .content");
+    clickChangeVideo('.video-group a', ".video-group .data");
     clickShowPopupVideo('.thumb-video a', '.popup-video');
     menu('.open-main-nav');
     bannerAdsSide();
-    changeContentTab('.tab-pro a','.des-pro .tab-content');
+    changeContentTab('.tab-pro a', '.des-pro .tab-content');
     changeContentTab('.tabs .tab');
-    var owl = $("#slider-1");
-    owl.owlCarousel({
-        navigation: true,
-        paginationSpeed: 400,
-        singleItem: true,
-        autoHeight: true,
-        responsive: true,
-        autoPlay: true,
-        autoPlaySpeed: 2000,
-        afterMove:function (element) {
-            var length = owl.find('.owl-item').length;
-            var current = this.currentItem;
-            if(current == length - 1){
-                current = -1;
-            }
-            var next = element.find(".owl-item").eq(current+1).find('img').attr('src');
-            $("#slide-preview img").attr('src',next);
-        }
-    });
     $("#slider-2").owlCarousel(
         {
             navigation: true,
@@ -32,51 +13,56 @@ $(document).ready(function(){
             autoPlay: false,
             autoPlaySpeed: 2000,
             responsive: true,
-            items : 3,
-            itemsDesktop : [1199,3],
-            itemsDesktopSmall : [980,3],
-            itemsTablet: [768,2],
-            itemsMobile : [479,1]
+            items: 3,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [980, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [479, 1]
         }
     );
     var e = $("#getOffset").offset().top + $("#getOffset").height();
     $(window).scroll(function () {
         var o = $(window).scrollTop();
-        e <= o ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed")
-    })
+        e <= o ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
+    });
+    $(".hide-form-phone").on("click", function (n) {
+        n.preventDefault(), $(".show-form-phone").show();
+    }), $(".show-form-phone h4").on("click", function (n) {
+        n.preventDefault(), $(".show-form-phone").hide();
+    });
 });
-$(".parentMenu>a").on('click',function(){
+$(".parentMenu>a").on('click', function () {
     var parentMenu = $(this).parent();
     parentMenu.find('.submenu').toggle();
 });
 function bannerAdsSide() {
     var $banner = $('.banner-ads'), $window = $(window);
-    var $topDefault = parseFloat( $banner.css('top'), 10 );
-    $window.on('scroll', function() {
+    var $topDefault = parseFloat($banner.css('top'), 10);
+    $window.on('scroll', function () {
         var $top = $(this).scrollTop();
-        $banner.stop().animate( { top: $top + $topDefault }, 100 , 'easeOutCirc');
+        $banner.stop().animate({top: $top + $topDefault}, 100, 'easeOutCirc');
     });
 }
-function clickChangeVideo(btnClick, posShowvideo){
+function clickChangeVideo(btnClick, posShowvideo) {
     $(btnClick).off('click');
-    $(btnClick).click(function(){
+    $(btnClick).click(function () {
         var src = $(this).data('src');
         $(posShowvideo).find('iframe').attr('src', src);
     });
 }
-function clickShowPopupVideo(btnClick, popupName){
+function clickShowPopupVideo(btnClick, popupName) {
     $(btnClick).off('click');
-    $(btnClick).click(function(){
+    $(btnClick).click(function () {
         var src = $(this).data('src');
         $(popupName).fadeIn();
-        $(popupName).find('iframe').attr('src',src);
-        $(".close-popup").click(function(){
+        $(popupName).find('iframe').attr('src', src);
+        $(".close-popup").click(function () {
             $(popupName).fadeOut();
         });
     });
 }
-function changeContentTab(btnClick, tabContent){
-    $(btnClick).click(function(){
+function changeContentTab(btnClick, tabContent) {
+    $(btnClick).click(function () {
         var content = $(this).data('content');
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
@@ -84,30 +70,30 @@ function changeContentTab(btnClick, tabContent){
         $(content).addClass('active');
     });
 }
-function menu(btnClick){
+function menu(btnClick) {
     $(btnClick).off('click');
     var click = 0;
-    $(btnClick).click(function(){
+    $(btnClick).click(function () {
         var menu = $(this).data('menu');
         if (click == 0) {
             $(menu).addClass('transX0');
             $(this).css({
-                'background':'none'
+                'background': 'none'
             });
             $('.miniMenu-btn:before').css({
-                'opacity':'1'
+                'opacity': '1'
             });
             click++;
         } else {
             $(menu).removeClass('transX0');
-            $(this).css({'background':'url("http://www.duoclieutuelinh.vn/frontend/images/menu-open.png")'});
+            $(this).css({'background': 'url("http://www.duoclieutuelinh.vn/frontend/images/menu-open.png")'});
             click--;
         }
     });
 }
-function closeHotline(btnClick){
+function closeHotline(btnClick) {
     var click = 0;
-    $(btnClick).click(function(){
+    $(btnClick).click(function () {
         var menu = $(this).data('close');
         if (click == 0) {
             $(menu).addClass('transY94');
