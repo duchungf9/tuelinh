@@ -9,7 +9,7 @@ $(document).ready(function () {
     $("#slider-2").owlCarousel({
         navigation: true,
         pagination: true,
-        autoPlay: false,
+        autoPlay: true,
         autoPlaySpeed: 2000,
         responsive: true,
         items: 3,
@@ -75,12 +75,7 @@ function menu(btnClick) {
         var menu = $(this).data('menu');
         if (click == 0) {
             $(menu).addClass('transX0');
-            $(this).css({
-                'background': 'none'
-            });
-            $('.miniMenu-btn:before').css({
-                'opacity': '1'
-            });
+            $(this).css({'background': 'url("http://www.duoclieutuelinh.vn/frontend/images/menu-close.png")'});
             click++;
         } else {
             $(menu).removeClass('transX0');

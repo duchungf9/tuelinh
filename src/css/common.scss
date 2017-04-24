@@ -681,10 +681,9 @@ header{
           .related-news{
             a{
               color: #070606;
-              color: #070606;
               border-bottom: thin solid #8c8888;
               padding: 10px 0;
-              @extend %overFlowA;
+              display: block;
               &:hover{
                 color: #40a629;
                 text-decoration: none;
@@ -698,6 +697,10 @@ header{
                 border-radius: 10px;
                 display: inline-block;
                 vertical-align: middle;
+              }
+              &:nth-child(2),&:nth-child(3){
+                height: 61px;
+                overflow-y: hidden;
               }
               &:last-child{
                 border: none;
@@ -978,7 +981,14 @@ header{
                 justify-content: space-between;
                 -webkit-align-items: center;
                 align-items: center;
-                &.row2,&.row3{
+                &.row2{
+                  -webkit-justify-content: space-between;
+                  justify-content: space-between;
+                  label {
+                    margin-left: 10px;
+                  }
+                }
+                &.row3{
                   -webkit-justify-content: flex-start;
                   justify-content: flex-start;
                   label {
@@ -986,7 +996,8 @@ header{
                   }
                 }
               }
-              input {
+
+              select,input {
                 padding-left: 10px;
                 width: 47.5%;
                 height: 35px;
@@ -1021,7 +1032,7 @@ header{
                 -webkit-border-radius: 15px;
                 -moz-border-radius: 15px;
                 border-radius: 15px;
-                margin-left: 6%;
+                margin: 10px auto;
                 &:hover {
                   color: #ff0;
                 }
@@ -1029,7 +1040,7 @@ header{
             }
             @media (max-width: 460px) {
              form{
-               input {
+               input, select {
                  width: 100%
                }
                .sl-onl {
@@ -1406,8 +1417,11 @@ header{
       h3 {
         font-weight: 400;
         margin: 0;
-        padding: 10px;
+        padding: 5px 10px;
         border-bottom: thin dashed #909193;
+        line-height: 27px;
+        height: 65px;
+        overflow-y: hidden;
       }
       a {
         color: #000;
@@ -1916,7 +1930,7 @@ footer{
   position: absolute;
   width: 171px;
   height: 454px;
-  top: 250px;
+  top: 186px;
   z-index: 9;
   img{
     width: 100%;
@@ -1931,8 +1945,10 @@ footer{
   &.btn-group-fix {
     width: 63px;
     position: absolute;
-    top: 250px;
+    top: 186px;
     right: 13%;
+    height: 283px;
+    z-index: 2;
     a {
       display: block;
       margin-bottom: 10px
@@ -1951,6 +1967,8 @@ footer{
   display: none;
 }
 .widget-wrap{
+  position: relative;
+  z-index: 1;
   .hide-form-phone {
     position: fixed;
     bottom: 0;

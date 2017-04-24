@@ -67,7 +67,7 @@ header #main-nav ul li a {
   margin: auto;
   text-align: center; }
 
-.body .groups .left-content .block-4 .post h4 a, .body .groups .left-content .block-4 .post .related-news a {
+.body .groups .left-content .block-4 .post h4 a {
   display: block;
   width: 100%;
   overflow: hidden;
@@ -528,9 +528,9 @@ header #main-nav {
           padding: 10px 0; }
         .body .groups .left-content .block-4 .post .related-news a {
           color: #070606;
-          color: #070606;
           border-bottom: thin solid #8c8888;
-          padding: 10px 0; }
+          padding: 10px 0;
+          display: block; }
           .body .groups .left-content .block-4 .post .related-news a:hover {
             color: #40a629;
             text-decoration: none; }
@@ -543,6 +543,9 @@ header #main-nav {
             border-radius: 10px;
             display: inline-block;
             vertical-align: middle; }
+          .body .groups .left-content .block-4 .post .related-news a:nth-child(2), .body .groups .left-content .block-4 .post .related-news a:nth-child(3) {
+            height: 61px;
+            overflow-y: hidden; }
           .body .groups .left-content .block-4 .post .related-news a:last-child {
             border: none; }
     .body .groups .left-content .steps {
@@ -735,12 +738,17 @@ header #main-nav {
       justify-content: space-between;
       -webkit-align-items: center;
       align-items: center; }
-      .body .groups .left-content .delivery .note.note1 form > div.row2, .body .groups .left-content .delivery .note.note1 form > div.row3 {
+      .body .groups .left-content .delivery .note.note1 form > div.row2 {
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+        .body .groups .left-content .delivery .note.note1 form > div.row2 label {
+          margin-left: 10px; }
+      .body .groups .left-content .delivery .note.note1 form > div.row3 {
         -webkit-justify-content: flex-start;
         justify-content: flex-start; }
-        .body .groups .left-content .delivery .note.note1 form > div.row2 label, .body .groups .left-content .delivery .note.note1 form > div.row3 label {
+        .body .groups .left-content .delivery .note.note1 form > div.row3 label {
           margin-left: 10px; }
-    .body .groups .left-content .delivery .note.note1 form input {
+    .body .groups .left-content .delivery .note.note1 form select, .body .groups .left-content .delivery .note.note1 form input {
       padding-left: 10px;
       width: 47.5%;
       height: 35px;
@@ -749,7 +757,7 @@ header #main-nav {
       border: none;
       color: #9fa1a4;
       margin-bottom: 10px; }
-      .body .groups .left-content .delivery .note.note1 form input.sl-onl {
+      .body .groups .left-content .delivery .note.note1 form select.sl-onl, .body .groups .left-content .delivery .note.note1 form input.sl-onl {
         width: 30%;
         margin-left: 5%; }
     .body .groups .left-content .delivery .note.note1 form .error {
@@ -772,11 +780,11 @@ header #main-nav {
       -webkit-border-radius: 15px;
       -moz-border-radius: 15px;
       border-radius: 15px;
-      margin-left: 6%; }
+      margin: 10px auto; }
       .body .groups .left-content .delivery .note.note1 form .btn-order-onl:hover {
         color: #ff0; }
     @media (max-width: 460px) {
-      .body .groups .left-content .delivery .note.note1 form input {
+      .body .groups .left-content .delivery .note.note1 form input, .body .groups .left-content .delivery .note.note1 form select {
         width: 100%; }
       .body .groups .left-content .delivery .note.note1 form .sl-onl {
         margin-left: 0 !important; }
@@ -1046,8 +1054,11 @@ header #main-nav {
   .body .groups .item-r h3 {
     font-weight: 400;
     margin: 0;
-    padding: 10px;
-    border-bottom: thin dashed #909193; }
+    padding: 5px 10px;
+    border-bottom: thin dashed #909193;
+    line-height: 27px;
+    height: 65px;
+    overflow-y: hidden; }
   .body .groups .item-r a {
     color: #000; }
     .body .groups .item-r a:before {
@@ -1426,7 +1437,7 @@ footer {
   position: absolute;
   width: 171px;
   height: 454px;
-  top: 250px;
+  top: 186px;
   z-index: 9; }
   .banner-ads img {
     width: 100%;
@@ -1438,8 +1449,10 @@ footer {
   .banner-ads.btn-group-fix {
     width: 63px;
     position: absolute;
-    top: 250px;
-    right: 13%; }
+    top: 186px;
+    right: 13%;
+    height: 283px;
+    z-index: 2; }
     .banner-ads.btn-group-fix a {
       display: block;
       margin-bottom: 10px; }
@@ -1452,90 +1465,93 @@ footer {
 .bg-top {
   display: none; }
 
-.widget-wrap .hide-form-phone {
-  position: fixed;
-  bottom: 0;
-  width: 270px;
-  background: url(../images/support-tel.png) bottom right no-repeat;
-  right: 2%;
-  z-index: 9999;
-  padding-top: 180px;
-  cursor: pointer; }
-  .widget-wrap .hide-form-phone p {
-    float: left;
-    width: 90%;
-    cursor: pointer;
-    text-align: left;
-    padding: 0px 5%;
-    color: #fff;
-    font-weight: 700;
-    height: 34px;
-    line-height: 52px; }
-  @media (max-width: 970px) {
-    .widget-wrap .hide-form-phone {
-      background: url(../images/support-tel-mb.jpg) right bottom no-repeat;
-      padding-top: 5px; } }
-.widget-wrap .show-form-phone {
-  position: fixed;
-  bottom: 0;
-  width: 270px;
-  background: #f5f5f5;
-  right: 2%;
-  display: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  box-shadow: 1px 1px 5px 2px #d6d6d6;
-  z-index: 99999999999; }
-  .widget-wrap .show-form-phone h4 {
-    background: url(http://static.xoangbachphuc.vn/themes/caia/images/button-hide.png) right 10px center no-repeat #009655;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 15px;
-    text-align: left;
-    cursor: pointer;
+.widget-wrap {
+  position: relative;
+  z-index: 1; }
+  .widget-wrap .hide-form-phone {
+    position: fixed;
+    bottom: 0;
+    width: 270px;
+    background: url(../images/support-tel.png) bottom right no-repeat;
+    right: 2%;
+    z-index: 9999;
+    padding-top: 180px;
+    cursor: pointer; }
+    .widget-wrap .hide-form-phone p {
+      float: left;
+      width: 90%;
+      cursor: pointer;
+      text-align: left;
+      padding: 0px 5%;
+      color: #fff;
+      font-weight: 700;
+      height: 34px;
+      line-height: 52px; }
+    @media (max-width: 970px) {
+      .widget-wrap .hide-form-phone {
+        background: url(../images/support-tel-mb.jpg) right bottom no-repeat;
+        padding-top: 5px; } }
+  .widget-wrap .show-form-phone {
+    position: fixed;
+    bottom: 0;
+    width: 270px;
+    background: #f5f5f5;
+    right: 2%;
+    display: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin: 0; }
-  .widget-wrap .show-form-phone .box-show {
-    padding: 15px 10px; }
-    .widget-wrap .show-form-phone .box-show #getQues input, .widget-wrap .show-form-phone .box-show #getQues textarea {
-      min-height: 30px;
-      width: 100%;
-      margin-bottom: 10px;
-      font-size: 14px;
-      line-height: 1.42857143;
-      color: #555;
-      background-color: #fff;
-      background-image: none;
-      border: 1px solid #ccc;
-      border-radius: 2px;
-      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-      -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
-      .widget-wrap .show-form-phone .box-show #getQues input:focus, .widget-wrap .show-form-phone .box-show #getQues textarea:focus {
-        border-color: #66afe9;
-        outline: 0;
-        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
-    .widget-wrap .show-form-phone .box-show #getQues button {
-      border: thin solid #adadad;
-      width: 100%;
-      height: 40px;
-      font-size: 16px;
-      line-height: 40px;
-      background: #009655;
+    box-shadow: 1px 1px 5px 2px #d6d6d6;
+    z-index: 99999999999; }
+    .widget-wrap .show-form-phone h4 {
+      background: url(http://static.xoangbachphuc.vn/themes/caia/images/button-hide.png) right 10px center no-repeat #009655;
       color: #fff;
-      cursor: pointer; }
-      .widget-wrap .show-form-phone .box-show #getQues button:hover {
-        color: #05421a; }
-    .widget-wrap .show-form-phone .box-show p {
+      font-size: 14px;
       font-weight: 700;
-      font-size: 13px !important;
-      text-align: justify;
-      margin-bottom: 20px; }
+      padding: 15px;
+      text-align: left;
+      cursor: pointer;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      margin: 0; }
+    .widget-wrap .show-form-phone .box-show {
+      padding: 15px 10px; }
+      .widget-wrap .show-form-phone .box-show #getQues input, .widget-wrap .show-form-phone .box-show #getQues textarea {
+        min-height: 30px;
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+        .widget-wrap .show-form-phone .box-show #getQues input:focus, .widget-wrap .show-form-phone .box-show #getQues textarea:focus {
+          border-color: #66afe9;
+          outline: 0;
+          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+      .widget-wrap .show-form-phone .box-show #getQues button {
+        border: thin solid #adadad;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        background: #009655;
+        color: #fff;
+        cursor: pointer; }
+        .widget-wrap .show-form-phone .box-show #getQues button:hover {
+          color: #05421a; }
+      .widget-wrap .show-form-phone .box-show p {
+        font-weight: 700;
+        font-size: 13px !important;
+        text-align: justify;
+        margin-bottom: 20px; }
 
 .pagination {
   margin: 40px auto;
