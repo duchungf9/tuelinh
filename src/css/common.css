@@ -89,7 +89,7 @@ header #main-nav ul li a {
   text-align: center;
   padding: 10px 0; }
 
-.body .block-1, .body .block-1 .group-banner-sm, .body .groups, .body .groups .left-content .tabs, .body .groups .left-content .block-4, .body .groups .left-content .video-content .thumb-video, .body .groups .left-content .list-news > div .post, .body .groups .left-content .listButton, .body .groups .left-content .news-bt, .body .groups .left-content .delivery .note.note1 form > div, .body .groups .left-content .delivery .places > div .provines, .body .groups .left-content .contact-content form, .body .groups .left-content .contact-content form .form-row, .body .groups .left-content .contact-content .box-intro, .body .groups .left-content .contact-content .box-intro .some-intro, .body .groups .right-content .boxHot, .body .experience #slider-2 .owl-item .item, .others .fixCen, .others .fixCen .content:nth-child(3), .others .fixCen .content:nth-child(3) .btn-groups, .others .fixCen .content:nth-child(3) .text {
+.body .block-1, .body .block-1 .group-banner-sm, .body .groups, .body .groups .left-content .tabs, .body .groups .left-content .block-4, .body .groups .left-content .video-content .thumb-video, .body .groups .left-content .list-news > div .post, .body .groups .left-content .listButton, .body .groups .left-content .news-bt, .body .groups .left-content .delivery .note.note1 form > div, .body .groups .left-content .delivery .places > div .provines, .body .groups .left-content .contact-content form, .body .groups .left-content .contact-content form .form-row, .body .groups .left-content .contact-content .box-intro, .body .groups .left-content .contact-content .box-intro .some-intro, .body .groups .left-content .box-faq .title-faq, .body .groups .left-content .box-faq .viewDetail .answer-faq, .body .groups .left-content .box-faq-detail .answer-faq, .body .groups .right-content .boxHot, .body .experience #slider-2 .owl-item .item, .others .fixCen, .others .fixCen .content:nth-child(3), .others .fixCen .content:nth-child(3) .btn-groups, .others .fixCen .content:nth-child(3) .text {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -295,9 +295,9 @@ header #main-nav {
         z-index: 2;
         padding: 0;
         height: auto !important;
-        background: rgba(222, 224, 205, 0.51);
+        background: rgba(35, 63, 22, 0.87);
         width: 100%;
-        min-width: 120%; }
+        min-width: 150%; }
         header #main-nav ul li .submenu li {
           min-width: 100%;
           list-style: none;
@@ -313,6 +313,8 @@ header #main-nav {
             header #main-nav ul li .submenu li a:first-child {
               font-size: 14px;
               padding: 0 10.85px; }
+            header #main-nav ul li .submenu li a:hover {
+              color: #009d36; }
       header #main-nav ul li:hover .submenu {
         display: block; }
       header #main-nav ul li a {
@@ -965,6 +967,80 @@ header #main-nav {
       .body .groups .left-content .contact-content {
         width: 96%;
         margin: auto; } }
+    .body .groups .left-content .box-faq .title-faq {
+      font-size: 16px; }
+      .body .groups .left-content .box-faq .title-faq .faq-icon {
+        width: 12%;
+        margin-right: 2%;
+        height: 100%; }
+      .body .groups .left-content .box-faq .title-faq .title-ques .normal {
+        font-weight: normal;
+        font-style: inherit;
+        color: #757679;
+        font-size: 13px; }
+    .body .groups .left-content .box-faq .viewMore {
+      color: #009d36; }
+    .body .groups .left-content .box-faq .viewDetail .answer {
+      background: #008746;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 3px 0;
+      box-sizing: border-box;
+      margin: 10px 0;
+      display: block;
+      width: 100px;
+      text-align: center;
+      font-weight: bold; }
+    .body .groups .left-content .box-faq .viewDetail .answer-faq {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      background: #f2f3f3;
+      padding: 5px; }
+      .body .groups .left-content .box-faq .viewDetail .answer-faq .faq-icon {
+        width: 12%;
+        height: 100%;
+        margin-right: 2%; }
+      .body .groups .left-content .box-faq .viewDetail .answer-faq .text {
+        width: 86%; }
+      .body .groups .left-content .box-faq .viewDetail .answer-faq .viewMore {
+        display: block;
+        width: 100%;
+        text-align: right; }
+    @media (max-width: 600px) {
+      .body .groups .left-content .box-faq .viewDetail .answer-faq .faq-icon {
+        width: 22%; }
+      .body .groups .left-content .box-faq .viewDetail .answer-faq .text {
+        width: 76%; } }
+    .body .groups .left-content .box-faq-detail .title-faq {
+      font-size: 16px;
+      color: #009d36;
+      font-weight: bold; }
+    .body .groups .left-content .box-faq-detail .answer {
+      background: #008746;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 3px 0;
+      box-sizing: border-box;
+      margin: 10px 0;
+      display: block;
+      width: 100px;
+      text-align: center;
+      font-weight: bold; }
+    .body .groups .left-content .box-faq-detail .answer-faq {
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      background: #f2f3f3;
+      padding: 5px; }
+      .body .groups .left-content .box-faq-detail .answer-faq .faq-icon {
+        width: 12%;
+        height: 100%;
+        margin-right: 2%; }
+      .body .groups .left-content .box-faq-detail .answer-faq .text {
+        width: 86%; }
+      .body .groups .left-content .box-faq-detail .answer-faq .viewMore {
+        display: block;
+        width: 100%;
+        text-align: right; }
   .body .groups .box-bd {
     border: thin solid #009d36; }
   .body .groups .item-r h3 {
@@ -1104,7 +1180,10 @@ header #main-nav {
     .body .experience #slider-2 .owl-item .item {
       -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
-      justify-content: space-between; }
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      width: 94%;
+      margin: auto; }
       .body .experience #slider-2 .owl-item .item .left {
         max-width: 114px;
         width: 40%; }
@@ -1116,9 +1195,9 @@ header #main-nav {
           -moz-border-radius: 100%;
           border-radius: 100%; }
       .body .experience #slider-2 .owl-item .item .right {
-        width: 60%;
+        width: 58%;
         padding-left: 2%;
-        margin-left: 10px; }
+        margin-left: 2%; }
         .body .experience #slider-2 .owl-item .item .right .title {
           color: #070607;
           font-size: 14px;
@@ -1130,6 +1209,26 @@ header #main-nav {
         .body .experience #slider-2 .owl-item .item .right .address {
           color: #838080;
           font-size: 10px; }
+      .body .experience #slider-2 .owl-item .item .bottom {
+        width: 100%;
+        background: #1fa007;
+        color: #ffffff;
+        padding: 10px 10px 20px 10px;
+        border-radius: 10px;
+        margin: 20px 0 0 0;
+        position: relative; }
+        .body .experience #slider-2 .owl-item .item .bottom:before {
+          content: '';
+          width: 0;
+          height: 0;
+          display: block;
+          border-bottom: 8px solid #1fa007;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 6px solid transparent;
+          position: absolute;
+          top: -14px;
+          left: 16%; }
       @media (max-width: 976px) {
         .body .experience #slider-2 .owl-item .item .left {
           margin: 0 auto 10px auto;

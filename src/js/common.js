@@ -6,20 +6,18 @@ $(document).ready(function () {
     bannerAdsSide();
     changeContentTab('.tab-pro a', '.des-pro .tab-content');
     changeContentTab('.tabs .tab');
-    $("#slider-2").owlCarousel(
-        {
-            navigation: true,
-            pagination: true,
-            autoPlay: false,
-            autoPlaySpeed: 2000,
-            responsive: true,
-            items: 3,
-            itemsDesktop: [1199, 3],
-            itemsDesktopSmall: [980, 3],
-            itemsTablet: [768, 2],
-            itemsMobile: [479, 1]
-        }
-    );
+    $("#slider-2").owlCarousel({
+        navigation: true,
+        pagination: true,
+        autoPlay: false,
+        autoPlaySpeed: 2000,
+        responsive: true,
+        items: 3,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 3],
+        itemsTablet: [768, 2],
+        itemsMobile: [479, 1]
+    });
     var e = $("#getOffset").offset().top + $("#getOffset").height();
     $(window).scroll(function () {
         var o = $(window).scrollTop();

@@ -344,9 +344,9 @@ header{
           z-index: 2;
           padding: 0;
           height: auto!important;
-          background: rgba(222, 224, 205, 0.51);
+          background: rgba(35, 63, 22, 0.87);
           width: 100%;
-          min-width: 120%;
+          min-width: 150%;
           li{
             min-width: 100%;
             list-style: none;
@@ -363,6 +363,9 @@ header{
               &:first-child{
                 font-size: 14px;
                 padding: 0 10.85px;
+              }
+              &:hover{
+                color: #009d36;
               }
             }
           }
@@ -1289,7 +1292,113 @@ header{
           margin: auto;
         }
       }
+      .box-faq{
+        .title-faq{
+          @extend %disFlex;
+          font-size: 16px;
+          .faq-icon{
+            width: 12%;
+            margin-right: 2%;
+            height: 100%;
+          }
+          .title-ques{
+            .normal{
+              font-weight: normal;
+              font-style: inherit;
+              color: #757679;
+              font-size: 13px;
+            }
+          }
+        }
+        .viewMore{
+          color: #009d36;
+        }
+        .viewDetail{
+          .answer{
+            background: #008746;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 3px 0;
+            box-sizing: border-box;
+            margin: 10px 0;
+            display: block;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+          }
+          .answer-faq{
+            @extend %disFlex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            background: #f2f3f3;
+            padding: 5px;
+            .faq-icon{
+              width: 12%;
+              height: 100%;
+              margin-right: 2%;
+            }
+            .text{
+              width: 86%;
+            }
+            .viewMore{
+              display: block;
+              width: 100%;
+              text-align: right;
+            }
+          }
+          @media(max-width: 600px) {
+            .answer-faq{
+              .faq-icon{
+                width: 22%;
+              }
+              .text{
+                width: 76%;
+              }
+            }
+          }
+        }
+      }
+      .box-faq-detail{
+        .title-faq{
+          font-size: 16px;
+          color: #009d36;
+          font-weight: bold;
+        }
+        .answer{
+          background: #008746;
+          color: #ffffff;
+          font-size: 16px;
+          padding: 3px 0;
+          box-sizing: border-box;
+          margin: 10px 0;
+          display: block;
+          width: 100px;
+          text-align: center;
+          font-weight: bold;
+        }
+        .answer-faq{
+          @extend %disFlex;
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          background: #f2f3f3;
+          padding: 5px;
+          .faq-icon{
+            width: 12%;
+            height: 100%;
+            margin-right: 2%;
+          }
+          .text{
+            width: 86%;
+          }
+          .viewMore{
+            display: block;
+            width: 100%;
+            text-align: right;
+          }
+        }
+      }
     }
+
     .box-bd{
       border: thin solid #009d36;
     }
@@ -1480,7 +1589,10 @@ header{
           @extend %disFlex;
           -webkit-flex-flow: row wrap;
           flex-flow: row wrap;
+          -webkit-justify-content: space-between;
           justify-content: space-between;
+          width: 94%;
+          margin: auto;
           .left{
             max-width: 114px;
             width: 40%;
@@ -1494,9 +1606,9 @@ header{
             }
           }
           .right{
-            width: 60%;
+            width: 58%;
             padding-left: 2%;
-            margin-left: 10px;
+            margin-left: 2%;
             .title{
               color: #070607;
               font-size: 14px;
@@ -1510,6 +1622,28 @@ header{
             .address{
               color: #838080;
               font-size: 10px;
+            }
+          }
+          .bottom{
+            width: 100%;
+            background: #1fa007;
+            color: #ffffff;
+            padding: 10px 10px 20px 10px;
+            border-radius: 10px;
+            margin: 20px 0 0 0;
+            position: relative;
+            &:before{
+              content: '';
+              width: 0;
+              height: 0;
+              display: block;
+              border-bottom: 8px solid #1fa007;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 6px solid transparent;
+              position: absolute;
+              top: -14px;
+              left: 16%;
             }
           }
           @media(max-width: 976px) {
