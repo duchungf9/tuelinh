@@ -2126,6 +2126,14 @@ footer{
     }
   }
 }
+@media (max-width: 1366px){
+  .banner-ads{
+    &.btn-group-fix {
+      width: 50px;
+      height: 232px;
+    }
+  }
+}
 
 @media (max-width: 1100px){
   .others{

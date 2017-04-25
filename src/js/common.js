@@ -18,7 +18,8 @@ $(document).ready(function () {
         itemsTablet: [768, 2],
         itemsMobile: [479, 1]
     });
-    var e = $("#getOffset").offset().top + $("#getOffset").height();
+
+    var e = $("#sidebar").offset().top + $("#sidebar").height();
     $(window).scroll(function () {
         var o = $(window).scrollTop();
         e <= o ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
