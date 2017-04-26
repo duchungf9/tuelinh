@@ -238,6 +238,7 @@ h1 {
   margin-bottom: 30px;
 }
 header{
+  z-index: 1;
   .head-info{
     display: -webkit-box;
     display: -moz-box;
@@ -2108,7 +2109,7 @@ footer{
 }
 @media (max-width: 1365px){
   .banner-ads{
-    width: 127px;
+    width: 115px;
   }
 }
 @media (max-width: 1279px){
@@ -2317,6 +2318,7 @@ footer{
     width: 50% !important;
   }
   .body{
+    z-index: 0;
     .others{
       .fixCen{
         display: block !important;
