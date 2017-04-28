@@ -54,6 +54,9 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
+red{
+  color: #ed1c24;
+}
 #sidebar{
   &.fixed {
     z-index: 10;
@@ -103,6 +106,9 @@ h1 {
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
+  display: block;
+  border: thin solid #bfe4d0;
+  border-radius: 5px;
 }
 %liProp{
   list-style: none;
@@ -206,6 +212,23 @@ h1 {
   width: 100%;
   margin: 0 auto;
   background: #d9ecde;
+}
+.center{
+  text-align: center;
+}
+%listStyle{
+  &::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #58595b;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 5px 0 0;
+  }
 }
 .global-title{
   color: #ffffff;
@@ -461,10 +484,7 @@ header{
     padding: 40px 0;
     h2{
       @extend %h2Prop;
-      display: block;
       margin: 0px auto 40px auto;
-      border: thin solid #bfe4d0;
-      border-radius: 5px;
     }
     .boxHot{
       @extend %disFlex;
@@ -544,11 +564,84 @@ header{
   }
   .block4{
     background: #d9ecde;
-    height: 400px;
+    color: #58595b;
+    padding-bottom: 30px;
+    h2{
+      @extend %h2Prop;
+      width: auto;
+      margin: 30px auto;
+      display: inline-block;
+      padding: 0 20px;
+    }
+    h3{
+      color: #009444;
+      font-family: Roboto-Bold, sans-serif;
+      font-size: 16px;
+      display: block;
+    }
+    h4{
+      font-size: 14px;
+      font-family:Roboto-Bold, sans-serif;
+    }
+    span{
+      font-weight: bold;
+      @extend %listStyle;
+    }
   }
   .block5{
-    height: 400px;
     background: #f1f2f2;
+    padding: 0px 0 30px 0;
+    h2{
+      @extend %h2Prop;
+      width: auto;
+      margin: 30px auto;
+      display: inline-block;
+      padding: 0 20px;
+    }
+    span{
+      @extend %listStyle;
+    }
+    .form_question{
+      .el{
+        width: 48%;
+        display: inline-block;
+        margin-bottom: 10px;
+        label{
+          width: 130px;
+          vertical-align: top;
+        }
+      }
+      .fullWidth{
+        width: 100%;
+        display: block;
+      }
+      input{
+        height: 30px;
+        line-height: 30px;
+        background: #ffffff;
+        border:thin solid gray;
+        width: 300px;
+        padding-left: 10px;
+      }
+      button{
+        color: #ffffff;
+        font-weight: bold;
+        background: #00984a;
+        width: 100px;
+        height: 35px;
+        line-height: 35px;
+        border: none;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+        display: inline-block;
+        margin-right: 10px;
+        text-align: center;
+      }
+      textarea{
+        width: 79%;
+      }
+    }
   }
   .block7{
     background: url("../images/bg3.jpg") center top no-repeat;
@@ -755,7 +848,45 @@ header{
     }
   }
   .block8{
-    height: 500px;
+    padding: 30px 0;
+    .share{
+      background: #ffffff;
+      color: #58595b;
+      padding: 10px 10px 10px 80px;
+      box-sizing: border-box;
+      position: relative;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:nth-child(even){
+        background: #eef5ee;
+      }
+      &:before{
+        content: '';
+        background: url(../images/faq-icon.png) no-repeat;
+        width: 48px;
+        height: 48px;
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+      }
+      .ques-detail{
+        line-height: 25px;
+      }
+      h4{
+        margin: 0 0 10px 0;
+        color: #239f49;
+        font-size: 14px;
+        font-family: Roboto-Bold, sans-serif;
+        text-transform: uppercase;
+      }
+
+    }
   }
 }
 footer{

@@ -50,6 +50,9 @@ h1 {
   position: relative;
   margin: 0 auto; }
 
+red {
+  color: #ed1c24; }
+
 #sidebar.fixed {
   z-index: 10;
   position: fixed;
@@ -78,7 +81,7 @@ header #main-nav ul li a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-.body .block3 h2 {
+.body .block3 h2, .body .block4 h2, .body .block5 h2 {
   font-family: Roboto-Black, sans-serif;
   color: #fff200;
   background: #009444;
@@ -87,7 +90,10 @@ header #main-nav ul li a {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: block;
+  border: thin solid #bfe4d0;
+  border-radius: 5px; }
 
 header .head-info, header #main-nav ul, .body .intro-video, .body .block3 .boxHot, .body .block3 .boxHot .item, .body .experience #slider-2 .owl-item .item, .others .fixCen, .others .fixCen .content:nth-child(3), .others .fixCen .content:nth-child(3) .btn-groups, .others .fixCen .content:nth-child(3) .text {
   display: -webkit-box;
@@ -169,6 +175,21 @@ header .head-info, header #main-nav ul, .body .intro-video, .body .block3 .boxHo
   width: 100%;
   margin: 0 auto;
   background: #d9ecde; }
+
+.center {
+  text-align: center; }
+
+.body .block4 span::before, .body .block5 span::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #58595b;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 5px 0 0; }
 
 .global-title {
   color: #ffffff;
@@ -368,10 +389,7 @@ header #main-nav {
   background: #009444;
   padding: 40px 0; }
   .body .block3 h2 {
-    display: block;
-    margin: 0px auto 40px auto;
-    border: thin solid #bfe4d0;
-    border-radius: 5px; }
+    margin: 0px auto 40px auto; }
   .body .block3 .boxHot {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -431,10 +449,64 @@ header #main-nav {
     border: none; }
 .body .block4 {
   background: #d9ecde;
-  height: 400px; }
+  color: #58595b;
+  padding-bottom: 30px; }
+  .body .block4 h2 {
+    width: auto;
+    margin: 30px auto;
+    display: inline-block;
+    padding: 0 20px; }
+  .body .block4 h3 {
+    color: #009444;
+    font-family: Roboto-Bold, sans-serif;
+    font-size: 16px;
+    display: block; }
+  .body .block4 h4 {
+    font-size: 14px;
+    font-family: Roboto-Bold, sans-serif; }
+  .body .block4 span {
+    font-weight: bold; }
 .body .block5 {
-  height: 400px;
-  background: #f1f2f2; }
+  background: #f1f2f2;
+  padding: 0px 0 30px 0; }
+  .body .block5 h2 {
+    width: auto;
+    margin: 30px auto;
+    display: inline-block;
+    padding: 0 20px; }
+  .body .block5 .form_question .el {
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 10px; }
+    .body .block5 .form_question .el label {
+      width: 130px;
+      vertical-align: top; }
+  .body .block5 .form_question .fullWidth {
+    width: 100%;
+    display: block; }
+  .body .block5 .form_question input {
+    height: 30px;
+    line-height: 30px;
+    background: #ffffff;
+    border: thin solid gray;
+    width: 300px;
+    padding-left: 10px; }
+  .body .block5 .form_question button {
+    color: #ffffff;
+    font-weight: bold;
+    background: #00984a;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center; }
+  .body .block5 .form_question textarea {
+    width: 79%; }
 .body .block7 {
   background: url("../images/bg3.jpg") center top no-repeat;
   width: 100%;
@@ -594,7 +666,38 @@ header #main-nav {
     .body .experience #slider-2 {
       margin-top: 60px; } }
 .body .block8 {
-  height: 500px; }
+  padding: 30px 0; }
+  .body .block8 .share {
+    background: #ffffff;
+    color: #58595b;
+    padding: 10px 10px 10px 80px;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; }
+    .body .block8 .share:last-child {
+      margin-bottom: 0; }
+    .body .block8 .share:nth-child(even) {
+      background: #eef5ee; }
+    .body .block8 .share:before {
+      content: '';
+      background: url(../images/faq-icon.png) no-repeat;
+      width: 48px;
+      height: 48px;
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 15px; }
+    .body .block8 .share .ques-detail {
+      line-height: 25px; }
+    .body .block8 .share h4 {
+      margin: 0 0 10px 0;
+      color: #239f49;
+      font-size: 14px;
+      font-family: Roboto-Bold, sans-serif;
+      text-transform: uppercase; }
 
 footer {
   height: 40px;
@@ -998,7 +1101,7 @@ footer {
       height: 50%;
       margin: -40% 0 0 0; } }
 @media (max-width: 767px) {
-  .body .block3 h2 {
+  .body .block3 h2, .body .block4 h2, .body .block5 h2 {
     font-size: 14px; }
 
   #main-nav, #top-nav {
@@ -1028,7 +1131,7 @@ footer {
   .products #slider-2 .owl-item img {
     height: auto; } }
 @media (max-width: 450px) {
-  .body .block3 h2 {
+  .body .block3 h2, .body .block4 h2, .body .block5 h2 {
     width: 100%; }
 
   #main-nav, #top-nav {
