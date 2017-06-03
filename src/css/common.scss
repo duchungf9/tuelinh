@@ -604,7 +604,13 @@ header{
           box-sizing: border-box;
           .item{
             @extend %disFlex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
             margin-bottom: 10px;
+            a{
+              float: left;
+
+            }
             h3{
               margin: 0;
               padding: 0 2%;
@@ -650,6 +656,9 @@ header{
             font-size: 15px;
             a{
               color: #26aae1;
+            }
+            @media (max-width: 900px) {
+              height: 50px;
             }
           }
         }

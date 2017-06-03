@@ -8,7 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   background: #ffffff; }
 
 li.rs {
@@ -88,7 +88,7 @@ header #main-nav ul li a {
 .groups .left-content .block-4 h2, .experience .extend {
   color: #ffffff;
   background: #2f962b;
-  font-size: 15px;
+  font-size: 16px;
   width: 42%;
   text-align: center;
   padding: 10px 0; }
@@ -316,8 +316,8 @@ header {
         header #main-nav ul li a {
           text-transform: uppercase;
           color: #ffffff;
-          padding: 0 8.5px;
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          padding: 0 7.3px;
+          font-family: Roboto,sans-serif;
           font-size: 13px; }
 
 #slide_header .owl-buttons > div {
@@ -488,7 +488,11 @@ header {
           padding: 0 1% 0 0;
           box-sizing: border-box; }
           .section .col-left .news-list .box-news .item02 .item {
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
             margin-bottom: 10px; }
+            .section .col-left .news-list .box-news .item02 .item a {
+              float: left; }
             .section .col-left .news-list .box-news .item02 .item h3 {
               margin: 0;
               padding: 0 2%; }
@@ -521,6 +525,9 @@ header {
             font-size: 15px; }
             .section .col-left .block-news .listNews .item h3 a {
               color: #26aae1; }
+            @media (max-width: 900px) {
+              .section .col-left .block-news .listNews .item h3 {
+                height: 50px; } }
         @media (max-width: 500px) {
           .section .col-left .block-news .listNews .item {
             width: 100%;
@@ -935,7 +942,7 @@ header {
       margin-bottom: 40px; }
     .groups .left-content .detail-content .detail-title {
       display: block;
-      text-align: left;
+      text-align: center;
       font-size: 20px;
       color: #26aae1;
       margin-bottom: 20px; }
@@ -1438,7 +1445,7 @@ header {
   .experience .no-extend {
     width: 350px;
     color: #0060af;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     background: url(../images/chat-icon.png) 0px center no-repeat;
