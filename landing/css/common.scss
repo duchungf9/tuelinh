@@ -545,6 +545,7 @@ header{
      color: #58595b;
      p{
        text-indent: 40px;
+       text-align:justify;
      }
    }
    .video{
@@ -685,6 +686,7 @@ header{
           }
         }
         h4{
+          text-align:justify;
           color: #ffffff;
           font-family: roboto-regular, sans-serif;
           font-size: 16px;
@@ -760,6 +762,7 @@ header{
     background: #d9ecde;
     color: #58595b;
     padding-bottom: 30px;
+    text-align:justify;
     h2{
       @extend %h2Prop;
       width: auto;
@@ -957,6 +960,7 @@ header{
             border-radius: 10px;
             margin: 20px 0 0 0;
             position: relative;
+            text-align:justify;
             &:before{
               content: '';
               width: 0;
@@ -1097,6 +1101,7 @@ header{
   }
   .block8{
     padding: 30px 0;
+    text-align:justify;
     .view-more{
       display: block;
       a{

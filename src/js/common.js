@@ -4,8 +4,7 @@ $(document).ready(function () {
     clickShowPopupVideo('.thumb-video a', '.popup-video');
     menu('.open-main-nav');
     bannerAdsSide();
-    changeContentTab('.tab-pro a', '.des-pro .tab-content');
-    changeContentTab('.tabs .tab');
+    changeContentTab('.tab');
     $("#slider-2").owlCarousel({
         navigation: true,
         pagination: true,
@@ -18,12 +17,28 @@ $(document).ready(function () {
         itemsTablet: [768, 2],
         itemsMobile: [479, 1]
     });
-
-    var e = $("#sidebar").offset().top + $("#sidebar").height()+100;
-    $(window).scroll(function () {
-        var o = $(window).scrollTop();
-        e <= o ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
-    });
+    if( $('#slide_header').length )
+    {
+        $("#slide_header").owlCarousel({
+            autoPlay : false,
+            navigation: true,
+            pagination: true,
+            paginationSpeed : 1000,
+            goToFirstSpeed : 2000,
+            singleItem : true,
+            autoHeight : false
+        });
+    }
+    if( $('#sidebar').length )
+    {
+       var h =  $("#sidebar").height();
+       var e = $("#sidebar").offset().top + h + 100;
+        $(window).scroll(function () {
+            var o = $(window).scrollTop();
+            var f = $("#experience").offset().top - h;
+            (e <= o && o <= f) ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
+        });
+    }
     $(".hide-form-phone").on("click", function (n) {
         n.preventDefault(), $(".show-form-phone").show();
     }), $(".show-form-phone h4").on("click", function (n) {
@@ -60,10 +75,10 @@ function clickShowPopupVideo(btnClick, popupName) {
         });
     });
 }
-function changeContentTab(btnClick, tabContent) {
+function changeContentTab(btnClick) {
     $(btnClick).click(function () {
         var content = $(this).data('content');
-        $(this).siblings().removeClass('active');
+        $(btnClick).removeClass('active');
         $(this).addClass('active');
         $(content).siblings().removeClass('active');
         $(content).addClass('active');

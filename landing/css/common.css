@@ -450,7 +450,8 @@ header #main-nav {
     width: 50%;
     color: #58595b; }
     .body .intro-video .text p {
-      text-indent: 40px; }
+      text-indent: 40px;
+      text-align: justify; }
   .body .intro-video .video {
     width: 47%;
     height: 86%;
@@ -560,6 +561,7 @@ header #main-nav {
           max-width: 100%;
           height: auto; }
       .body .block3 .boxHot .item h4 {
+        text-align: justify;
         color: #ffffff;
         font-family: roboto-regular, sans-serif;
         font-size: 16px; }
@@ -606,7 +608,8 @@ header #main-nav {
 .body .block4 {
   background: #d9ecde;
   color: #58595b;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  text-align: justify; }
   .body .block4 h2 {
     width: auto;
     margin: 30px auto;
@@ -758,7 +761,8 @@ header #main-nav {
         padding: 10px 10px 20px 10px;
         border-radius: 10px;
         margin: 20px 0 0 0;
-        position: relative; }
+        position: relative;
+        text-align: justify; }
         .body .experience #slider-2 .owl-item .item .bottom:before {
           content: '';
           width: 0;
@@ -860,7 +864,8 @@ header #main-nav {
     .body .experience #slider-2 {
       margin-top: 60px; } }
 .body .block8 {
-  padding: 30px 0; }
+  padding: 30px 0;
+  text-align: justify; }
   .body .block8 .view-more {
     display: block; }
     .body .block8 .view-more a {
