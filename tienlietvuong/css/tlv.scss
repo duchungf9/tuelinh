@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: UTM;
   src: url('../fonts/UTM Aurora.ttf');
@@ -11,6 +12,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: Roboto, sans-serif;
   background: #ffffff;
 }
 li.rs{
@@ -49,11 +51,30 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
-$globalColor:#523e35;
-$boxBg: #f1f3f3;
-$tabBg:#5a4336;
-$otherBg:#72513b;
-$titleMain: #72513b;
+.box-adv-center{
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+#sidebar{
+  &.fixed {
+    z-index: 10;
+    position: fixed;
+    width: 300px;
+    top: 20px;
+    background: #ffffff;
+  }
+  @media(max-width: 1024px) {
+    &.fixed {
+      z-index: 10;
+      position: relative;
+      width: auto;
+      top: inherit;
+      background: none;
+    }
+  }
+}
 %aProp{
   width: 100%;
   height: 100%;
@@ -160,15 +181,15 @@ $titleMain: #72513b;
   }
 }
 .tab-1{
-  background: #522506;
+  background: #08558c;
   z-index: 4;
 }
 .tab-2{
-  background: $otherBg;
+  background: #1376bc;
   z-index: 3;
 }
 .tab-3{
-  background: $globalColor;
+  background: #26aae1;
   z-index: 2;
 }
 .tab-4{
@@ -185,7 +206,7 @@ $titleMain: #72513b;
 }
 .global-title{
   color: #ffffff;
-  background: $globalColor;
+  background: #0060af;
   font-size: 16px;
   text-transform: uppercase;
   height: 35px;
@@ -198,82 +219,38 @@ $titleMain: #72513b;
     color: #ffffff;
     &:hover{
       text-decoration: none;
-      color: #fff200;
+      color: #000000;
     }
   }
 }
 .share-exp{
   margin-bottom: 30px;
 }
-.box-adv-center{
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-}
-h3{
-  a{
-    font-weight: bold;
-  }
-  &.tab-bg{
-    background: url(../images/tab-bg.png) center right no-repeat;
-    width: auto;
-    height: 47px;
-    line-height: 47px;
-    padding: 0 20px;
-    text-transform: uppercase;
-    font-size: 16px;
-    border-left: thin solid;
-    margin: 0 0 10px 0;
-    min-width: 186px;
-    float: left;
-    a{
-      color: $titleMain;
-    }
-  }
-}
-#sidebar{
-  &.fixed {
-    z-index: 10;
-    position: fixed;
-    width: 300px;
-    top: 20px;
-    background: #ffffff;
-  }
-  @media(max-width: 1024px) {
-    &.fixed {
-      z-index: 10;
-      position: relative;
-      width: auto;
-      top: inherit;
-      background: none;
-    }
-  }
-}
 header{
-  background: url(../images/header-bg.jpg) center -47px no-repeat, #fefefe;
-  -webkit-background-size:cover;
-  background-size:cover;
+  background: #f7f7f6;
   z-index: 2;
   .head-info{
-    @extend %disFlex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     -webkit-justify-content: space-around;
     justify-content: space-around;
     -webkit-align-items: center;
     align-items: center;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    h1{
-      width: 35%;
+    padding: 20px 0;
+    .logo{
+      width: 30%;
     }
     .slogan{
-      color: $globalColor;
-      width: 44%;
-      font-size: 20px;
-      text-align: center;
-      font-family: Roboto, sans-serif;
+      width: 30%;
       text-transform: uppercase;
-      font-weight: bold;
+      color: #1376bc;
+      font-size: 27px;
+      text-align: center;
       span{
         display: block;
       }
@@ -300,7 +277,7 @@ header{
           text-align: center;
         }
       }
-      @media(max-width: 1024px) {
+      @media(max-width: 767px) {
         a{
           display: none;
         }
@@ -320,25 +297,20 @@ header{
       .icon-header{
         display: none;
       }
-      h1{
-        width: auto;
+      .logo{
+        width: 170px;
       }
       .slogan{
         width: 100%;
-        margin: 10px auto;
-        text-transform: uppercase;
-        text-align: center;
       }
     }
   }
   #main-nav{
-    background: $globalColor;
-    border-top: thin solid #c5c925;
+    background: #0060af;
     width: 100%;
     height: 47px;
     ul{
-      height: 45px;
-      padding-top: 2px;
+      height: 47px;
       li{
         position: relative;
         list-style: none;
@@ -347,11 +319,12 @@ header{
         line-height: 47px;
         padding: 0 4px;
         box-sizing: border-box;
-        border-right: thin solid #ceb9a2;
+        border-right: thin solid #ffffff;
         &:hover, &.active{
-          background: $otherBg;
+          background: #57a9de;
           a{
             text-decoration: none;
+            color: #000;
           }
         }
         &:last-child{
@@ -365,9 +338,9 @@ header{
           z-index: 2;
           padding: 0;
           height: auto !important;
-          background: $otherBg;
+          background: rgba(19, 118, 188, 0.9);
           width: 100%;
-          min-width: 260px;
+          min-width: 230px;
           left: 0;
           li{
             min-width: 100%;
@@ -449,11 +422,11 @@ header{
       width: 10px;
       height: 10px;
       margin: 0 5px;
-      background: $otherBg;
+      background: #1f68b3;
       border-radius: 10px;
       display: inline-block;
       &:hover, &.active{
-        background: $globalColor;
+        background: #40a629;
       }
     }
   }
@@ -476,7 +449,7 @@ header{
 .section{
   margin: 20px auto;
   .global-title {
-    background: $globalColor;
+    background: #0060af;
     height: 35px;
     padding: 0 20px;
     box-sizing: border-box;
@@ -485,7 +458,7 @@ header{
       display: block;
       text-transform: uppercase;
       &:hover{
-        color: #fff200;
+        color: #575757;
       }
     }
   }
@@ -503,97 +476,52 @@ header{
     .menu-tabs {
       @extend %disFlex;
       width: auto;
-      height: 47px;
+      border-bottom: 1px solid #26aae1;
       .news-type{
         list-style: none;
         padding: 0;
         margin: 0;
-        line-height: 47px;
-        height: 100%;
+        line-height: 35px;
+        height: auto;
         display: block;
         li{
-          display: inline-block;
+          float: left;
           margin-right: 1px;
-          height: 100%;
-          margin-left: 5px;
-          background: $otherBg;
-          min-width: 200px;
-          text-align: center;
-          -webkit-transform: skew(20deg);
-          -moz-transform: skew(20deg);
-          -ms-transform: skew(20deg);
-          -o-transform: skew(20deg);
-          transform: skew(20deg);
-          &:nth-child(2){
-            display: none;
-          }
+          color: #26aae1;
           a {
             display: block;
+            height: 29px;
+            line-height: 29px;
+            padding: 5px;
+            font-family: "Arial";
             text-transform: uppercase;
-            color: #ffffff;
-            font-size: 16px;
-            -webkit-transform: skew(-19deg);
-            -moz-transform: skew(-19deg);
-            -ms-transform: skew(-19deg);
-            -o-transform: skew(-19deg);
-            transform: skew(-19deg);
+            color: #26aae1;
+            position: relative;
+            font-weight: bold;
             &.active, &:hover{
               text-decoration: none;
-              color: #311315;
+              color: #da4b38;
             }
           }
         }
       }
-      @media (max-width: 430px) {
-        height: auto;
-        .news-type{
-          li{
-            height: auto;
-            width: 80% !important;
-            display: block;
-            margin: 0 auto 10px auto;
-          }
-        }
-      }
-      @media (max-width: 670px) {
+      @media (max-width: 600px) {
         width: 100%;
         .news-type{
-          width: 100%;
           height: auto;
-          li{
-            width: 48%;
-          }
         }
       }
     }
   }
   .box-uses {
     margin-bottom: 20px;
-    .title-panel{
-      .title{
-        width: 100%;
-        position: relative;
-        &:before{
-          content: '';
-          height: 1px;
-          background: $otherBg;
-          width: 100%;
-          bottom: 10px;
-          position: absolute;
-        }
-      }
-    }
-    .menu-tabs{
-      display: none;
-    }
   }
   .news-home{
     display: none;
     width: 100%;
     .item {
-      width: 32.333%;
+      width: 32.29167%;
       margin-top: 10px;
-      margin-right: 1.5%;
       .thumbs {
         position: relative;
         height: 220px;
@@ -608,7 +536,7 @@ header{
         font-weight: normal;
         font-size: 16px;
         a{
-          color: $titleMain;
+          color: #26aae1;
         }
       }
       p {
@@ -620,7 +548,7 @@ header{
         }
       }
       .related-post {
-        border-top: 1px dashed #808284;
+        border-top: 1px dashed #26aae1;
         margin-top: 15px;
         padding-top: 10px;
         ul{
@@ -642,14 +570,15 @@ header{
           }
         }
       }
-      &:last-child{
-        margin-right: 0;
-      }
     }
     &.active{
       @extend %disFlex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
       -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
+      -webkit-align-items: flex-end;
+      align-items: flex-end;
     }
     @media (max-width: 600px) {
       .item{
@@ -676,7 +605,6 @@ header{
         display: block;
       }
       .box-news{
-        width: 100%;
         @extend %disFlex;
         -webkit-justify-content: space-between;
         justify-content: space-between;
@@ -686,7 +614,7 @@ header{
           font-weight: normal;
           font-size: 15px;
           a{
-            color: $titleMain;
+            color: #26aae1;
           }
         }
         .item01{
@@ -706,17 +634,7 @@ header{
           .item{
             @extend %disFlex;
             margin-bottom: 10px;
-            .thumbs{
-              width: 40%;
-              float: left;
-              img{
-                width: 100%;
-                height: auto;
-              }
-            }
             h3{
-              width: 60%;
-              float: right;
               margin: 0;
               padding: 0 2%;
             }
@@ -738,21 +656,12 @@ header{
     }
     .block-news{
       margin-top: 20px;
-      .tab-bg{
-        background: url(../images/tab-bg.png) -70px no-repeat;
-        width: 100%;
-        position: relative;
-        &:before{
-          content: '';
-          height: 1px;
-          background: $otherBg;
-          width: 100%;
-          bottom: 0;
-          position: absolute;
-        }
+      .global-title{
+        min-width: 150px;
+        display: inline-block;
+        width: auto;
       }
       .listNews{
-        width: 100%;
         @extend %disFlex;
         -webkit-justify-content: space-between;
         justify-content: space-between;
@@ -770,11 +679,8 @@ header{
           h3{
             font-weight: normal;
             font-size: 15px;
-            @media (max-width: 900px) {
-              height: 50px;
-            }
             a{
-              color: $titleMain;
+              color: #26aae1;
             }
           }
         }
@@ -1101,7 +1007,7 @@ header{
         h4{
           font-size: 14px;
           a{
-            color: $globalColor;
+            color: #12491d;
             @extend %overFlowA;
             &:hover{
               color: #40a629;
@@ -1195,7 +1101,7 @@ header{
           display: block;
           width: 48%;
           font-size: 15px;
-          color: $globalColor;
+          color: #1f1a1b;
           font-weight: bold;
           iframe{
             width: 100%;
@@ -1238,7 +1144,7 @@ header{
             font-size: 12px;
           }
           a{
-            color: $globalColor;
+            color: #1f1a1b;
             text-transform: uppercase;
             font-weight: bold;
             &:hover{
@@ -1246,7 +1152,7 @@ header{
             }
           }
           .view-detail{
-            color: $globalColor;
+            color: green;
           }
           .title{
             font-family: secondFont, sans-serif;
@@ -1336,7 +1242,7 @@ header{
       a{
         font-size: 14px;
         color: #ffffff;
-        background: $globalColor;
+        background: #26aae1;
         display: inline-block;
         padding: 3px 5px;
         margin: 0 1px 5px 1px;
@@ -1379,7 +1285,7 @@ header{
         display: block;
         text-align: center;
         font-size: 20px;
-        color: $globalColor;
+        color: #26aae1;
         margin-bottom: 20px;
       }
       .detail-tabs{
@@ -1449,18 +1355,18 @@ header{
     .delivery{
       .note-pp {
         font-size: 21px;
-        color: $globalColor
+        color: #26aae1
       }
       .note{
         .title {
-          color: $globalColor;
+          color: #26aae1;
           font-size: 16px;
           margin: 25px 0;
           .number {
             width: 30px;
             height: 30px;
             border-radius: 30px;
-            background: $globalColor;
+            background: #26aae1;
             display: inline-block;
             color: #fff;
             text-align: center;
@@ -1566,7 +1472,7 @@ header{
           border-top: thin solid #e5e5e5;
           .captain {
             color: #fff;
-            background: $globalColor;
+            background: #26aae1;
             font-size: 16px;
             width: 140px;
             text-align: center;
@@ -1588,7 +1494,7 @@ header{
               margin: 5px 0;
               padding: 0 0 0 20px;
               &:hover {
-                color: $globalColor;
+                color: #26aae1;
               }
             }
           }
@@ -1668,7 +1574,7 @@ header{
         -webkit-flex-direction: column;
         flex-direction: column;
         background: #ffffff;
-        border: thin solid $globalColor;
+        border: thin solid #26aae1;
         padding: 10px;
         .form-row{
           @extend %disFlex;
@@ -1706,7 +1612,7 @@ header{
           background: none !important;
           button{
             border: none;
-            background: $globalColor;
+            background: #26aae1;
             color: #ffffff;
             height: 30px;
             line-height: 30px;
@@ -1760,7 +1666,7 @@ header{
             -webkit-border-radius: 8px;
             -moz-border-radius: 8px;
             border-radius: 8px;
-            background: $globalColor;
+            background: #26aae1;
             color: #fff;
           }
           @media (max-width: 450px) {
@@ -1815,11 +1721,6 @@ header{
           height: 100%;
         }
         .title-ques{
-          .text{
-            a{
-              color: $globalColor;
-            }
-          }
           .normal{
             font-weight: normal;
             font-style: inherit;
@@ -1833,7 +1734,7 @@ header{
       }
       .viewDetail{
         .answer{
-          background: $globalColor;
+          background: #26aae1;
           color: #ffffff;
           font-size: 16px;
           padding: 3px 0;
@@ -1859,7 +1760,7 @@ header{
             width: 86%;
           }
           .viewMore{
-            color: $globalColor;
+            color: #26aae1;
             display: block;
             width: 100%;
             text-align: right;
@@ -1880,11 +1781,11 @@ header{
     .box-faq-detail{
       .title-faq{
         font-size: 16px;
-        color: $globalColor;
+        color: #26aae1;
         font-weight: bold;
       }
       .answer{
-        background: $globalColor;
+        background: #26aae1;
         color: #ffffff;
         font-size: 16px;
         padding: 3px 0;
@@ -1918,8 +1819,7 @@ header{
     }
   }
   .box-bd{
-    border: thin solid $globalColor;
-    background: $boxBg;
+    border: thin solid #26aae1;
   }
   .item-r{
     h3 {
@@ -2021,7 +1921,7 @@ header{
       width: 100%;
       .item {
         padding: 10px 0;
-        border-bottom: 1px dashed #808284;
+        border-bottom: 1px dashed #62a76a;
         width: 100%;
         .thumb {
           float: left;
@@ -2060,7 +1960,7 @@ header{
         text-align: right;
         input {
           padding: 3px 10px;
-          background: $globalColor;
+          background: #26aae1;
           border: none;
           color: #fff;
           display: inline-block;
@@ -2080,13 +1980,14 @@ header{
 }
 .experience{
   margin: 0;
-  background: $boxBg;
+  background: #e2efe3;
   padding: 20px 0;
   .extend{
+
     @extend %h2Prop;
-    width: 315px;
+    width: 298px;
     margin: 0 0 20px 0;
-    background: $globalColor;
+    background: #b7092c;
     position: absolute;
     top: 0;
     right: 36px;
@@ -2095,8 +1996,8 @@ header{
     }
   }
   .no-extend{
-    width: 380px;
-    color: $globalColor;
+    width: 350px;
+    color: #0060af;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -2134,15 +2035,15 @@ header{
           padding-left: 2%;
           margin-left: 2%;
           .title{
-            color: $globalColor;
+            color: #0060af;
             font-size: 14px;
             font-weight: bold;
             a{
-              color: $globalColor;
+              color: #0060af;
             }
           }
           .name{
-            color: #f13033;
+            color: #26aae1;
             font-style: italic;
             font-size: 11px;
           }
@@ -2153,7 +2054,7 @@ header{
         }
         .bottom{
           width: 100%;
-          background: $otherBg;
+          background: #1376bc;
           color: #ffffff;
           padding: 10px 10px 20px 10px;
           border-radius: 10px;
@@ -2164,7 +2065,7 @@ header{
             width: 0;
             height: 0;
             display: block;
-            border-bottom: 8px solid $otherBg;
+            border-bottom: 8px solid #1376bc;
             border-left: 6px solid transparent;
             border-right: 6px solid transparent;
             border-top: 6px solid transparent;
@@ -2224,11 +2125,11 @@ header{
         width: 10px;
         height: 10px;
         margin: 0 5px;
-        background: $otherBg;
+        background: #26aae1;
         border-radius: 10px;
         display: inline-block;
         &:hover, &.active{
-          background: $globalColor;
+          background: #1376bc;
         }
       }
     }
@@ -2248,13 +2149,13 @@ header{
       line-height: 50px;
       color: #ffffff;
       font-size: 18px;
-      background: $globalColor;
+      background: #237d26;
       display: inline-block;
       @extend %transition;
       padding-right: 10px;
       margin: 10px 0;
       &:hover{
-        background: $otherBg;
+        background: #3fa229;
         text-decoration: none;
       }
       .icon{
@@ -2263,6 +2164,26 @@ header{
         background-size: 100%;
         position: absolute;
         left: 3%;
+      }
+    }
+    .htpp{
+      .icon{
+        background: url("../images/icon-1.png")no-repeat;
+        top: 17%;
+        left: 10%;
+      }
+    }
+    .tvvcg{
+      .icon{
+        background: url("../images/icon-2.png")no-repeat;
+        top: 17%;
+      }
+      margin: 0 2%;
+    }
+    .mhtt{
+      .icon{
+        background: url("../images/icon-3.png")no-repeat;
+        top: 10%;
       }
     }
   }
@@ -2292,7 +2213,7 @@ header{
 }
 footer{
   height: 40px;
-  background: $globalColor;
+  background: #1376bc;
   margin-top: 0;
   font-size: 12px;
   color: #ffffff;
@@ -2315,7 +2236,7 @@ footer{
   }
 }
 .others{
-  background: $otherBg            ;
+  background: #7e7d7b;
   padding: 20px 0 10px 0;
   .fixCen{
     @extend %disFlex;
@@ -2342,7 +2263,7 @@ footer{
       }
       &:nth-child(1){
         .diem-ban-btn{
-          background: $globalColor;
+          background: #b7092c;
           width: 80px;
           height: 30px;
           line-height: 30px;
@@ -2367,15 +2288,12 @@ footer{
         .text{
           width: 100%;
           color: #ffffff;
-          font-size: 22px;
+          font-size: 23px;
+          font-weight: bold;
           text-align: center;
-          font-family: Roboto,sans-serif;
-          letter-spacing: 1px;
+          margin-top: 3%;
           text-transform: uppercase;
-          margin-top: 10px;
-          span{
-            display: block;
-          }
+          letter-spacing: -1px;
         }
       }
     }
@@ -2403,19 +2321,12 @@ footer{
             }
           }
           .text{
+            font-size: 20px;
             span{
               width: 80%;
             }
-          }
-        }
-      }
-    }
-    @media(max-width: 768px) {
-      .content{
-        &:nth-child(3){
-          .text{
-            span{
-              width: 100%;
+            brown{
+              font-size: 14px;
             }
           }
         }
@@ -2607,7 +2518,7 @@ footer{
     display: inline-block;
     margin-right: 2px;
     a, span{
-      color: $globalColor;
+      color: #26aae1;
       width: 34px;
       height: 34px;
       text-align: center;
@@ -2618,8 +2529,8 @@ footer{
     }
     &.active, &:hover{
       &>a, &>span{
-        background-color: $globalColor;
-        border-color: $globalColor;
+        background-color: #1376bc;
+        border-color: green;
         color: #ffffff;
       }
 
@@ -2731,7 +2642,7 @@ footer{
   }
   .bg-top{
     display: block;
-    background: $globalColor;
+    background: #0060af;
     position: fixed;
     top: 0;
     z-index: 999;
@@ -2740,10 +2651,10 @@ footer{
     height: 50px;
   }
   .head-info{
-    margin: 50px auto 0 auto !important;
+    margin: 50px 0 0 0 !important;
   }
   #main-nav{
-    background: $otherBg !important;
+    background: #26aae1 !important;
     position: fixed;
     top: 50px;
     width: 33%;
@@ -2763,11 +2674,11 @@ footer{
       overflow-y: scroll;
       height: 100% !important;
       max-height: 90%;
-      background: $otherBg;
+      background: #26aae1;
       li{
         height: auto !important;
         line-height: 50px !important;
-        border-top: thin solid #ffffff;
+        border-top: thin solid #428bca;
         display: block;
         float: none !important;
         border-right: none !important;
