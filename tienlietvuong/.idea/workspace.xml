@@ -21,13 +21,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="common.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="74" column="30" lean-forward="true" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/common.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="22151">
+              <caret line="1303" column="6" lean-forward="false" selection-start-line="1303" selection-start-column="6" selection-end-line="1343" selection-end-column="7" />
               <folding>
-                <element signature="e#2829#3535#0" expanded="false" />
+                <element signature="e#26571#27462#0" expanded="false" />
+                <element signature="e#26766#27005#0" expanded="false" />
+                <element signature="e#27039#27137#0" expanded="false" />
+                <element signature="e#27171#27263#0" expanded="false" />
+                <element signature="e#27297#27358#0" expanded="false" />
+                <element signature="e#27392#27454#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -41,7 +56,35 @@
       <find>banner-ads</find>
       <find>top_310_230</find>
       <find>thông tin khoa học</find>
+      <find>submenu</find>
+      <find>#slider-2</find>
+      <find>thumb-video</find>
+      <find>news-type</find>
+      <find>fix</find>
+      <find>btn-group-fix</find>
+      <find>%aP</find>
+      <find>$globalColor</find>
+      <find>aPr</find>
+      <find>$color2</find>
+      <find>header</find>
+      <find>$topIndexCategory</find>
+      <find>id=&quot;tab-index&quot;</find>
+      <find>box-adv-center</find>
+      <find>tab-sectors</find>
+      <find>box-ad</find>
+      <find>block</find>
+      <find>block-news</find>
+      <find>news-home</find>
+      <find>$getIndexThirdCategoryPosts</find>
+      <find>listNews</find>
+      <find>slider-2</find>
+      <find>news-h</find>
+      <find>bottom</find>
+      <find>detail-tabs</find>
     </findStrings>
+    <replaceStrings>
+      <replace>$globalColor</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>F:\hoa\tuelinh_work\tienlietvuong\images</dir>
     </dirStrings>
@@ -52,28 +95,21 @@
         <option value="$PROJECT_DIR$/bantinDl.html" />
         <option value="$PROJECT_DIR$/chitiet.html" />
         <option value="$PROJECT_DIR$/dlcaythuoc.html" />
+        <option value="$PROJECT_DIR$/hethongphanphoi.html" />
+        <option value="$PROJECT_DIR$/lienhe.html" />
         <option value="$PROJECT_DIR$/thongtinkh.html" />
         <option value="$PROJECT_DIR$/tracuubenh.html" />
         <option value="$PROJECT_DIR$/tuvanchuyengia.html" />
-        <option value="$PROJECT_DIR$/chitietsanpham.html" />
-        <option value="$PROJECT_DIR$/chuyenmuc.html" />
-        <option value="$PROJECT_DIR$/video.html" />
-        <option value="$PROJECT_DIR$/sanpham.html" />
-        <option value="$PROJECT_DIR$/phanphoi_chitiet.html" />
-        <option value="$PROJECT_DIR$/lienhe.html" />
-        <option value="$PROJECT_DIR$/hethongphanphoi.html" />
-        <option value="$PROJECT_DIR$/chitietchuyenmuc.html" />
-        <option value="$PROJECT_DIR$/hoidap.html" />
         <option value="$PROJECT_DIR$/chitiethoidap.html" />
-        <option value="$PROJECT_DIR$/header.blade.php" />
-        <option value="$PROJECT_DIR$/css/index.blade.php" />
-        <option value="$PROJECT_DIR$/js/common.js" />
-        <option value="$PROJECT_DIR$/index_block_1.blade.php" />
-        <option value="$PROJECT_DIR$/index.blade.php" />
-        <option value="$PROJECT_DIR$/category.blade.php" />
-        <option value="$PROJECT_DIR$/css/tlv.scss" />
+        <option value="$PROJECT_DIR$/video.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/common.scss" />
+        <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/css/2common.scss" />
+        <option value="$PROJECT_DIR$/css/1common.scss" />
+        <option value="$PROJECT_DIR$/2index.blade.php" />
+        <option value="$PROJECT_DIR$/index.blade.php" />
+        <option value="$PROJECT_DIR$/search.blade.php" />
+        <option value="$PROJECT_DIR$/1category.blade.php" />
         <option value="$PROJECT_DIR$/css/common.scss" />
       </list>
     </option>
@@ -84,25 +120,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpServers">
-    <servers />
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -119,14 +142,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="tienlietvuong" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tienlietvuong" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -136,6 +163,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tienlietvuong" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -162,15 +193,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../scms_new2_new" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sinhlucnam" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\work 2017\tienlietvuong\css" />
-      <recent name="F:\work 2017\tienlietvuong" />
-      <recent name="C:\Users\PC0353\Downloads\tienlietvuong" />
-      <recent name="C:\Users\PC0353\Downloads\tienlietvuong\css" />
-      <recent name="C:\Users\PC0353\Downloads\tienlietvuong\js" />
+      <recent name="F:\hoa\tuelinh_work\tienlietvuong" />
+      <recent name="F:\hoa\tuelinh_work\tienlietvuong\css" />
+      <recent name="F:\hoa\tuelinh_work\tienlietvuong\images" />
+      <recent name="F:\hoa\tuelinh_work\viemgan\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,6 +216,23 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -203,6 +250,10 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -213,7 +264,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -236,9 +287,6 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2b4ee46a-ebdc-4a9f-85c8-3ecb6fe88994" name="Default" comment="" />
@@ -249,41 +297,44 @@
       <workItem from="1477983503950" duration="107000" />
       <workItem from="1493213332048" duration="540000" />
       <workItem from="1495551480070" duration="2371000" />
-      <workItem from="1495554009837" duration="4837000" />
-      <workItem from="1495771912953" duration="12339000" />
-      <workItem from="1496198464879" duration="6958000" />
-      <workItem from="1496283836867" duration="621000" />
-      <workItem from="1496285022770" duration="2532000" />
-      <workItem from="1496401674917" duration="968000" />
-      <workItem from="1496461437401" duration="12315000" />
-      <workItem from="1496971586679" duration="2104000" />
+      <workItem from="1495554009837" duration="4931000" />
+      <workItem from="1496156066994" duration="6848000" />
+      <workItem from="1496239337057" duration="3428000" />
+      <workItem from="1496668103137" duration="84000" />
+      <workItem from="1496673666501" duration="87000" />
+      <workItem from="1496674039719" duration="7595000" />
+      <workItem from="1496757458015" duration="19000" />
+      <workItem from="1496936733658" duration="1348000" />
+      <workItem from="1497109814999" duration="37000" />
+      <workItem from="1497112651934" duration="1174000" />
+      <workItem from="1497158453256" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45692000" />
+    <option name="totallyTimeSpent" value="28608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3001066" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,157 +356,200 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/common.js" />
-    <entry file="file://$PROJECT_DIR$/chitietchuyenmuc.html" />
-    <entry file="file://$PROJECT_DIR$/hoidap.html" />
-    <entry file="file://$PROJECT_DIR$/css/common2.scss">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8959">
-          <caret line="527" column="12" selection-start-line="527" selection-start-column="12" selection-end-line="527" selection-end-column="12" />
+        <state relative-caret-position="799">
+          <caret line="92" column="18" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="92" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/hoidap.html" />
-    <entry file="file://$PROJECT_DIR$/css/common2.scss">
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="578">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js" />
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/css/common2.scss">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="969">
+          <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js" />
-    <entry file="file://$PROJECT_DIR$/chitiethoidap.html" />
-    <entry file="file://$PROJECT_DIR$/tuvanchuyengia.html" />
-    <entry file="file://$PROJECT_DIR$/tracuubenh.html" />
-    <entry file="file://$PROJECT_DIR$/thongtinkh.html" />
-    <entry file="file://$PROJECT_DIR$/dlcaythuoc.html" />
-    <entry file="file://$PROJECT_DIR$/chitiet.html" />
-    <entry file="file://$PROJECT_DIR$/bantinDl.html" />
-    <entry file="file://$PROJECT_DIR$/js/owl.carousel.min.js" />
-    <entry file="file://$PROJECT_DIR$/css/owl.carousel.css">
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="578">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/video.html" />
-    <entry file="file://$PROJECT_DIR$/sanpham.html" />
-    <entry file="file://$PROJECT_DIR$/phanphoi_chitiet.html" />
-    <entry file="file://$PROJECT_DIR$/lienhe.html" />
-    <entry file="file://$PROJECT_DIR$/hethongphanphoi.html" />
-    <entry file="file://$PROJECT_DIR$/chuyenmuc.html" />
-    <entry file="file://$PROJECT_DIR$/chitietsanpham.html" />
-    <entry file="file://$PROJECT_DIR$/chitietchuyenmuc.html" />
-    <entry file="file://$PROJECT_DIR$/hoidap.html" />
-    <entry file="file://$PROJECT_DIR$/chitiethoidap.html" />
-    <entry file="file://$PROJECT_DIR$/css/common2.scss">
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12648">
-          <caret line="1245" column="31" selection-start-line="1245" selection-start-column="31" selection-end-line="1245" selection-end-column="31" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="82" lean-forward="true" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.blade.php" />
-    <entry file="file://$PROJECT_DIR$/header.blade.php" />
-    <entry file="file://$PROJECT_DIR$/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="722" column="28" selection-start-line="722" selection-start-column="28" selection-end-line="722" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/samnhung.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="921" column="28" selection-start-line="921" selection-start-column="28" selection-end-line="921" selection-end-column="28" />
-          <folding>
-            <element signature="e#4123#4495#0" expanded="false" />
-            <element signature="e#4508#5220#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js" />
-    <entry file="file://$PROJECT_DIR$/template.blade.php" />
-    <entry file="file://$PROJECT_DIR$/post.blade.php" />
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
     <entry file="file://$PROJECT_DIR$/index_block_1.blade.php" />
-    <entry file="file://$PROJECT_DIR$/product.blade.php" />
-    <entry file="file://$PROJECT_DIR$/store_list.blade.php" />
-    <entry file="file://$PROJECT_DIR$/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/index_block_2.blade.php" />
+    <entry file="file://$PROJECT_DIR$/template.blade.php" />
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="245" column="185" selection-start-line="245" selection-start-column="103" selection-end-line="245" selection-end-column="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tlv.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="2786" column="0" selection-start-line="2786" selection-start-column="0" selection-end-line="2786" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/common3.scss" />
-    <entry file="file://$PROJECT_DIR$/category.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="58" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="37" lean-forward="true" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-          <folding />
+        <state relative-caret-position="2295">
+          <caret line="135" column="55" lean-forward="true" selection-start-line="135" selection-start-column="55" selection-end-line="135" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/samnhung.scss">
+    <entry file="file://$PROJECT_DIR$/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
+    <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="345" column="22" selection-start-line="345" selection-start-column="22" selection-end-line="345" selection-end-column="22" />
-          <folding>
-            <element signature="e#4123#4495#0" expanded="false" />
-            <element signature="e#4508#5220#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/samnhung.scss">
+    <entry file="file://$PROJECT_DIR$/hoidap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1008" column="30" selection-start-line="1008" selection-start-column="30" selection-end-line="1008" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="1836">
+          <caret line="538" column="42" lean-forward="true" selection-start-line="538" selection-start-column="42" selection-end-line="538" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common.scss">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="1319" column="9" selection-start-line="1319" selection-start-column="9" selection-end-line="1319" selection-end-column="9" />
+        <state relative-caret-position="1394">
+          <caret line="647" column="22" lean-forward="true" selection-start-line="647" selection-start-column="22" selection-end-line="647" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="114" column="37" lean-forward="true" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="67" lean-forward="false" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chitiethoidap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5899">
+          <caret line="347" column="67" lean-forward="false" selection-start-line="347" selection-start-column="67" selection-end-line="347" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuvanchuyengia.html" />
+    <entry file="file://$PROJECT_DIR$/tracuubenh.html" />
+    <entry file="file://$PROJECT_DIR$/thongtinkh.html" />
+    <entry file="file://$PROJECT_DIR$/lienhe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hethongphanphoi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dlcaythuoc.html" />
+    <entry file="file://$PROJECT_DIR$/chitiet.html" />
+    <entry file="file://$PROJECT_DIR$/bantinDl.html" />
+    <entry file="file://$PROJECT_DIR$/chitiethoidap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="347" column="67" lean-forward="false" selection-start-line="347" selection-start-column="67" selection-end-line="347" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hoidap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="538" column="42" lean-forward="false" selection-start-line="538" selection-start-column="42" selection-end-line="538" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="468" column="14" lean-forward="true" selection-start-line="468" selection-start-column="14" selection-end-line="468" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_block_2.blade.php" />
+    <entry file="file://$PROJECT_DIR$/template.blade.php" />
+    <entry file="file://$PROJECT_DIR$/category.blade.php" />
+    <entry file="file://$PROJECT_DIR$/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/search.blade.php" />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="95" column="18" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chitietchuyenmuc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="461" column="44" lean-forward="true" selection-start-line="461" selection-start-column="44" selection-end-line="461" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/2common.scss" />
+    <entry file="file://$PROJECT_DIR$/index_block_1.blade.php" />
+    <entry file="file://$PROJECT_DIR$/css/1common.scss" />
+    <entry file="file://$PROJECT_DIR$/2index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/search.blade.php" />
+    <entry file="file://$PROJECT_DIR$/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/category.blade.php" />
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="74" column="30" lean-forward="true" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="22151">
+          <caret line="1303" column="6" lean-forward="false" selection-start-line="1303" selection-start-column="6" selection-end-line="1343" selection-end-column="7" />
           <folding>
-            <element signature="e#2829#3535#0" expanded="false" />
+            <element signature="e#26571#27462#0" expanded="false" />
+            <element signature="e#26766#27005#0" expanded="false" />
+            <element signature="e#27039#27137#0" expanded="false" />
+            <element signature="e#27171#27263#0" expanded="false" />
+            <element signature="e#27297#27358#0" expanded="false" />
+            <element signature="e#27392#27454#0" expanded="false" />
           </folding>
         </state>
       </provider>
