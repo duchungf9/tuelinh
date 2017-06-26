@@ -46,7 +46,7 @@ h1 {
   position: relative;
   margin: 0 auto; }
 
-.experience #slider-2 .owl-item .item, .others .fixCen, .others .fixCen .content:nth-child(3), .others .fixCen .content:nth-child(3) .btn-groups, .block-1, .block-1 .group-banner-sm, .section .title-panel .menu-tabs, .section .news-home, .section .block-info, .section .col-left .news-list .box-news, .section .col-left .news-list .box-news .item02 .item, .section .col-left .block-news .listNews, .banner4 .items, .groups, .groups .left-content .tabs, .groups .left-content .block-4, .groups .left-content .video-content .thumb-video, .groups .left-content .list-news > div .post, .groups .left-content .listButton, .groups .left-content .news-bt, .groups .left-content .delivery .note.note1 form > div, .groups .left-content .delivery .places > div .provines, .groups .left-content .contact-content form, .groups .left-content .contact-content form .form-row, .groups .left-content .contact-content .box-intro, .groups .left-content .contact-content .box-intro .some-intro, .groups .left-content .box-faq .title-faq, .groups .left-content .box-faq .viewDetail .answer-faq, .groups .left-content .box-faq-detail .answer-faq, .groups .right-content .boxHot, header .head-info, .wrapper.blue .groups .left-content .delivery .note.note1 form > div, .wrapper.green .section .block-info, .wrapper.green .section .col-left .news-list .box-news, .wrapper.green .section .col-left .news-list .box-news .item02 .item, .wrapper.green .section .col-left .block-news .listNews, .wrapper.green .groups .left-content .delivery .note.note1 form > div, .wrapper #banner_header {
+.experience #slider-2 .owl-item .item, .others .fixCen, .others .fixCen .content:nth-child(3), .others .fixCen .content:nth-child(3) .btn-groups, .block-1, .block-1 .group-banner-sm, .section .title-panel .menu-tabs, .section .news-home, .section .block-info, .section .col-left .news-list .box-news, .section .col-left .news-list .box-news .item02 .item, .section .col-left .block-news .listNews, .banner2 .items, .banner2 .items .item, .banner4 .items, .groups, .groups .left-content .tabs, .groups .left-content .block-4, .groups .left-content .video-content .thumb-video, .groups .left-content .list-news > div .post, .groups .left-content .listButton, .groups .left-content .news-bt, .groups .left-content .delivery .note.note1 form > div, .groups .left-content .delivery .places > div .provines, .groups .left-content .contact-content form, .groups .left-content .contact-content form .form-row, .groups .left-content .contact-content .box-intro, .groups .left-content .contact-content .box-intro .some-intro, .groups .left-content .box-faq .title-faq, .groups .left-content .box-faq .viewDetail .answer-faq, .groups .left-content .box-faq-detail .answer-faq, .groups .right-content .boxHot, header .head-info, .wrapper.blue .groups .left-content .delivery .note.note1 form > div, .wrapper.green .section .block-info, .wrapper.green .section .col-left .news-list .box-news, .wrapper.green .section .col-left .news-list .box-news .item02 .item, .wrapper.green .section .col-left .block-news .listNews, .wrapper.green .groups .left-content .delivery .note.note1 form > div, .wrapper #banner_header {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -951,18 +951,53 @@ footer {
 .banner2 {
   height: 523px;
   background-image: url("../images/banner2.jpg"); }
+  .banner2 .bn2-content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .banner2 span {
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    display: block; }
+  .banner2 .items {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .banner2 .items .item {
+      color: #ffffff;
+      width: 46%;
+      color: #ffffff;
+      margin-top: 8%; }
+      .banner2 .items .item a {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 19px; }
+        .banner2 .items .item a:hover {
+          color: #b4d94e; }
+      .banner2 .items .item img {
+        opacity: 1;
+        width: auto;
+        height: auto; }
+      .banner2 .items .item ul {
+        padding: 0; }
+        .banner2 .items .item ul li {
+          list-style-type: none; }
   @media (max-width: 1024px) {
     .banner2 {
-      height: 380px; } }
-  @media (max-width: 768px) {
+      height: 600px; }
+      .banner2 .items .item {
+        width: 100%;
+        margin-top: 3%; } }
+  @media (max-width: 450px) {
     .banner2 {
-      height: 280px; } }
-  @media (max-width: 550px) {
-    .banner2 {
-      height: 200px; } }
-  @media (max-width: 390px) {
-    .banner2 {
-      height: 160px; } }
+      height: 750px; }
+      .banner2 .items .item {
+        margin-top: 2%; } }
 
 .banner3 {
   height: 274px;
@@ -1104,8 +1139,6 @@ footer {
 .banner4 {
   height: 416px;
   background-image: url("../images/banner4.jpg"); }
-  .banner4 img {
-    opacity: 1; }
   .banner4 .big {
     font-weight: bold;
     color: #ffffff;
@@ -1120,7 +1153,20 @@ footer {
     justify-content: space-between;
     margin-top: 10%; }
     .banner4 .items .it {
-      width: 14%; }
+      width: 14%;
+      text-align: center; }
+      .banner4 .items .it img {
+        opacity: 1;
+        width: auto;
+        height: auto; }
+      .banner4 .items .it .text {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff; }
+      .banner4 .items .it .number {
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff200; }
   @media (max-width: 960px) {
     .banner4 .big {
       font-size: 2.3vw; }
@@ -1128,7 +1174,9 @@ footer {
       margin-top: 0; }
       .banner4 .items .it {
         width: 16%;
-        margin: 2% 5% 0 5%; } }
+        margin: 2% 5% 0 5%; }
+        .banner4 .items .it .number {
+          font-size: 4vw; } }
   @media (max-width: 768px) {
     .banner4 {
       height: auto;
@@ -1138,9 +1186,11 @@ footer {
       .banner4 .items {
         -webkit-justify-content: space-around;
         justify-content: space-around; } }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .banner4 .items .it {
-      width: 24%; } }
+      width: 30%; }
+      .banner4 .items .it .number {
+        font-size: 23px; } }
 
 .groups {
   width: 100%;

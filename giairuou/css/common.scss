@@ -1254,17 +1254,69 @@ footer{
 .banner2{
   height: 523px;
   background-image: url("../images/banner2.jpg");
+  .bn2-content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  span{
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    display: block;
+  }
+  .items{
+    @extend %disFlex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    .item{
+      color: #ffffff;
+      @extend %disFlex;
+      width: 46%;
+      color: #ffffff;
+      margin-top: 8%;
+      a{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 19px;
+        &:hover{
+          color: #b4d94e;
+        }
+      }
+      img{
+        opacity: 1;
+        width: auto;
+        height: auto;
+      }
+      ul{
+        padding: 0;
+        li{
+          list-style-type: none;
+        }
+      }
+    }
+  }
   @media (max-width: 1024px) {
-    height: 380px;
+    height: 600px;
+    .items{
+      .item{
+        width: 100%;
+        margin-top: 3%;
+      }
+    }
   }
-  @media (max-width: 768px) {
-    height: 280px;
-  }
-  @media (max-width: 550px) {
-    height: 200px;
-  }
-  @media (max-width: 390px) {
-    height: 160px;
+  @media (max-width: 450px) {
+    height: 750px;
+    .items{
+      .item{
+        margin-top: 2%;
+      }
+    }
   }
 }
 .banner3{
@@ -1441,9 +1493,6 @@ footer{
 .banner4{
   height: 416px;
   background-image: url("../images/banner4.jpg");
-  img{
-    opacity: 1;
-  }
   .big{
     font-weight: bold;
     color: #ffffff;
@@ -1461,6 +1510,22 @@ footer{
     margin-top: 10%;
     .it{
       width: 14%;
+      text-align: center;
+      img{
+        opacity: 1;
+        width: auto;
+        height: auto;
+      }
+      .text{
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      .number{
+        font-size: 36px;
+        font-weight: bold;
+        color: #fff200;
+      }
     }
   }
   @media (max-width: 960px) {
@@ -1472,6 +1537,9 @@ footer{
       .it{
         width: 16%;
         margin: 2% 5% 0 5%;
+        .number{
+          font-size: 4vw;
+        }
       }
     }
   }
@@ -1486,10 +1554,13 @@ footer{
       justify-content: space-around;
     }
   }
-  @media (max-width: 420px) {
+  @media (max-width: 600px) {
     .items{
       .it{
-        width: 24%;
+        width: 30%;
+        .number{
+          font-size: 23px;
+        }
       }
     }
   }
