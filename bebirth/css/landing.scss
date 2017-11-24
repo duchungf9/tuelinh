@@ -46,7 +46,7 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
-$globalColor: #58bb2b;
+$globalColor: #00b034;
 a{
   color: $globalColor;
   &:hover{
@@ -104,9 +104,13 @@ a{
   display: -webkit-flex;
   display: flex;
 }
-
-
-
+.disFlex{
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;
+}
 header{
   .menuTop{
     width: 100%;
@@ -138,6 +142,7 @@ header{
         line-height: 42px;
         text-align: center;
         border-right: thin solid #3f6bb1;
+        position: relative;
         &:nth-child(2){
           line-height: 25px;
         }
@@ -154,6 +159,52 @@ header{
           font-weight: bold;
           &:hover, &.active{
             color: #FFEB3B;
+          }
+        }
+        .hasSub {
+          display: none;
+          position: absolute;
+          left: -5px;
+          top: 56px;
+          padding: 5px 0;
+          width: 220px;
+          list-style: none;
+          z-index: 11;
+          li{
+            width: 100%;
+            padding: 0 10px;
+            text-align: left;
+            border: none;
+            a{
+              display: block;
+              line-height: 35px;
+              font-size: 13px;
+              color: #fff;
+              white-space: nowrap;
+              &:hover{
+                color: #000000;
+              }
+            }
+            &.color01{
+              background: #6dbc44;
+            }
+            &.color02 {
+              background: #ee9fbd;
+            }
+            &.color03 {
+              background: #00afdd;
+            }
+            &.color04 {
+              background: #ae4a9c;
+            }
+            &.color05 {
+              background: #f19231;
+            }
+          }
+        }
+        &:hover{
+          &>.hasSub{
+            display: block;
           }
         }
       }
@@ -174,7 +225,7 @@ header{
     color: $globalColor;
     margin: 20px 0;
   }
-  .block2, .block6{
+  .block2, .block6,.relatedProducts{
     @extend %disFlex;
     -webkit-justify-content: center;
     justify-content: center;
@@ -273,6 +324,108 @@ header{
   .block4{
     margin: 30px 0 10px 0;
   }
+  .block5{
+    padding: 0 10px;
+    box-sizing: border-box;
+    .rows{
+      width: 100%;
+      margin-bottom: 40px;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      display: none;
+      .title{
+        color: #848484;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: bold;
+        @extend %overFlowA;
+        &:hover{
+          color: $globalColor;
+        }
+      }
+      .txtSumary{
+        font-size: 16px;
+      }
+      &>div{
+        @extend %disFlex;
+        width: 50%;
+        &>div{
+          width: 50%;
+        }
+      }
+      .left{
+        text-align: right;
+        .material-left{
+          border-right: thin solid $globalColor;
+          padding-right: 20px;
+          &:before{
+            right: -50%;
+          }
+        }
+      }
+      .right{
+        text-align: left;
+        .material-left{
+          border-left: thin solid $globalColor;
+          padding-left: 20px;
+          &:before{
+            left: -50%;
+          }
+        }
+      }
+      .material-left{
+        position: relative;
+        z-index: 0;
+        &:before{
+          content: '';
+          display: block;
+          height: 1px;
+          width: 50%;
+          background: $globalColor;
+          position: absolute;
+          top: 50%;
+        }
+      }
+      .material-right{
+        z-index: 1;
+        .material-img{
+
+        }
+      }
+      &.row2{
+        .left,.right{
+          -webkit-align-items: flex-start;
+          align-items: flex-start;
+        }
+      }
+      &.row3{
+        margin-top: -170px;
+      }
+      &.row5{
+        img{
+          display: block;
+          margin: auto;
+        }
+      }
+      &.row6{
+        -webkit-justify-content: space-evenly;
+        justify-content: space-evenly;
+        &>div{
+          display: block;
+          width: 40%;
+          .title{
+            min-height: 74px;
+          }
+          .txtSumary{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
   .block6{
     background: url("../images/landing/banner2.jpg") no-repeat;
     width: 100%;
@@ -318,6 +471,172 @@ header{
         }
         &:nth-child(5),&:nth-child(6){
           border: none;
+        }
+      }
+    }
+  }
+  .block8,.block9,.block10{
+    color: #848484;
+    font-size: 16px;
+  }
+  .block8{
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+  .block9{
+    border-top: thin dashed $globalColor;
+    border-bottom: thin dashed $globalColor;
+    padding: 20px;
+    box-sizing: border-box;
+    .boxAnswer{
+      @extend %disFlex;
+      -webkit-align-items: center;
+      align-items: center;
+      &>div{
+        width: 50%;
+        text-align: center;
+        img{
+          display: block;
+          margin: auto;
+        }
+      }
+      .left{
+        border-right: thin dashed $globalColor;
+      }
+    }
+  }
+  .block10{
+    @extend %disFlex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-bottom: thin dashed $globalColor;
+    .left{
+      width: 30%;
+      text-align: center;
+      img{
+        display: block;
+        margin: 0 auto 20px auto;
+      }
+      span{
+        width: 100%;
+        display: block;
+      }
+    }
+    .right{
+      width: 60%;
+      h2.title{
+        margin: 0 0 10px 0;
+        text-align: left;
+      }
+      .boxAnswer{
+        text-align: justify;
+      }
+    }
+  }
+  .block11{
+    -webkit-align-items: center;
+    align-items: center;
+    .drugs{
+      margin: 10px 0;
+    }
+    .arrow{
+      top: 150px;
+    }
+    #slideRelatedProducts{
+      margin-top: 20px;
+      .owl-item{
+        background: url("../images/landing/shadow.png") bottom center no-repeat;
+        padding-bottom: 15px;
+      }
+      .product{
+        width: 235px;
+        margin: auto;
+        border: thin solid #999999;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 20px;
+        padding: 20px 0 10px 0;
+        box-sizing: border-box;
+        span{
+          width: 100%;
+          display: block;
+          margin: 10px auto;
+          text-align: center;
+          font-weight: bold;
+          text-transform: uppercase;
+          &:last-child{
+            font-size: 13px;
+          }
+        }
+        .buyNow{
+          width: 150px;
+          height: 30px;
+          line-height: 30px;
+          color: #ffffff;
+          text-align: center;
+          text-transform: uppercase;
+          display: block;
+          margin: auto;
+          font-size: 22px;
+          &:hover{
+            color: $globalColor;
+          }
+        }
+        img{
+          display: block;
+          margin: auto;
+        }
+        .price{
+          text-transform: capitalize;
+          .showPrice{
+            font-style: normal;
+            font-size: 20px;
+          }
+        }
+        &.product2{
+          color: #f07d9f;
+          .buyNow{
+            background: #f07d9f;
+          }
+        }
+        &.product3{
+          color: #00b5ef;
+          .buyNow{
+            background: #00b5ef;
+          }
+        }
+        &.product4{
+          color: #b33f8d;
+          .buyNow{
+            background: #b33f8d;
+          }
+        }
+        &.product5{
+          color: #ec9b26;
+          .buyNow{
+            background: #ec9b26;
+          }
+        }
+      }
+      .owl-buttons{
+        display: none;
+      }
+      .owl-pagination{
+        text-align: center;
+        .owl-page{
+          background: #8c8888;
+          width: 10px;
+          height: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          margin: 0 15px;
+          display: inline-block;
+          &.active{
+            background: $globalColor;
+          }
         }
       }
     }
