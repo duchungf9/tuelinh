@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    showMaterials();
+    new WOW().init();
+    showMenu();
     $("#slideRelatedProducts").owlCarousel({
         navigation: false,
         pagination: true,
@@ -13,18 +14,19 @@ $(document).ready(function () {
         itemsMobile: [479, 1]
     });
 });
-function menu(btnClick) {
-    $(btnClick).off('click');
+function showMenu() {
+    $('.btnMenu').off('click');
     var click = 0;
-    $(btnClick).click(function () {
-        var menu = $(this).data('menu');
+    $('.btnMenu').click(function () {
         if (click == 0) {
-            $(menu).addClass('transX0');
-            $(this).css({'background': 'url("http://www.duoclieutuelinh.vn/frontend/images/menu-close.png")'});
+            $(this).removeClass('show');
+            $(this).addClass('close');
+            $('#menuMb').css('margin-top',0);
             click++;
         } else {
-            $(menu).removeClass('transX0');
-            $(this).css({'background': 'url("http://www.duoclieutuelinh.vn/frontend/images/menu-open.png")'});
+            $(this).removeClass('close');
+            $(this).addClass('show');
+            $('#menuMb').css('margin-top','-500px');
             click--;
         }
     });

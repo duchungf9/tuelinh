@@ -6,6 +6,7 @@
     <title>Tiền liệt vương | Index</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
@@ -15,10 +16,11 @@
            <div class="contain">
                <h1 class="logo rs">
                    <a href="#" title="Bebirth">
-                       <img src="images/landing/logo.png" alt="" >
+                       <img src="images/landing/logo.png" alt="" class="logoPC">
+                       <img src="http://www.bebirth.vn/frontend/imgs/logosp.png" alt="" class="logomb">
                    </a>
                </h1>
-               <ul class="rs">
+               <ul class="rs" id="menuMb">
                    <li class="rs">
                        <a href="#" title="Trang chủ">Trang chủ</a>
                    </li>
@@ -51,6 +53,7 @@
                        <a href="#" title="Liên hệ">Liên hệ</a>
                    </li>
                </ul>
+               <a href="javascript:void(0)" class="btnMenu pa show"></a>
            </div>
         </nav>
     </header>
@@ -145,7 +148,7 @@
                 <img src="images/landing/thanh-phan.jpg" alt="" class="imgFull">
             </div>
             <div class="block5 materials">
-                <div class="rows row1" id="row1">
+                <div class="rows row1 wow fadeInDown">
                     <div class="left">
                        <div class="material-left">
                            <a href="#" class="title" title="Bạch quả">Bạch quả</a>
@@ -169,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rows row2" id="row2">
+                <div class="rows row2 wow fadeInDown">
                     <div class="left">
                         <div class="material-left">
                             <a href="#" class="title" title="Nhân sâm">Nhân sâm</a>
@@ -193,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rows row3" id="row3">
+                <div class="rows row3 wow fadeInDown">
                     <div class="left">
                         <div class="material-left">
                             <a href="#" class="title" title="Hydrastis canadensis">Hydrastis <br>canadensis</a>
@@ -217,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rows row4" id="row4">
+                <div class="rows row4 wow fadeInDown">
                     <div class="left">
                         <div class="material-left">
                             <a href="#" class="title" title="Bưởi chùm (Citrus Paradisi)">Bưởi chùm <br>(Citrus Paradisi)</a>
@@ -241,10 +244,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="rows row5" id="row5">
+                <div class="rows row5 wow fadeInDown">
                     <img src="images/landing/vitamins.png" alt="">
                 </div>
-                <div class="rows row6">
+                <div class="rows row6 wow fadeInDown">
                     <div class="left">
                         <a href="#" class="title" title="Acid Folic">Acid Folic</a>
                         <div class="txtSumary">
@@ -252,7 +255,7 @@
                         </div>
                     </div>
                     <div class="right">
-                        <a href="#" class="title" title="Bưởi chùm (Citrus Paradisi)">Các vitamin nhóm <br> b, c, d3, e</a>
+                        <a href="#" class="title" title="Các vitamin nhóm b, c, d3, e">Các vitamin nhóm b, c, d3, e</a>
                         <div class="txtSumary">
                             Với đội ngũ bác sĩ, dược sĩ nhiều năm kinh nghiệm và các chuyên gia hàng đầu của hãng dược phẩm Pleuran, chúng tôi luôn lắng nghe và sẵn sàng tư vấn với mong muốn mang tới sức khỏe toàn diện cho thế hệ mầm non Việt Nam.
                         </div>
@@ -575,5 +578,7 @@
 <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="js/SmoothScroll.js" type="text/javascript"></script>
 <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/wow.min.js" type="text/javascript"></script>
 <script src="js/landing.js" type="text/javascript"></script>
 </html>
