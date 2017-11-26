@@ -17,6 +17,7 @@ $(document).ready(function () {
 function showMenu() {
     $('.btnMenu').off('click');
     var click = 0;
+    var click2 = 0;
     $('.btnMenu').click(function () {
         if (click == 0) {
             $(this).removeClass('show');
@@ -26,11 +27,17 @@ function showMenu() {
         } else {
             $(this).removeClass('close');
             $(this).addClass('show');
-            $('#menuMb').css('margin-top','-500px');
+            $('#menuMb').css('margin-top','-550px');
             click--;
         }
     });
-}
-function showMaterials() {
-
+    $('.showSubmenu').click(function () {
+        if (click2 == 0) {
+            $('.hasSub').show(500);
+            click2++;
+        } else {
+            $('.hasSub').hide(500);
+            click2--;
+        }
+    });
 }
