@@ -4,7 +4,7 @@ $(document).ready(function () {
     $("#slideRelatedProducts").owlCarousel({
         navigation: false,
         pagination: true,
-        autoPlay: false,
+        autoPlay: true,
         autoPlaySpeed: 2000,
         responsive: true,
         items: 4,
