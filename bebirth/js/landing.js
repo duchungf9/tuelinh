@@ -27,7 +27,7 @@ function showMenu() {
         } else {
             $(this).removeClass('close');
             $(this).addClass('show');
-            $('#menuMb').css('margin-top','-550px');
+            $('#menuMb').css('margin-top','-670px');
             click--;
         }
     });
