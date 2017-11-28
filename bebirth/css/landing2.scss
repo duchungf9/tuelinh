@@ -46,7 +46,7 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
-$globalColor: #00b034;
+$globalColor: #e4568c;
 a{
   color: $globalColor;
   &:hover{
@@ -318,10 +318,10 @@ header{
       .btnMenu{
         display: block;
         &.show{
-          background: url("../images/landing/open-btn.png") no-repeat;
+          background: url("../images/landing2/open-btn.png") no-repeat;
         }
         &.close{
-          background: url("../images/landing/close-btn.png") no-repeat;
+          background: url("../images/landing2/close-btn.png") no-repeat;
         }
       }
     }
@@ -578,13 +578,13 @@ header{
         }
       }
       &.row3 {
-        margin-top: -17%;
+        margin-top: -4%;
       }
       &.row4 {
         .left {
           .material-right {
             .material-img {
-              width: 130%;
+              width: 120%;
               max-width: inherit;
               margin-left: -14%;
             }
@@ -630,12 +630,8 @@ header{
         }
         &.row2 {
           .right {
-            margin-top: -30%;
             z-index: 2;
           }
-        }
-        &.row3 {
-          margin-top: -10%;
         }
         &.row4 {
           .left {
@@ -715,7 +711,7 @@ header{
     }
   }
   .block6 {
-    background: url(../images/landing/banner2.jpg) 100% 0 no-repeat;
+    background: url(../images/landing2/banner2.jpg) 100% 0 no-repeat;
     width: 100%;
     height: 239px;
     padding: 0 0 20px 90px;
@@ -760,7 +756,7 @@ header{
     @media (max-width: 400px) {
       padding: 0;
       height: 340px;
-      background: url(../images/landing/banner2.jpg) 0 0 no-repeat;
+      background: url(../images/landing2/banner2.jpg) 0 0 no-repeat;
       background-size: cover;
       .left {
         width: 65%;
@@ -959,8 +955,8 @@ header{
     }
   }
   .block11 {
-    -webkit-align-items: center;
-    align-items: center;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
     margin-top: 0;
     padding-top: 20px;
     .drugs {
@@ -972,7 +968,7 @@ header{
     #slideRelatedProducts {
       margin-top: 20px;
       .owl-item {
-        background: url("../images/landing/shadow.png") bottom center no-repeat;
+        background: url("../images/landing2/shadow.png") bottom center no-repeat;
         padding-bottom: 15px;
       }
       .product {
@@ -1022,9 +1018,9 @@ header{
           }
         }
         &.product2 {
-          color: #f07d9f;
+          color: #00b034;
           .buyNow {
-            background: #f07d9f;
+            background: #00b034;
           }
         }
         &.product3 {
@@ -1067,6 +1063,8 @@ header{
       }
     }
     @media(max-width: 680px) {
+      -webkit-align-items: center;
+      align-items: center;
       .right {
         padding-right: 2%;
         -webkit-box-sizing: border-box;
@@ -1078,7 +1076,7 @@ header{
   .block12 {
     padding: 10px 0;
     .arrow2 {
-      background: url("../images/landing/arrow2.png");
+      background: url("../images/landing2/arrow2.png");
       width: 28px;
       height: 51px;
       -webkit-background-size: 100%;
@@ -1393,16 +1391,16 @@ footer{
             transform: scale(1.2);
           }
           &.se{
-            background: url("../images/landing/icon_search.png") no-repeat;
+            background: url("../images/landing2/icon_search.png") no-repeat;
           }
           &.yu{
-            background: url("../images/landing/icon_youtube.png") no-repeat;
+            background: url("../images/landing2/icon_youtube.png") no-repeat;
           }
           &.fb{
-            background: url("../images/landing/icon_fb.png") no-repeat;
+            background: url("../images/landing2/icon_fb.png") no-repeat;
           }
           &.go{
-            background: url("../images/landing/icon_gg.png") no-repeat;
+            background: url("../images/landing2/icon_gg.png") no-repeat;
           }
         }
       }
@@ -1434,7 +1432,7 @@ footer{
   }
 }
 .goTop{
-  background: url("../images/landing/goTop.png") no-repeat;
+  background: url("../images/landing2/goTop.png") no-repeat;
   width: 36px;
   height: 36px;
   display: block;
