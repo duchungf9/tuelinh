@@ -46,7 +46,7 @@ h1 {
   position: relative;
   margin: 0 auto;
 }
-$globalColor: #b10d7f;
+$globalColor: #e97018;
 a{
   color: $globalColor;
   &:hover{
@@ -318,10 +318,10 @@ header{
       .btnMenu{
         display: block;
         &.show{
-          background: url("../images/landing4/open-btn.png") no-repeat;
+          background: url("../images/landing5/open-btn.png") no-repeat;
         }
         &.close{
-          background: url("../images/landing4/close-btn.png") no-repeat;
+          background: url("../images/landing5/close-btn.png") no-repeat;
         }
       }
     }
@@ -463,7 +463,7 @@ header{
       #slideWhy {
         margin-top: 20px;
         .owl-item {
-          background: url("../images/landing4/shadow.png") bottom center no-repeat;
+          background: url("../images/landing5/shadow.png") bottom center no-repeat;
           padding-bottom: 15px;
         }
         .news {
@@ -476,7 +476,7 @@ header{
           border-radius: 20px;
           padding: 15px;
           box-sizing: border-box;
-          background: #f8bfd0;
+          background: #f5d05f;
           color: #000000;
           img {
             display: block;
@@ -702,7 +702,7 @@ header{
         .left {
           .material-right {
             .material-img {
-              width: 120%;
+              width: 100%;
               max-width: inherit;
               margin-left: -14%;
             }
@@ -841,7 +841,7 @@ header{
     }
   }
   .block6 {
-    background: url(../images/landing4/banner2.jpg) 100% 0 no-repeat;
+    background: url(../images/landing5/banner2.jpg) 100% 0 no-repeat;
     width: 100%;
     height: 239px;
     padding: 0 0 20px 90px;
@@ -886,7 +886,7 @@ header{
     @media (max-width: 400px) {
       padding: 0;
       height: 340px;
-      background: url(../images/landing4/banner2.jpg) 0 0 no-repeat;
+      background: url(../images/landing5/banner2.jpg) 0 0 no-repeat;
       background-size: cover;
       .left {
         width: 65%;
@@ -926,7 +926,7 @@ header{
       background: none;
       .reason {
         width: 100%;
-        border-left: 2px solid #deafcb;
+        border-left: 2px solid #f3aa6c;
         padding: 0 0 2% 2%;
         box-sizing: border-box;
         position: relative;
@@ -1136,7 +1136,7 @@ header{
     .bottom{
       &:before{
         content: '';
-        background: url("../images/landing4/txt-other-pro.png") no-repeat;
+        background: url("../images/landing5/txt-other-pro.png") no-repeat;
         width: 240px;
         height: 62px;
         display: block;
@@ -1152,7 +1152,7 @@ header{
     #slideRelatedProducts {
       margin-top: 20px;
       .owl-item {
-        background: url("../images/landing4/shadow.png") bottom center no-repeat;
+        background: url("../images/landing5/shadow.png") bottom center no-repeat;
         padding-bottom: 15px;
       }
       .product {
@@ -1220,9 +1220,9 @@ header{
           }
         }
         &.product5 {
-          color: #ec9b26;
+          color: #b33f8d;
           .buyNow {
-            background: #ec9b26;
+            background: #b33f8d;
           }
         }
       }
@@ -1260,7 +1260,7 @@ header{
   .block12 {
     padding: 10px 0;
     .arrow2 {
-      background: url("../images/landing4/arrow2.png");
+      background: url("../images/landing5/arrow2.png");
       width: 28px;
       height: 51px;
       -webkit-background-size: 100%;
@@ -1575,16 +1575,16 @@ footer{
             transform: scale(1.2);
           }
           &.se{
-            background: url("../images/landing4/icon_search.png") no-repeat;
+            background: url("../images/landing5/icon_search.png") no-repeat;
           }
           &.yu{
-            background: url("../images/landing4/icon_youtube.png") no-repeat;
+            background: url("../images/landing5/icon_youtube.png") no-repeat;
           }
           &.fb{
-            background: url("../images/landing4/icon_fb.png") no-repeat;
+            background: url("../images/landing5/icon_fb.png") no-repeat;
           }
           &.go{
-            background: url("../images/landing4/icon_gg.png") no-repeat;
+            background: url("../images/landing5/icon_gg.png") no-repeat;
           }
         }
       }
@@ -1616,7 +1616,7 @@ footer{
   }
 }
 .goTop{
-  background: url("../images/landing4/goTop.png") no-repeat;
+  background: url("../images/landing5/goTop.png") no-repeat;
   width: 36px;
   height: 36px;
   display: block;
