@@ -259,17 +259,27 @@ img {
 }
 
 .header-mid {
-  height: 144px;
+  height: 137px;
+  border-bottom: 2px solid #5ab159;
   background: #e9f6ec;
-  /* background: url('../images/bg_top.jpg') no-repeat 50% 0;
-  background-size: cover; */
 }
 .header-mid .fix {
   position: relative;
   min-height: 70px;
+  height: 100%;
+  background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 28% top no-repeat;
+  @media (max-width: 640px) {
+    background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 20% top no-repeat;
+  }
+  @media (max-width: 480px) {
+    background: none;
+  }
 }
 .header-mid .banner {
   display: block;
+  width: 175px;
+  height: 84px;
+  margin: 30px 0 0 0;
 }
 .header-mid .logo {
   width: 90px;
@@ -317,7 +327,30 @@ img {
   border-radius: 50%;
   text-indent: -9090px;
 }
-
+.box-tk{
+  width: 206px;
+  height: 30px;
+  line-height: 30px;
+  background: #ffffff;
+  border: none;
+  color: #808285;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  @media(max-width: 1024px) {
+    display: none;
+  }
+}
+.phone{
+  right: 0;
+  bottom: 60px;
+  width: 206px;
+  height: 49px;
+  position: absolute;
+  @media(max-width: 1024px) {
+    display: none;
+  }
+}
 .nav-social {
   list-style: none;
   position: absolute;
@@ -563,8 +596,8 @@ img {
   background: url(../images/sprite.png) no-repeat -272px -144px;
 }
 .menu-left .inner .btn-menu {
-  top: 80px;
-  left: -52px;
+  top: 20px;
+  left: -45px;
   background: url(../images/sprite.png) no-repeat -240px -144px;
 }
 .menu-left .inner .nav-mobile a {
@@ -4129,14 +4162,13 @@ img {
     width: 100%;
     margin-top: 10px;
   }
-  .header-mid {
-    height: inherit;
-  }
   .boxNews .listNews .item {
     width: 100%;
     min-height: inherit;
   }
-
+  .header-mid .banner {
+    margin: 30px auto 0 auto;
+  }
   .boxNews .listNews .thumb {
     text-align: center;
     margin-bottom: 10px;
@@ -4407,7 +4439,7 @@ img {
     margin-left: 0;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) {
   .header-mid .box-find {
     right: 70px;
   }
@@ -4556,7 +4588,7 @@ $bgColor: #f2f3f3;
   .address-group{
     margin-top: 20px;
     strong{
-      background: url(../images/icon-4.png) 0 3px no-repeat;
+      background: url(http://www.cagaileo.vn/frontend/images/ilocation.png) 0 0px no-repeat;
       color: #333;
       font-size: 13px;
       margin: 5px 0;
@@ -4868,6 +4900,412 @@ $bgColor: #f2f3f3;
         width: 80px;
         &:hover{
           background: #1376bc;
+        }
+      }
+    }
+  }
+}
+.banner-ads{
+  position: absolute;
+  width: 171px;
+  height: 454px;
+  top: 186px;
+  z-index: 9;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  &.left{
+    left: 5%;
+  }
+  &.right{
+    right: 0px;
+  }
+  &.btn-group-fix {
+    width: 63px;
+    position: absolute;
+    top: 186px;
+    right: 13%;
+    height: 283px;
+    z-index: 3;
+    a {
+      display: block;
+      margin-bottom: 10px;
+      img {
+        background: #219f49;
+        width: 100%;
+        height: auto;
+        border-radius: 100%;
+      }
+    }
+  }
+  @media (max-width: 1480px) {
+    &.btn-group-fix {
+      right: 2%
+    }
+    &.left {
+      left: 0
+    }
+  }
+}
+@media (max-width: 1430px){
+  .banner-ads{
+    width: 140px;
+  }
+}
+@media (max-width: 1366px){
+  .banner-ads{
+    width: 130px;
+  }
+}
+@media (max-width: 1365px){
+  .banner-ads{
+    width: 115px;
+  }
+}
+@media (max-width: 1279px){
+  .banner-ads{
+    &.left{
+      display: none;
+    }
+    &.btn-group-fix {
+      right: 5px;
+      a{
+        &:nth-child(1),&:nth-child(3),&:nth-child(4){
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1366px){
+  .banner-ads{
+    &.btn-group-fix {
+      width: 50px;
+      height: 232px;
+    }
+  }
+}
+
+.steps{
+  font-weight: bold;
+  margin: 20px 0 30px 0;
+  text-transform: uppercase;
+  h3,h2,h4,h5,h6,span{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  a{
+    color: #1f1a1b;
+  }
+  span{
+    margin: 0 10px;
+  }
+}
+.listButton{
+  @extend %disFlex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin: 20px 0;
+  li{
+    background: none;
+    &:first-child{
+      margin-bottom: 20px;
+    }
+    &:before{
+      display: none;
+    }
+    a{
+      padding: 0;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media(max-width: 520px ) {
+    li{
+      min-width: 51%;
+      &:nth-child(1){
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.ads{
+  margin: 40px 0;
+  a{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    &:last-child{
+      margin: 0;
+    }
+    img{
+      display: block;
+      margin: auto;
+    }
+  }
+}
+.box-tags{
+  padding: 10px 0;
+  margin-top: 20px;
+  a{
+    font-size: 14px;
+    color: #ffffff;
+    background: $globalColor;
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 0 1px 5px 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+}
+.news-bt{
+  @extend %disFlex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  &>div{
+    width: 48%;
+    h3{
+      font-size: 14px;
+    }
+  }
+  @media(max-width: 580px) {
+    justify-content: space-around;
+    &>div{
+      width: 90%;
+      &:nth-child(1){
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.social-bt{
+  width: 100%;
+  margin: 20px 0;
+}
+.comment-post{
+  margin-bottom: 40px;
+}
+
+.delivery{
+  .note-pp {
+    font-size: 21px;
+    color: $globalColor
+  }
+  .note{
+    .title {
+      color: $globalColor;
+      font-size: 16px;
+      margin: 25px 0;
+      .number {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background: $globalColor;
+        display: inline-block;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 700;
+      }
+    }
+    &.note1{
+      .title{
+        a {
+          font-size: 17px;
+        }
+      }
+      #order_online{
+        &>div {
+          @extend %disFlex;
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          -webkit-justify-content: space-between;
+          justify-content: space-between;
+          -webkit-align-items: center;
+          align-items: center;
+          &.row2{
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            label {
+              margin-left: 10px;
+            }
+          }
+          &.row3{
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            label {
+              margin-left: 10px;
+            }
+          }
+        }
+
+        select,input {
+          padding-left: 10px;
+          width: 47.5%;
+          height: 35px;
+          line-height: 35px;
+          background: #f1f2f2;
+          border: none;
+          color: #9fa1a4;
+          margin-bottom: 10px;
+          &.sl-onl {
+            width: 30%;
+            margin-left: 5%;
+          }
+        }
+        .error {
+          width: 100%;
+          color: red;
+          text-align: center;
+          display: block;
+          margin-top: 10px;
+        }
+        .btn-order-onl {
+          background: #ed1c24;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 700;
+          border: none;
+          height: 35px;
+          line-height: 35px;
+          text-align: center;
+          padding: 0 15px;
+          box-sizing: border-box;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+          margin: 10px auto;
+          &:hover {
+            color: #ff0;
+          }
+        }
+      }
+      @media (max-width: 460px) {
+        form{
+          input, select {
+            width: 100%
+          }
+          .sl-onl {
+            margin-left: 0 !important
+          }
+          .btn-order-onl {
+            margin: auto
+          }
+        }
+      }
+    }
+    &.note2{
+      a {
+        color: #ed1c24;
+        font-weight: 700;
+      }
+    }
+  }
+  .places{
+    &> div {
+      border-top: thin solid #e5e5e5;
+      .captain {
+        color: #fff;
+        background: $globalColor;
+        font-size: 16px;
+        width: 140px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 700;
+        display: block
+      }
+      .provines {
+        @extend %disFlex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        margin-top: 10px;
+        a {
+          width: 25%;
+          background: url(http://www.cagaileo.vn/frontend/images/ilocation.png) 0 3px no-repeat;
+          color: #333;
+          font-size: 13px;
+          margin: 5px 0;
+          padding: 0 0 0 20px;
+          &:hover {
+            color: $globalColor;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .provines{
+        a {
+          width: 29%;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .provines{
+        a {
+          width: 43%;
+        }
+      }
+    }
+  }
+  @media(max-width: 767px) {
+    width: 96%;
+    margin: auto;
+  }
+}
+.delivery-detail{
+  a{
+    margin: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: 0 0;
+    transition: all .2s ease;
+    color: #019444;
+  }
+  .note-pp-chitiet {
+    font-weight: 400;
+    color: #000;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .pp-chitiet-content{
+    select {
+      height: 30px;
+      line-height: 30px;
+      width: 100%;
+    }
+    .title {
+      font-size: 20px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .show-name-store {
+      margin-top: 20px;
+      table{
+        width: 100%;
+        tr{
+          td,th {
+            padding: 6px;
+            border: 1px solid #ccc;
+            text-align: left;
+          }
+          &:nth-of-type(odd) {
+            background: #eee;
+          }
+          &:first-child {
+            background: #009656;
+            font-weight: 700;
+            font-size: 14px
+          }
         }
       }
     }

@@ -62,41 +62,6 @@
                     {!! Form::close() !!}
                 </div>
                 <div class="box-faq">
-                    @if ($mainQuestion)
-                        <article class="item">
-                            <h3 class="title-faq">
-                                <img src="http://www.giaidocgan.vn/files/59e5_HoiDap.png" alt="" width="58" height="58" class="faq-icon">
-                                <div class="title-ques">
-                                    <strong class="text"> {{$mainQuestion->title}}</strong> <br>
-                                    <i class="normal">Hỏi bởi: {{$mainQuestion->ask_person}}</i>
-                                </div>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    <span>{{$mainQuestion->question}}</span>
-                                </p>
-
-                                <div class="viewDetail clearFix">
-                                    <div class="date">
-                                        <span class="datePost">
-                                          <time class="time" datetime="{{$mainQuestion->updated_at->format('Y/m/d')}}">{{$mainQuestion->updated_at->format('d/m/Y')}}</time>
-                                        </span>
-                                        <span>
-                                         {{$mainQuestion->created_at->format('H:i:s')}}
-                                        </span>
-                                    </div>
-                                    <span class="answer">Trả lời</span>
-                                    <div class="answer-faq">
-                                        <img src="http://www.giaidocgan.vn/frontend/images/bs-img.jpg" alt="" width="58" height="58" class="faq-icon">
-                                        <div class="text">
-                                            {{$mainQuestion->answer}}
-                                        </div>
-                                        <a href="chitiethoidap.html" class="viewMore">Xem thêm</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    @endif
                     @foreach ($questions as $question)
                         <article class="item">
                             <h3 class="title-faq">
@@ -126,7 +91,7 @@
                                         <div class="text">
                                             {{$question->answer}}
                                         </div>
-                                        <a href="chitiethoidap.html" class="viewMore">Xem thêm</a>
+                                        <a href="{{url('cau-hoi-thuong-gap', $question->slug)}}" class="viewMore">Xem thêm</a>
                                     </div>
                                 </div>
                             </div>
