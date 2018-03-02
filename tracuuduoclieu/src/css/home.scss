@@ -425,12 +425,19 @@ $hoverColor: #75c325;
          background: #ffffff;
          color: $globalColor;
          border: thin solid #547b4d;
+         padding-bottom: 35px;
+         margin-bottom: 5%;
+         @extend %disFlex;
+         -webkit-align-items: center;
+         align-items: center;
          img{
            max-width: 100%;
            display: block;
            margin: auto;
          }
          span{
+           position: absolute;
+           bottom: 0px;
            background: #bbdc9d;
            width: 100%;
            display: block;
@@ -439,11 +446,69 @@ $hoverColor: #75c325;
            text-align: center;
            font-weight: bold;
            font-size: 20px;
-           border-top: thin solid #547b4d;
+           border-top: 1px solid #547b4d;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           white-space: nowrap;
          }
          &:hover{
              color: $hoverColor;
            }
+       }
+     }
+   }
+   .block3{
+    .steps{
+      text-transform: uppercase;
+      color: #005c2a;
+      @extend %disFlex;
+      -webkit-align-items: center;
+      align-items: center;
+      h2,h3{
+        font-size: 25px;
+      }
+      span{
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #005c2a;
+        margin: 0 10px;
+      }
+      .step2{
+        font-weight: bold;
+      }
+    }
+     .content{
+       margin-top: 4%;
+       .item{
+         @extend %disFlex;
+         -webkit-justify-content: space-between;
+         justify-content: space-between;
+         flex-flow: row wrap;
+         margin-bottom: 4%;
+         background: #dad4d4;
+         &:last-child{
+           margin-bottom: 0;
+         }
+         .left{
+           width: 29%;
+           min-width: 288px;
+         }
+         .right{
+           width: 70%;
+           color: #000000;
+           font-weight: bold;
+           padding: 2%;
+           a{
+             color: #005c2a;
+             font-size: 17px;
+           }
+           span{
+             display: block;
+             width: 100%;
+           }
+         }
        }
      }
    }
@@ -453,7 +518,7 @@ $hoverColor: #75c325;
     -webkit-justify-content: space-between;
     justify-content: space-between;
     background: $globalColor;
-    padding: 2% 5%;
+    padding: 2% 3%;
     a{
       color: #ffffff;
     }
@@ -464,9 +529,28 @@ $hoverColor: #75c325;
       -webkit-flex-flow: row wrap;
       flex-flow: row wrap;
       width: 70%;
-      padding: 2% 5%;
-      a{
+      padding: 2% 0 0 45px;
+      &>div{
         width: 48%;
+      }
+      .textLeft{
+        a{
+          &:first-child{
+            &:before{
+              content: '';
+              background: url("../images/icon-home.jpg") no-repeat;
+              width: 55px;
+              height: 36px;
+              position: absolute;
+              top: -10px;
+              left: -50px;
+            }
+          }
+        }
+      }
+      a{
+        width: 100%;
+        display: block;
         position: relative;
         font-weight: bold;
         font-size: 17px;
@@ -486,17 +570,6 @@ $hoverColor: #75c325;
           background-image: -webkit-linear-gradient(left, #000, transparent);
           background-image: -moz-linear-gradient(left, #000, transparent);
           background-image: -o-linear-gradient(left, #000, transparent);
-        }
-        &:first-child{
-          &:before{
-            content: '';
-            background: url("../images/icon-home.jpg") no-repeat;
-            width: 55px;
-            height: 36px;
-            position: absolute;
-            top: -10px;
-            left: -50px;
-          }
         }
       }
     }
@@ -529,9 +602,189 @@ $hoverColor: #75c325;
     padding: 1% 0;
     margin-top: 2px;
   }
+  &.wrapper-sub{
+    header{
+      .banner-header{
+        background: #d5e8c4;
+        text-align: center;
+        height: auto;
+        .logo, .search-header{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .search-header{
+          width: 60%;
+          margin-left: 5%;
+        }
+        .search-medicine{
+          @extend %disFlex;
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          background: $globalColor;
+          .left{
+            width: 197px;
+          }
+          .right{
+            width: 670px;
+            @extend %disFlex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-justify-content: center;
+            justify-content: center;
+            padding: 1%;
+            box-sizing: border-box;
+            .txt{
+              width: 53%;
+              text-transform: uppercase;
+              color: #ffffff;
+              font-weight: bold;
+              font-size: 25px;
+              text-align: left;
+            }
+            .form-medicine{
+              width: 300px;
+              @extend %disFlex;
+              input, button{
+                border: 2px solid #ffffff;
+              }
+              input{
+                height: 30px;
+                background: none;
+                width: 270px;
+                color: #ffffff;
+                padding-left: 2%;
+                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                  color: #ffffff;
+                }
+                &::-moz-placeholder { /* Firefox 19+ */
+                  color: #ffffff;
+                }
+                &:-ms-input-placeholder { /* IE 10+ */
+                  color: #ffffff;
+                }
+                &:-moz-placeholder { /* Firefox 18- */
+                  color: #ffffff;
+                }
+              }
+              button{
+                width: 30px;
+                height: 30px;
+                border-left: none;
+                background: #ffffff;
+              }
+            }
+            .txt-alphabet{
+              width: 100%;
+              text-transform: uppercase;
+              margin-top: 2%;
+              a{
+                width: 21px;
+                height: 21px;
+                line-height: 21px;
+                display: inline-block;
+                color: #78c424;
+                font-weight: bold;
+                font-size: 17px;
+                border: thin solid #84a87a;
+                border-bottom: 2px solid #84a87a;
+                margin-bottom: 1%;
+                &.active, &:hover{
+                  background: #ffffff;
+                  color: #436e40;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .body{
+      .block2{
+        .content{
+          a{
+            width: 22%;
+          }
+        }
+      }
+    }
+  }
+  &.wrapper-sub2{
+    header{
+      .banner-header{
+        .search-medicine{
+          .right{
+            width: 370px;
+            padding: 2%;
+            .txt{
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
   @media(max-width: 1024px) {
     width: 100%;
+    .body{
+      padding: 5% 3%;
+      .block1{
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        .leftBlock{
+          width: 100%;
+        }
+        .rightBlock{
+          width: 100%;
+          .content{
+            width: 96%;
+            padding: 2% 0;
+            .item{
+              width: 32%;
+              border-right: 2px dashed #858979;
+              border-bottom: none;
+              padding: 0 1% 0 0;
+              .right{
+                a{
+                  &.view-more{
+                    width: 100%;
+                    display: block;
+                    right: 10px;
+                    bottom: 0;
+                    text-align: right;
+                  }
+                }
+              }
+              &:last-child{
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 870px) {
     header{
+      &.header-sub{
+        .banner-header{
+          .search-medicine{
+            .right{
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+    &.wrapper-sub2{
+      header{
+        .banner-header{
+          .search-medicine{
+            .right{
+              margin: 0;
+            }
+          }
+        }
+      }
     }
   }
   @media(max-width: 768px) {
@@ -595,6 +848,198 @@ $hoverColor: #75c325;
       }
       .btnMenu{
         display: block;
+      }
+      .banner-header{
+        .search-header{
+          width: 80%;
+        }
+      }
+    }
+    &.wrapper-sub{
+      .body{
+        .block2{
+          .content{
+            a{
+              width: 31%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 740px) {
+    footer{
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-justify-content: center;
+      justify-content: center;
+      .left{
+        width: 100%;
+       .textLeft{
+         text-align: right;
+         a{
+           &:first-child{
+             &:before{
+               display: none;
+             }
+           }
+           &:after{
+             left: inherit;
+             right: 0;
+             background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+             background-image: -webkit-linear-gradient(right, #000, transparent);
+             background-image: -moz-linear-gradient(right, #000, transparent);
+             background-image: -o-linear-gradient(right, #000, transparent);
+           }
+         }
+       }
+      }
+      .right{
+        margin-top: 4%;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    .body{
+      .block1{
+        .rightBlock{
+          .content{
+            .item{
+              width: 100%;
+              border-bottom: 2px dashed #858979;
+              border-right: none;
+              padding: 2% 1% 2% 0;
+              .right{
+                a{
+                  &.view-more{
+                    width: 100%;
+                    display: block;
+                    right: 10px;
+                    bottom: 0;
+                    text-align: right;
+                  }
+                }
+              }
+              &:last-child{
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 660px) {
+    &.wrapper-sub{
+      header{
+        .banner-header{
+          .search-medicine{
+            .right{
+              .txt{
+                width: 300px;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 640px) {
+    header{
+      .banner-header{
+        .logo{
+          width: 20%;
+        }
+        .search-header{
+          width: 90%;
+          .form-header{
+            input{
+              width: 86%;
+            }
+            button{
+              width: 12%;
+            }
+          }
+        }
+      }
+    }
+    .body{
+      .block2{
+        .content{
+          a{
+            width: 48%;
+          }
+        }
+      }
+    }
+    footer{
+      .left{
+        width: 260px;
+        padding: 0;
+        .textRight{
+          width: 100%;
+        }
+        .textLeft{
+          width: 100%;
+          text-align: left;
+          a{
+            &:first-child{
+              &:before{
+                display: none;
+              }
+            }
+            &:after{
+              left: 0;
+              right: inherit;
+              background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+              background-image: -webkit-linear-gradient(left, #000, transparent);
+              background-image: -moz-linear-gradient(left, #000, transparent);
+              background-image: -o-linear-gradient(left, #000, transparent);
+            }
+          }
+        }
+      }
+    }
+    &.wrapper-sub{
+      .body{
+        .block2{
+          .content{
+            a{
+              width: 48%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 620px) {
+    &.wrapper-sub{
+      header{
+        .banner-header{
+          .search-medicine{
+            .right{
+              .txt{
+                width: 300px;
+                margin-bottom: 2%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 360px) {
+    header{
+      .top{
+        height: auto;
+        line-height: inherit;
+        font-size: 0;
+        span{
+          display: block;
+          width: 100%;
+          font-size: 14px;
+        }
       }
     }
   }
