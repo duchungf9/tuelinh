@@ -8,6 +8,14 @@
                     <img src="{{url('frontend/images/banner.png')}}" alt="">
                 </a>
             </h1>
+            <div class="box-slogan">
+                <span>
+                    DƯỢC LIỆU CÀ GAI LEO TUỆ LINH
+                </span>
+                <span>
+                    Dược liệu sạch cho mọi nhà
+                </span>
+            </div>
             <div class="box-tk">
                 {!! Form::open(array('url' => 'search', 'method' => 'get')) !!}
                     <input type="text" placeholder="Từ khóa tìm kiếm" name="q" class="txt"/>

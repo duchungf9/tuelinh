@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe18e168-b728-456e-9fa7-556ff162a084" name="Default" comment="" />
+    <ignored path="sg120.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="sg120" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="154" column="30" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="30" />
+              <folding>
+                <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#form#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#iframe#0;n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="499" column="19" selection-start-line="499" selection-start-column="19" selection-end-line="499" selection-end-column="19" />
+              <folding>
+                <element signature="e#1446#1801#0" expanded="false" />
+                <element signature="e#1454#1740#0" expanded="false" />
+                <element signature="e#1802#2825#0" expanded="false" />
+                <element signature="e#2838#3025#0" expanded="false" />
+                <element signature="e#3026#3103#0" expanded="false" />
+                <element signature="e#3104#3485#0" expanded="false" />
+                <element signature="e#3491#3662#0" expanded="false" />
+                <element signature="e#3672#3867#0" expanded="false" />
+                <element signature="e#3876#3990#0" expanded="false" />
+                <element signature="e#4369#4718#0" expanded="false" />
+                <element signature="e#5103#5291#0" expanded="false" />
+                <element signature="e#5956#6564#0" expanded="false" />
+                <element signature="e#7060#7151#0" expanded="false" />
+                <element signature="e#7277#8774#0" expanded="false" />
+                <element signature="e#7412#7517#0" expanded="false" />
+                <element signature="e#8155#8248#0" expanded="false" />
+                <element signature="e#8284#8481#0" expanded="false" />
+                <element signature="e#8797#8836#0" expanded="false" />
+                <element signature="e#8888#10609#0" expanded="false" />
+                <element signature="e#9010#9305#0" expanded="false" />
+                <element signature="e#9322#10604#0" expanded="false" />
+                <element signature="e#10620#11526#0" expanded="false" />
+                <element signature="e#11053#11145#0" expanded="false" />
+                <element signature="e#11159#11441#0" expanded="false" />
+                <element signature="e#11458#11505#0" expanded="false" />
+                <element signature="e#11539#13492#0" expanded="false" />
+                <element signature="e#12124#12165#0" expanded="false" />
+                <element signature="e#12181#12652#0" expanded="false" />
+                <element signature="e#12674#12940#0" expanded="false" />
+                <element signature="e#12965#13488#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/paymentsg201.html" />
+        <option value="$PROJECT_DIR$/src/css/payment-sg201.css" />
+        <option value="$PROJECT_DIR$/src/images/noel2017/BG hieu ung_Canvas.html" />
+        <option value="$PROJECT_DIR$/dist/landing-mb.html" />
+        <option value="$PROJECT_DIR$/src/landing.html" />
+        <option value="$PROJECT_DIR$/src/css/landing.scss" />
+        <option value="$PROJECT_DIR$/src/js/landing.js" />
+        <option value="$PROJECT_DIR$/src/js/landing-mb.js" />
+        <option value="$PROJECT_DIR$/src/landing-mb.html" />
+        <option value="$PROJECT_DIR$/src/css/landing-mb.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/css/home.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\work 2018\sg171\src\fonts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\domains\tuelinh\tracuuduoclieu\dist" />
+      <recent name="F:\work 2018\sg200\dist\images\landing-mb" />
+      <recent name="F:\work 2018\sg200\dist\images\landing" />
+      <recent name="F:\work 2018\sg73\dist\images\tet2018-mb" />
+      <recent name="F:\work 2018\sg73\src\images\tet2018-mb" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe18e168-b728-456e-9fa7-556ff162a084" name="Default" comment="" />
+      <created>1488855651516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488855651516</updated>
+      <workItem from="1488855652858" duration="21841000" />
+      <workItem from="1512097618371" duration="2770000" />
+      <workItem from="1512966000678" duration="19036000" />
+      <workItem from="1513051548102" duration="11843000" />
+      <workItem from="1516610344724" duration="14289000" />
+      <workItem from="1516758723430" duration="3710000" />
+      <workItem from="1516766340975" duration="3612000" />
+      <workItem from="1516783000814" duration="11961000" />
+      <workItem from="1517215174653" duration="6621000" />
+      <workItem from="1517280100448" duration="4998000" />
+      <workItem from="1517393908104" duration="1397000" />
+      <workItem from="1517455909645" duration="9809000" />
+      <workItem from="1517538095309" duration="4662000" />
+      <workItem from="1517558157343" duration="8126000" />
+      <workItem from="1519889854403" duration="13797000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="138472000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40697673" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="145" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/landing-mb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/js/landing.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/landing-mb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/landing-mb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="157" column="15" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/landing-mb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/landing-mb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/js/landing.js" />
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/js/landing.js" />
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/landing-mb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="606" column="17" selection-start-line="606" selection-start-column="17" selection-end-line="606" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/landing-mb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/js/landing.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/payment-sg201.css" />
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/landing-mb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/landing-mb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="102" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="347" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/vqmm/vqmm_bg.png" />
+    <entry file="file://$PROJECT_DIR$/src/paymentsg201.html" />
+    <entry file="file://$PROJECT_DIR$/src/css/payment-sg201.css" />
+    <entry file="file://$PROJECT_DIR$/src/images/noel2017/BG hieu ung_Canvas.html" />
+    <entry file="file://$PROJECT_DIR$/dist/images/vqmm_btn_hv.png" />
+    <entry file="file://$PROJECT_DIR$/dist/images/payment/sprite.png" />
+    <entry file="file://$PROJECT_DIR$/dist/landing-mb.html" />
+    <entry file="file://$PROJECT_DIR$/dist/images/tet2018/numbers.png" />
+    <entry file="file://$PROJECT_DIR$/src/js/landing.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing.scss" />
+    <entry file="file://$PROJECT_DIR$/src/css/landing-mb.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="148" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="499" selection-end-column="1" />
+          <folding>
+            <element signature="e#1303#2814#0" expanded="false" />
+            <element signature="e#2820#2963#0" expanded="false" />
+            <element signature="e#2964#3987#0" expanded="false" />
+            <element signature="e#4000#4179#0" expanded="false" />
+            <element signature="e#8232#8722#0" expanded="false" />
+            <element signature="e#8238#8361#0" expanded="false" />
+            <element signature="e#8374#8638#0" expanded="false" />
+            <element signature="e#8729#9036#0" expanded="false" />
+            <element signature="e#9043#9689#0" expanded="false" />
+            <element signature="e#9696#10067#0" expanded="false" />
+            <element signature="e#10074#11599#0" expanded="false" />
+            <element signature="e#10091#10187#0" expanded="false" />
+            <element signature="e#10400#10498#0" expanded="false" />
+            <element signature="e#10515#10564#0" expanded="false" />
+            <element signature="e#10908#11593#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/landing-mb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing.html" />
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/landing-mb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="56" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/fonts/TUV-Montserrat-Bold.ttf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="30" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="499" column="19" selection-start-line="499" selection-start-column="19" selection-end-line="499" selection-end-column="19" />
+          <folding>
+            <element signature="e#1446#1801#0" expanded="false" />
+            <element signature="e#1454#1740#0" expanded="false" />
+            <element signature="e#1802#2825#0" expanded="false" />
+            <element signature="e#2838#3025#0" expanded="false" />
+            <element signature="e#3026#3103#0" expanded="false" />
+            <element signature="e#3104#3485#0" expanded="false" />
+            <element signature="e#3491#3662#0" expanded="false" />
+            <element signature="e#3672#3867#0" expanded="false" />
+            <element signature="e#3876#3990#0" expanded="false" />
+            <element signature="e#4369#4718#0" expanded="false" />
+            <element signature="e#5103#5291#0" expanded="false" />
+            <element signature="e#5956#6564#0" expanded="false" />
+            <element signature="e#7060#7151#0" expanded="false" />
+            <element signature="e#7277#8774#0" expanded="false" />
+            <element signature="e#7412#7517#0" expanded="false" />
+            <element signature="e#8155#8248#0" expanded="false" />
+            <element signature="e#8284#8481#0" expanded="false" />
+            <element signature="e#8797#8836#0" expanded="false" />
+            <element signature="e#8888#10609#0" expanded="false" />
+            <element signature="e#9010#9305#0" expanded="false" />
+            <element signature="e#9322#10604#0" expanded="false" />
+            <element signature="e#10620#11526#0" expanded="false" />
+            <element signature="e#11053#11145#0" expanded="false" />
+            <element signature="e#11159#11441#0" expanded="false" />
+            <element signature="e#11458#11505#0" expanded="false" />
+            <element signature="e#11539#13492#0" expanded="false" />
+            <element signature="e#12124#12165#0" expanded="false" />
+            <element signature="e#12181#12652#0" expanded="false" />
+            <element signature="e#12674#12940#0" expanded="false" />
+            <element signature="e#12965#13488#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -262,17 +262,66 @@ img {
   height: 137px;
   border-bottom: 2px solid #5ab159;
   background: #e9f6ec;
+  @media (max-width: 640px) {
+    height: auto;
+    padding-bottom: 5%;
+  }
 }
 .header-mid .fix {
   position: relative;
   min-height: 70px;
   height: 100%;
-  background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 28% top no-repeat;
+  background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 47% top no-repeat;
+  @media (max-width: 1024px) {
+    background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 40% top no-repeat;
+  }
+  @media (max-width: 900px) {
+    background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 30% top no-repeat;
+  }
   @media (max-width: 640px) {
     background: url(http://www.cagaileo.vn/frontend/images/header-bg.jpg) 20% top no-repeat;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     background: none;
+  }
+}
+.box-slogan{
+  width: 35%;
+  position: absolute;
+  top: 31%;
+  left: 42%;
+  color: #0e9e21;
+  text-align: center;
+  span{
+    display: block;
+    font-size: 20px;
+    font-family: tahoma, sans-serif;
+  }
+  @media (max-width: 1024px) {
+    left: 55%;
+  }
+  @media (max-width: 900px) {
+    width: 50%;
+    left: 48%;
+  }
+  @media (max-width: 768px) {
+    width: 65%;
+    left: 27%;
+    span{
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 640px) {
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    left: inherit;
+    top: inherit;
+  }
+  @media (max-width: 380px) {
+    span{
+      font-size: 5vw;
+    }
   }
 }
 .header-mid .banner {
@@ -280,6 +329,9 @@ img {
   width: 175px;
   height: 84px;
   margin: 30px 0 0 0;
+  @media (max-width: 640px) {
+    margin: 30px auto 0 auto;
+  }
 }
 .header-mid .logo {
   width: 90px;
