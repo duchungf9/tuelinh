@@ -1,30 +1,19 @@
 $(document).ready(function () {
-    $(".btnChangePage").click(function () {
-       $(this).siblings().removeClass('active');
-       $(this).addClass('active');
+    var clickMenu = 0;
+    $(".btnMenu").unbind().click(function () {
+       if(clickMenu == 0){
+           $(this).removeClass('btnClose');
+           $(this).addClass('btnOpen');
+           $('.menuTop').css('right','0');
+           clickMenu++;
+       }else{
+           $(this).removeClass('btnOpen');
+           $(this).addClass('btnClose');
+           $('.menuTop').css('right','-200px');
+           clickMenu--;
+       }
     });
-    $(window).scroll(function () {
-        var scrollTop = $(window).scrollTop();
-        $('.btnChangePage').removeClass('active');
-        var height1 = $('#page1').height();
-        var height2 = $('#page2').height();
-        var height3 = $('#page3').height();
-        var height4 = $('#page4').height();
-        if (scrollTop <= height1) {
-            $('.bt-0').addClass('active');
-        } else if (scrollTop >= height1 && scrollTop < (height1 + height2)) {
-            $('.bt-1').addClass('active');
-        } else if (scrollTop >= (height1 + height2) && scrollTop < (height1 + height2 + height3)) {
-            $('.bt-2').addClass('active');
-        } else if (scrollTop >= (height1 + height2 + height3) && scrollTop < (height1 + height2 + height3 + height4)) {
-            $('.bt-3').addClass('active');
-        }else if (scrollTop >= (height1 + height2 + height3 + height4)) {
-            $('.bt-4').addClass('active');
-        }
-    });
-    showPopupVideo('.play-btn','.popup-video');
-    showPopup('.rule-btn','.popup-rule');
-    showPopup('.his-btn','.popup-his');
+
 });//end document
 
 function showPopupVideo(btnCall, popupName) {

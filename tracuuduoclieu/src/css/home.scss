@@ -171,7 +171,32 @@ $hoverColor: #75c325;
          margin-left: 1%;
        }
      }
-     nav.menuTop{
+     .btnMenu{
+       display: none;
+       position: fixed;
+       top: 0;
+       right: 0;
+       width: 40px;
+       height: 40px;
+       color: #fff;
+       font-weight: 400;
+       background: #007429;
+       font-size: 35px;
+       text-align: center;
+       line-height: 40px;
+       z-index: 2;
+       &.btnClose{
+         &:before{
+           content: '=';
+         }
+       }
+       &.btnOpen{
+         &:before{
+           content: 'x';
+         }
+       }
+     }
+     .menuTop{
        background: $globalColor;
        height: 60px;
        ul{
@@ -179,7 +204,9 @@ $hoverColor: #75c325;
          width: 100%;
          padding: 0;
          margin: 0;
-         text-align: center;
+         @extend %disFlex;
+         -webkit-justify-content: center;
+         justify-content: center;
          li{
            height: 100%;
            position: relative;
@@ -501,6 +528,75 @@ $hoverColor: #75c325;
     text-align: center;
     padding: 1% 0;
     margin-top: 2px;
+  }
+  @media(max-width: 1024px) {
+    width: 100%;
+    header{
+    }
+  }
+  @media(max-width: 768px) {
+    width: 100%;
+    header{
+      .top{
+        padding-right: 50px;
+      }
+      .menuTop{
+        height: auto;
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        z-index: 2;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        ul{
+          display: block;
+          padding: 20px 0 20px 10px;
+          li{
+            display: block;
+            height: 50px;
+            line-height: 50px;
+            &:before, &:after{
+              display: none;
+            }
+            a{
+              display: block;
+              &:after{
+                content: '';
+                height: 1px;
+                width: 80%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+                background-image: -webkit-linear-gradient(left, #000, transparent);
+                background-image: -moz-linear-gradient(left, #000, transparent);
+                background-image: -o-linear-gradient(left, #000, transparent);
+              }
+            }
+            &:first-child{
+              a{
+                &:before{
+                  display: none;
+                }
+              }
+            }
+            &:last-child{
+              a{
+                &:after{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .btnMenu{
+        display: block;
+      }
+    }
   }
 }
 
