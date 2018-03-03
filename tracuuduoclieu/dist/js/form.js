@@ -1,0 +1,1 @@
+var app=angular.module("myApp",[]);app.controller("SearchController",function(a){a.medicineList=[{title:"Chá»n cĂ¢y thuá»‘c..."}],a.medicineList=["Chọn cây thuốc...","Sữa ong chúa 1","Sữa ong chúa 2","Sữa ong chúa 3","Sữa ong chúa 4","Sữa ong chúa 5","Sữa ong chúa 6"]});
