@@ -13,7 +13,6 @@ $(document).ready(function () {
            clickMenu--;
        }
     });
-
 });//end document
 
 function showPopupVideo(btnCall, popupName) {
@@ -44,3 +43,4 @@ function showPopupNotify(popupName, message) {
         $(popupName).fadeOut();
     });
 }
+

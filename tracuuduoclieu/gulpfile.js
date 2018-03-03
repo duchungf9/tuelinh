@@ -27,7 +27,7 @@ var paths = {
 gulp.task('watch', [], function () {
     browserSync.init({
         server: "./dist",
-        index: 'ketqua.html',
+        index: 'chuyengiaduoclieu.html',
     });
 
     gulp.watch(paths.scss,  ['sass']);
