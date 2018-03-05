@@ -13,29 +13,20 @@ $(document).ready(function () {
            clickMenu--;
        }
     });
+    if($(".img-thumbs").length > 0){
+        $('.img-thumbs').click(function () {
+            var bigImg = $(this).data('img');
+            var imgInfo = $(this).data('infos');
+           $(this).siblings().removeClass('active');
+           $(this).addClass('active');
+           $(bigImg).siblings().removeClass('active');
+           $(bigImg).addClass('active');
+           $(imgInfo).siblings().removeClass('active');
+           $(imgInfo).addClass('active');
+        });
+    }
 });//end document
 
-function showPopupVideo(btnCall, popupName) {
-    $(btnCall).click(function () {
-        var src = $(this).data('src');
-        var title = $(this).data('title');
-        $(popupName).fadeIn();
-        $(popupName).find('iframe').attr('src', src);
-        $(popupName).find('.title').text(title);
-        $(popupName + ' .close-popup').click(function () {
-            $(popupName).find('iframe').attr('src', '');
-            $(popupName).fadeOut();
-        });
-    });
-}
-function showPopup(btnCall,popupName) {
-    $(btnCall).click(function () {
-        $(popupName).fadeIn();
-        $(popupName + ' .close-popup').click(function () {
-            $(popupName).fadeOut();
-        });
-    });
-}
 function showPopupNotify(popupName, message) {
     $(popupName).fadeIn();
     $(popupName).find('.message').html(message);

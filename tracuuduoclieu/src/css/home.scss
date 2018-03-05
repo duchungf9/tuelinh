@@ -987,6 +987,105 @@ $hoverColor: #75c325;
        }
      }
    }
+   .block7{
+     @extend %disFlex;
+     -wwebkit-justify-content: space-between;
+     justify-content: space-between;
+     -wwebkit-flex-flow: row wrap;
+     flex-flow: row wrap;
+     width: 100%;
+     margin-bottom: 2%;
+    .thumb-imgs{
+      width: 11.4%;
+      a{
+        margin-bottom: 10%;
+        display: block;
+        &.active, &:hover{
+          border: thin solid red;
+        }
+      }
+    }
+    .big-imgs{
+      width: 37%;
+      .bigImg{
+        display: none;
+        &.active{
+          display: block;
+        }
+      }
+    }
+    .img-infos{
+      width: 47%;
+      .info{
+        display: none;
+        &.active{
+          display: block;
+        }
+        span{
+          display: block;
+          width: 100%;
+          color: #000000;
+          font-weight: bold;
+          &.title{
+            color: $globalColor;
+            text-transform: uppercase;
+            font-size: 42px;
+            @media (max-width: 500px) {
+              font-size: 8vw;
+            }
+          }
+        }
+      }
+    }
+     @media(max-width: 768px) {
+       .thumb-imgs{
+         width: 22.6%;
+       }
+       .big-imgs{
+         width: 74%;
+       }
+       .img-infos{
+         width: 100%;
+       }
+     }
+   }
+   .detailDescriptions{
+     .captain{
+       display: block;
+       width: 100%;
+       border-bottom: 3px solid $globalColor;
+       margin: 0 0 5% 0;
+       i{
+         display: block;
+         font-style: normal;
+         background: $globalColor;
+         color: #ffffff;
+         font-weight: bold;
+         font-size: 25px;
+         height: 50px;
+         line-height: 50px;
+         width: 80%;
+         padding-left: 20px;
+       }
+     }
+   }
+   .tags{
+     margin-top: 3%;
+     padding-top: 1%;
+     border-top: 2px solid $globalColor;
+     span, a{
+       display: inline-block;
+     }
+     span{
+       font-weight: bold;
+     }
+     a{
+       background: $globalColor;
+       color: #ffffff;
+       padding: 0 2%;
+       margin-bottom: 2%;
+     }
+   }
   }
   footer{
     @extend  %disFlex;
