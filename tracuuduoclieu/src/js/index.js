@@ -13,6 +13,16 @@ $(document).ready(function () {
            clickMenu--;
        }
     });
+    var clickSubMenu = 0;
+    $(".menuTop li").click(function () {
+        if(clickSubMenu == 0){
+            $(this).find('.subMenu').addClass('active');
+            clickSubMenu++;
+        }else{
+            $(this).find('.subMenu').removeClass('active');
+            clickSubMenu--;
+        }
+    });
     if($(".img-thumbs").length > 0){
         $('.img-thumbs').click(function () {
             var bigImg = $(this).data('img');
