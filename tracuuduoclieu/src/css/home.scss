@@ -353,7 +353,6 @@ $hoverColor: #75c325;
          position: relative;
          &:before{
            width: 100%;
-           content: 'Tra cứu dược liệu ';
            color: #ffffff;
            text-transform: uppercase;
            font-weight: bold;
@@ -371,6 +370,26 @@ $hoverColor: #75c325;
          &:hover{
            &:before{
              color: #FFC107;
+           }
+         }
+         &:nth-child(1){
+           &:before{
+             content: 'Tra cứu dược liệu';
+           }
+         }
+         &:nth-child(2){
+           &:before{
+             content: 'Tra cứu danh lục';
+           }
+         }
+         &:nth-child(3){
+           &:before{
+             content: 'Tra cứu theo bệnh';
+           }
+         }
+         &:nth-child(4){
+           &:before{
+             content: 'Tra cứu bài thuốc';
            }
          }
        }
@@ -515,6 +534,12 @@ $hoverColor: #75c325;
     }
      .content{
        margin-top: 4%;
+       .title{
+         font-size: 30px;
+         text-align: center;
+         margin-bottom: 20px;
+         color: #005b2b;
+       }
        .item{
          @extend %disFlex;
          flex-flow: row wrap;
@@ -1381,8 +1406,13 @@ $hoverColor: #75c325;
             margin-bottom: 65px;
             span{
               bottom: -35px;
-              height: 70px;
+              min-height: 70px;
               border: 1px solid #547b4d;
+              overflow: visible;
+              text-overflow: inherit;
+              white-space: inherit;
+              height: auto;
+              line-height: inherit;
             }
             &:nth-child(4n+5),&:nth-child(1){
               margin-left: 0;
