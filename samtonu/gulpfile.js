@@ -22,12 +22,16 @@ var paths = {
         roots + "**/*.ico",
         roots + "**/*.jpeg",
     ],
+    fonts: [
+        roots + "**/*.ttf",
+        roots + "**/*.otf",
+    ],
     dest: "./dist",
 };
 gulp.task('watch', [], function () {
     browserSync.init({
         server: "./dist",
-        index: 'chitiettinduoclieu.html',
+        index: 'index.html',
     });
 
     gulp.watch(paths.scss,  ['sass']);
@@ -87,6 +91,12 @@ gulp.task('js', function () {
                 drop_console: true
             }
         }))
+        .pipe(gulp.dest(paths.dest))
+        .pipe(browserSync.stream());
+
+});
+gulp.task('fonts', function () {
+    return gulp.src(paths.fonts)
         .pipe(gulp.dest(paths.dest))
         .pipe(browserSync.stream());
 

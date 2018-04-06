@@ -93,31 +93,31 @@ $hoverColor: #75c325;
          margin-left: 1%;
        }
      }
-     .btnMenu{
-       display: none;
-       position: fixed;
-       top: 0;
-       right: 0;
-       width: 40px;
-       height: 40px;
-       color: #fff;
-       font-weight: 400;
-       background: #007429;
-       font-size: 35px;
-       text-align: center;
-       line-height: 40px;
-       z-index: 2;
-       &.btnClose{
-         &:before{
-           content: '=';
+       .btnMenu{
+         display: none;
+         position: fixed;
+         top: 0;
+         right: 0;
+         width: 40px;
+         height: 40px;
+         color: #fff;
+         font-weight: 400;
+         background: #007429;
+         font-size: 35px;
+         text-align: center;
+         line-height: 40px;
+         z-index: 2;
+         &.btnClose{
+           &:before{
+             content: '=';
+           }
+         }
+         &.btnOpen{
+           &:before{
+             content: 'x';
+           }
          }
        }
-       &.btnOpen{
-         &:before{
-           content: 'x';
-         }
-       }
-     }
      .menuTop{
        background: $globalColor;
        height: 60px;
