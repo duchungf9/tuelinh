@@ -31,7 +31,7 @@ var paths = {
 gulp.task('watch', [], function () {
     browserSync.init({
         server: "./dist",
-        index: 'product1.html',
+        index: 'product2.html',
     });
 
     gulp.watch(paths.scss,  ['sass']);

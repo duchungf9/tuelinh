@@ -70,6 +70,20 @@ $(document).ready(function () {
             itemsMobile: [479, 1]
         });
     }
+    if($("#block16_slider").length > 0){
+        $("#block16_slider").owlCarousel({
+            navigation: false,
+            pagination: true,
+            autoPlay: false,
+            autoPlaySpeed: 2000,
+            responsive: true,
+            items: 4,
+            itemsDesktop: [1220, 4],
+            itemsDesktopSmall: [1024, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [500, 1]
+        });
+    }
 });//end document
 
 function showPopupNotify(popupName, message) {
