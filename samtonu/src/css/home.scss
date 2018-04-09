@@ -1377,12 +1377,12 @@ $hoverColor: #000000;
             }
           }
           .someInfos{
-            margin-top: 100px;
+            margin-top: 120px;
             -webkit-justify-content: flex-end;
             justify-content: flex-end;
             text-align: right;
             li{
-              line-height: 59px;
+              line-height: 60px;
               &:nth-child(1){
                 padding-right: 30px;
               }
@@ -1429,7 +1429,7 @@ $hoverColor: #000000;
             -webkit-justify-content: flex-start;
             justify-content: flex-start;
             li{
-              margin-bottom: 20px;
+              margin-bottom: 19px;
               &:nth-child(1){
                 padding-left: 70px;
               }
@@ -1443,7 +1443,7 @@ $hoverColor: #000000;
                 padding-left: 50px;
               }
               &:nth-child(6){
-                padding-left: 120px;
+                padding-left: 140px;
               }
             }
           }
