@@ -1,21 +1,22 @@
 $(document).ready(function () {
+    new WOW().init();
     var clickMenu = 0;
     $(".btnMenu").unbind().click(function () {
-       if(clickMenu == 0){
-           $(this).removeClass('btnClose');
-           $(this).addClass('btnOpen');
-           $('.menuTop').css('right','0');
-           clickMenu++;
-       }else{
-           $(this).removeClass('btnOpen');
-           $(this).addClass('btnClose');
-           $('.menuTop').css('right','-250px');
-           clickMenu--;
-       }
+        if(clickMenu == 0){
+            $(this).removeClass('btnClose');
+            $(this).addClass('btnOpen');
+            $('.menuTop').css('right','0');
+            clickMenu++;
+        }else{
+            $(this).removeClass('btnOpen');
+            $(this).addClass('btnClose');
+            $('.menuTop').css('right','-250px');
+            clickMenu--;
+        }
     });
     var clickSubMenu = 0;
     $(".menuTop>li").hover(function () {
-       return;
+        return;
     });
     $(".menuTop li").click(function () {
         if(clickSubMenu == 0){
