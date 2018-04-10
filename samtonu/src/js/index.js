@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    new WOW().init();
+    if(typeof WOW != 'undefined'){
+        new WOW().init();
+    }
     var clickMenu = 0;
     $(".btnMenu").unbind().click(function () {
         if(clickMenu == 0){
@@ -82,6 +84,16 @@ $(document).ready(function () {
             itemsDesktopSmall: [1024, 3],
             itemsTablet: [768, 2],
             itemsMobile: [500, 1]
+        });
+    }
+
+    if( $('#sidebar').length >0){
+        var h =  $("#sidebar").height();
+        var e = $("#sidebar").offset().top + h + 100;
+        $(window).scroll(function () {
+            var o = $(window).scrollTop();
+            var f = $("#footer").offset().top - h;
+            (e <= o && o <= f) ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
         });
     }
 });//end document
