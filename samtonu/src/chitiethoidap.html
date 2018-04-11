@@ -122,7 +122,34 @@
                                 <img src="images/social.jpg" alt="" width="341" height="24" class="imgFull">
                             </div>
                             <div class="comment-post">
-                                <div class="fb-comments" data-href="https://www.facebook.com/tuelinh.vn" data-numposts="2" data-width="100%"></div>
+                                <div class="tabs tabComment">
+                                    <a href="javascript:void(0)" class="fb-tab active" title="Bình luận Facebook" data-content=".fb-cmt-content">Bình luận facebook</a>
+                                    <a href="javascript:void(0)" class="default-tab" title="Bình luận" data-content=".default-comments">Bình luận</a>
+                                </div>
+                                <div class="fb-cmt-content cmtContent active">
+                                    <div class="title">Ý kiến của bạn</div>
+                                    <div class="fb-comments" data-href="https://www.facebook.com/tuelinh.vn" data-numposts="2" data-width="100%"></div>
+                                </div>
+                                <div class="default-comments cmtContent">
+                                    <div class="title">Bình luận về bài viết</div>
+                                    <div class="content">
+                                        <div class="old-cmt">
+                                            <div class="name">Phương Mai đã bình luận</div>
+                                            <div class="date">27-12-2017 10:18</div>
+                                            <div class="cmt-content">Thông tin khoa học cần tham khảo</div>
+                                            <a href="javascript:void(0)" class="your-answer-btn" title="Trả lời">Trả lời</a>
+                                        </div>
+                                        <div class="new-cmt">
+                                            <div class="title">Ý kiến của bạn</div>
+                                            <form action="" class="cmt-form">
+                                                <input type="text" name="name" placeholder="Nhập tên của bạn">
+                                                <input type="text" name="email" placeholder="Nhập email của bạn">
+                                                <textarea name="content" id="" cols="30" rows="10" placeholder="Nhập nội dung"></textarea>
+                                                <button class="send-cmt">Gửi bình luận</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="block16 pr onsubPage">
                                 <h3 class="globalTitle">Tin xem thêm</h3>
@@ -325,7 +352,7 @@
                 </div>
             </div>
         </div>
-        <footer class="pr" id="footer">
+        <footer class="pr">
             <div class="top">Bổ sung nội tiết - Căng tràn sức xuân</div>
             <div class="content fixCen">
                 <div class="left">
@@ -351,6 +378,7 @@
                 </div>
             </div>
         </footer>
+        <div class="" id="scrollPoint"></div>
         <a href="javascript:void(0)" class="goTop-btn px" title="Lên đầu trang" onclick="$('html,body').animate({scrollTop: 0},500)">
             <img src="images/btn-top.jpg" alt="">
         </a>

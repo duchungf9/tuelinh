@@ -441,7 +441,7 @@
                                 <div class="row3">
                                     <input type="text" placeholder="Ghi chú">
                                     <input type="number" placeholder="Số lượng" class="sl-onl"> <label for="">hộp</label>
-                                    <button class="btn-order-onl">ĐẶT MUA HÀNG</button>
+                                    <button class="btn-order-onl" type="button" onclick="showPopupNotify('.popup-notify');">ĐẶT MUA HÀNG</button>
                                 </div>
                                 <div class="error">Điền đầy đủ các thông tin</div>
                             </form>
@@ -481,6 +481,21 @@
         <a href="javascript:void(0)" class="fb-btn"><img src="images/icon-fb.jpg" alt=""></a>
         <a href="javascript:void(0)" class="phone-btn"><img src="images/icon-hotline.jpg" alt=""></a>
         <a href="javascript:void(0)" class="cart-btn"><img src="images/icon-cart.jpg" alt=""></a>
+    </div>
+    <div class="popup popup-notify px">
+        <div class="popup-content pa">
+            <a href="javascript:void(0)" class="close-popup pa" title="Đóng lại">X</a>
+            <div class="content">
+                <div class="logo">
+                    <img src="images/popup-logo.jpg" alt="">
+                </div>
+                <div class="message">
+                    Cảm ơn bạn đã đặt hàng thành công ! <br>
+                    Chúng tôi sẽ liên hệ với bạn trong giờ hành chính <br>
+                    (8h-16h hàng ngày trừ thứ 7, CN)
+                </div>
+            </div>
+        </div>
     </div>
     <a href="javascript:void(0)" class="goTop-btn px" title="Lên đầu trang" onclick="$('html,body').animate({scrollTop: 0},500)">
         <img src="images/btn-top.jpg" alt="">

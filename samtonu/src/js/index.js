@@ -92,17 +92,26 @@ $(document).ready(function () {
         var e = $("#sidebar").offset().top + h + 100;
         $(window).scroll(function () {
             var o = $(window).scrollTop();
-            var f = $("#footer").offset().top - h;
+            var f = $("#scrollPoint").offset().top - h;
             (e <= o && o <= f) ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
         });
     }
+    activeTab('.tabComment a');
 });//end document
 
 function showPopupNotify(popupName, message) {
     $(popupName).fadeIn();
-    $(popupName).find('.message').html(message);
     $(popupName + ' .close-popup').click(function () {
         $(popupName).fadeOut();
     });
+}
+function activeTab(btnClick) {
+    $(btnClick).click(function () {
+        var content = $(this).data('content');
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $(content).siblings().removeClass('active');
+        $(content).addClass('active');
+    })
 }
 
