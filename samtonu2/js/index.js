@@ -62,7 +62,7 @@ $(document).ready(function () {
         $("#block7_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: true,
+            autoPlay: false,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 3,
@@ -97,6 +97,7 @@ $(document).ready(function () {
         });
     }
     activeTab('.tabComment a');
+    bannerAdsSide();
 });//end document
 
 function showPopupNotify(popupName, message) {
@@ -113,5 +114,13 @@ function activeTab(btnClick) {
         $(content).siblings().removeClass('active');
         $(content).addClass('active');
     })
+}
+function bannerAdsSide() {
+    var $banner = $('#scrollPage'), $window = $(window);
+    var $topDefault = parseFloat($banner.css('top'), 10);
+    $(window).on('scroll', function () {
+        var $docHeight = $(window).innerHeight();
+        $('#scrollPage').stop().animate({top: $(window).scrollTop() + $topDefault}, 100, 'easeOutCirc');
+    });
 }
 
