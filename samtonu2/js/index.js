@@ -1,22 +1,24 @@
 $(document).ready(function () {
-    new WOW().init();
+    if(typeof WOW != 'undefined'){
+        new WOW().init();
+    }
     var clickMenu = 0;
     $(".btnMenu").unbind().click(function () {
-       if(clickMenu == 0){
-           $(this).removeClass('btnClose');
-           $(this).addClass('btnOpen');
-           $('.menuTop').css('right','0');
-           clickMenu++;
-       }else{
-           $(this).removeClass('btnOpen');
-           $(this).addClass('btnClose');
-           $('.menuTop').css('right','-250px');
-           clickMenu--;
-       }
+        if(clickMenu == 0){
+            $(this).removeClass('btnClose');
+            $(this).addClass('btnOpen');
+            $('.menuTop').css('right','0');
+            clickMenu++;
+        }else{
+            $(this).removeClass('btnOpen');
+            $(this).addClass('btnClose');
+            $('.menuTop').css('right','-250px');
+            clickMenu--;
+        }
     });
     var clickSubMenu = 0;
     $(".menuTop>li").hover(function () {
-       return;
+        return;
     });
     $(".menuTop li").click(function () {
         if(clickSubMenu == 0){
@@ -70,13 +72,46 @@ $(document).ready(function () {
             itemsMobile: [479, 1]
         });
     }
+    if($("#block16_slider").length > 0){
+        $("#block16_slider").owlCarousel({
+            navigation: false,
+            pagination: true,
+            autoPlay: false,
+            autoPlaySpeed: 2000,
+            responsive: true,
+            items: 4,
+            itemsDesktop: [1220, 4],
+            itemsDesktopSmall: [1024, 3],
+            itemsTablet: [768, 2],
+            itemsMobile: [500, 1]
+        });
+    }
+
+    if( $('#sidebar').length >0){
+        var h =  $("#sidebar").height();
+        var e = $("#sidebar").offset().top + h + 100;
+        $(window).scroll(function () {
+            var o = $(window).scrollTop();
+            var f = $("#scrollPoint").offset().top - h;
+            (e <= o && o <= f) ? $("#sidebar").addClass("fixed") : $("#sidebar").removeClass("fixed");
+        });
+    }
+    activeTab('.tabComment a');
 });//end document
 
 function showPopupNotify(popupName, message) {
     $(popupName).fadeIn();
-    $(popupName).find('.message').html(message);
     $(popupName + ' .close-popup').click(function () {
         $(popupName).fadeOut();
     });
+}
+function activeTab(btnClick) {
+    $(btnClick).click(function () {
+        var content = $(this).data('content');
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $(content).siblings().removeClass('active');
+        $(content).addClass('active');
+    })
 }
 
