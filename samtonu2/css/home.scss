@@ -214,7 +214,7 @@ $hoverColor: #000000;
     }
     .logo{
       width: 230px;
-      top: 20px;
+      top: 15px;
       left: 50%;
       margin-left: -115px;
       z-index: 1;
@@ -224,7 +224,7 @@ $hoverColor: #000000;
       @media(max-width: 1260px){
         width: 230px;
         margin-left: -115px;
-        top: 18px;
+        top: 16px;
         img{
           width: 100%;
         }
@@ -265,7 +265,8 @@ $hoverColor: #000000;
       @extend %disFlex;
       -webkit-justify-content: space-between;
       justify-content: space-between;
-      z-index: 0;
+      z-index: 2;
+      position: relative;
       .left, .right{
         ul{
           @extend %disFlex;
@@ -352,12 +353,12 @@ $hoverColor: #000000;
                 padding: 0 13px;
               }
               .subMenu{
-                width: 150%;
+                width: 190%;
               }
             }
             &:first-child{
               .subMenu{
-                width: 120%;
+                width: 140%;
               }
             }
           }
@@ -634,9 +635,13 @@ $hoverColor: #000000;
                 }
               }
               &:hover{
-                -webkit-animation:wobble-horizontal 0.5s linear infinite;
-                -o-animation:wobble-horizontal 0.5s linear infinite;
-                animation:wobble-horizontal 0.5s linear infinite;
+                //-webkit-animation:wobble-horizontal 0.5s linear infinite;
+                //-o-animation:wobble-horizontal 0.5s linear infinite;
+                //animation:wobble-horizontal 0.5s linear infinite;
+
+                -o-animation: zoomIn 2s infinite linear;
+                -webkit-animation: zoomIn 2s infinite linear;
+                -moz-animation: zoomIn 2s infinite linear;
               }
             }
             &.title{
@@ -926,7 +931,7 @@ $hoverColor: #000000;
           }
           .view-more{
             position: absolute;
-            bottom: 10px;
+            bottom: 5px;
             right: 0;
             background: #0092d7;
             color: #000000;
@@ -1901,18 +1906,26 @@ $hoverColor: #000000;
       padding-top: 70px;
       .content{
         @extend %disFlex;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-        -webkit-align-items: center;
-        align-items: center;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
         border:  thin dashed $globalColor;
         padding: 10px;
         &>div{
-          width: 33%;
+          width: 25%;
           text-align: center;
-          padding: 0 5%;
+          padding: 0%;
+        }
+        .left{
+          max-width: 110px;
+        }
+        .right2{
+          max-width: 164px;
+          img{
+            display: block;
+            margin: auto;
+          }
         }
       }
       @media(max-width: 1260px){
@@ -1920,12 +1933,10 @@ $hoverColor: #000000;
       }
       @media(max-width: 720px){
         .content{
-          .left{
-            width: 120px;
-            padding: 0 0;
-          }
-          .center, .right{
-            padding: 0 2%;
+          &>div{
+            width: 50%;
+            max-width: inherit !important;
+            margin-bottom: 10px;
           }
         }
       }
@@ -1933,15 +1944,22 @@ $hoverColor: #000000;
         .content{
           -webkit-justify-content: space-between;
           justify-content: space-between;
-          -webkit-align-items: flex-start;
-          align-items: flex-start;
           .left{
             width: 100%;
             margin-bottom: 5%;
           }
-          .center, .right{
-            padding: 0;
+          .center, .right, .right2{
             width: 48%;
+          }
+          .right2{
+            width: 100%;
+          }
+        }
+      }
+      @media(max-width: 380px){
+        .content{
+          &>div{
+            width: 100% !important;
           }
         }
       }
@@ -3638,15 +3656,32 @@ $hoverColor: #000000;
       }
     }
   }
+  .left-banner-fixed{
+    position: absolute;
+    left: 20px;
+    top: 70px;
+    z-index: 2;
+    width: 128px;
+    img{
+      width: 100%;
+    }
+    @media(max-width: 1366px) {
+      top: 110px;
+      left: 0;
+    }
+    @media(max-width: 1280px) {
+      display: none;
+    }
+  }
   .right-btns-fixed{
-    height: 150px;
+    height: 125px;
     top: 70px;
     right: 0;
     position: absolute;
     a{
       display: block;
       margin-top: 5px;
-      width: 48px;
+      width: 40px;
       &:first-child{
         margin-top: 0;
       }
@@ -3674,13 +3709,17 @@ $hoverColor: #000000;
     }
   }
   .goTop-btn{
+    width: 40px;
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 10px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
     overflow: hidden;
+    img{
+      width: 100%;
+    }
   }
   .popup-notify{
     width: 100%;

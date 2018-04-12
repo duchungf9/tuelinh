@@ -34,7 +34,7 @@ $(document).ready(function () {
         $("#block2_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: false,
+            autoPlay: true,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 3,
@@ -62,7 +62,7 @@ $(document).ready(function () {
         $("#block7_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: false,
+            autoPlay: true,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 3,
@@ -76,7 +76,7 @@ $(document).ready(function () {
         $("#block16_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: false,
+            autoPlay: true,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 4,
@@ -116,11 +116,11 @@ function activeTab(btnClick) {
     })
 }
 function bannerAdsSide() {
-    var $banner = $('#scrollPage'), $window = $(window);
+    var $banner = $('.scrollPage'), $window = $(window);
     var $topDefault = parseFloat($banner.css('top'), 10);
     $(window).on('scroll', function () {
         var $docHeight = $(window).innerHeight();
-        $('#scrollPage').stop().animate({top: $(window).scrollTop() + $topDefault}, 100, 'easeOutCirc');
+        $('.scrollPage').stop().animate({top: $(window).scrollTop() + $topDefault}, 100, 'easeOutCirc');
     });
 }
 

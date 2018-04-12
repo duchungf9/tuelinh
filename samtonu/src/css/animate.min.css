@@ -15,14 +15,14 @@
         -moz-transform: translateX(8px);
         -ms-transform: translateX(8px);
         -o-transform: translateX(8px);
-        transform: translateX(8px);
+        transform: translateX(3px);
     }
     33.3% {
         -webkit-transform: translateX(-6px);
         -moz-transform: translateX(-6px);
         -ms-transform: translateX(-6px);
         -o-transform: translateX(-6px);
-        transform: translateX(-6px);
+        transform: translateX(-2px);
     }
 
     49.95% {
@@ -30,7 +30,7 @@
         -moz-transform: translateX(4px);
         -ms-transform: translateX(4px);
         -o-transform: translateX(4px);
-        transform: translateX(4px);
+        transform: translateX(2px);
     }
 
     66.6% {
@@ -38,7 +38,7 @@
         -moz-transform: translateX(-2px);
         -ms-transform: translateX(-2px);
         -o-transform: translateX(-2px);
-        transform: translateX(-2px);
+        transform: translateX(-1px);
     }
 
     83.25% {
@@ -58,7 +58,54 @@
     }
 }
 .wobble-horizontal{
-    -webkit-animation:wobble-horizontal 0.5s linear infinite;
-    -o-animation:wobble-horizontal 0.5s linear infinite;
-    animation:wobble-horizontal 0.5s linear infinite;
+    -webkit-animation:wobble-horizontal 1.5s linear infinite;
+    -o-animation:wobble-horizontal 1.5s linear infinite;
+    animation:wobble-horizontal 1.5s linear infinite;
+}
+@keyframes fadeInDown1{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}.fadeInDown1{animation-name:fadeInDown1}
+@keyframes fadeInDown2{0%{opacity:0;transform:translate3d(0, -250%,0)}to{opacity:1;transform:none}}.fadeInDown2{animation-name:fadeInDown2}
+@keyframes fadeInDown3{0%{opacity:0;transform:translate3d(0,-400%,0)}to{opacity:1;transform:none}}.fadeInDown3{animation-name:fadeInDown3}
+@keyframes fadeInDown4{0%{opacity:0;transform:translate3d(0,-550%,0)}to{opacity:1;transform:none}}.fadeInDown4{animation-name:fadeInDown4}
+@keyframes fadeInDownBig{0%{opacity:0;transform:translate3d(0,-2000px,0)}to{opacity:1;transform:none}}.fadeInDownBig{animation-name:fadeInDownBig}
+.animated1{animation-duration: 0.5s !important;animation-fill-mode:both}
+.animated2{animation-duration:1s !important;animation-fill-mode:both}
+.animated3{animation-duration:1.5s !important;animation-fill-mode:both}
+.animated4{animation-duration:2s !important;animation-fill-mode:both}
+
+@keyframes swing {
+    0% {
+        -webkit-transform: rotateZ(20deg);
+        transform: rotateZ(20deg);
+    }
+    100% {
+        -webkit-transform: rotateZ(-20deg);
+        transform: rotateZ(-20deg);
+    }
+}
+@keyframes zoomIn {
+    50% {
+        -webkit-transform: scale(.75);
+        transform: scale(.75);
+    }
+
+    40%, 60% {
+        -webkit-transform: scale(.8);
+        transform: scale(.8);
+    }
+    30%, 70% {
+        -webkit-transform: scale(.85);
+        transform: scale(.85);
+    }
+    20%, 80% {
+        -webkit-transform: scale(.9);
+        transform: scale(.9);
+    }
+    10%, 90% {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+    }
+    0%, 100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
