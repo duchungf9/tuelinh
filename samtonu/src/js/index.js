@@ -34,7 +34,7 @@ $(document).ready(function () {
         $("#block2_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: true,
+            autoPlay: false,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 3,
