@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/css/home.scss" line="3723" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fe18e168-b728-456e-9fa7-556ff162a084" name="Default" comment="" />
     <ignored path="sg120.iws" />
@@ -41,8 +44,8 @@
       <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="381" column="7" selection-start-line="381" selection-start-column="7" selection-end-line="381" selection-end-column="7" />
+            <state relative-caret-position="428">
+              <caret line="3723" column="11" selection-start-line="3723" selection-start-column="11" selection-end-line="3723" selection-end-column="11" />
               <folding>
                 <element signature="e#1252#1383#0" expanded="false" />
                 <element signature="e#1391#1615#0" expanded="false" />
@@ -58,6 +61,7 @@
                 <element signature="e#4071#4259#0" expanded="false" />
                 <element signature="e#4269#4932#0" expanded="false" />
                 <element signature="e#4942#4997#0" expanded="false" />
+                <element signature="e#5326#11226#0" expanded="false" />
                 <element signature="e#5339#5371#0" expanded="false" />
                 <element signature="e#5381#5741#0" expanded="false" />
                 <element signature="e#5754#6258#0" expanded="false" />
@@ -71,6 +75,7 @@
                 <element signature="e#11236#11384#0" expanded="false" />
                 <element signature="e#11394#11542#0" expanded="false" />
                 <element signature="e#11558#11899#0" expanded="false" />
+                <element signature="e#11907#89615#0" expanded="false" />
                 <element signature="e#11945#13635#0" expanded="false" />
                 <element signature="e#12244#13629#0" expanded="false" />
                 <element signature="e#16148#16310#0" expanded="false" />
@@ -164,8 +169,9 @@
                 <element signature="e#87758#88500#0" expanded="false" />
                 <element signature="e#88977#89611#0" expanded="false" />
                 <element signature="e#89624#92523#0" expanded="false" />
+                <element signature="e#92544#92802#0" expanded="false" />
                 <element signature="e#92822#93590#0" expanded="false" />
-                <element signature="e#93841#94654#0" expanded="false" />
+                <element signature="e#93840#94653#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -279,7 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -332,6 +337,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -453,15 +459,16 @@
       <workItem from="1524041647036" duration="1928000" />
       <workItem from="1524190369326" duration="1634000" />
       <workItem from="1524192252966" duration="199000" />
+      <workItem from="1524193226625" duration="69000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="326163000" />
+    <option name="totallyTimeSpent" value="326232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -470,7 +477,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40591967" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40591967" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -678,13 +685,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="92" selection-start-line="18" selection-start-column="92" selection-end-line="18" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/footer.blade.php" />
     <entry file="file://$PROJECT_DIR$/src/hoidap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
@@ -696,22 +697,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5253">
           <caret line="309" column="18" selection-start-line="309" selection-start-column="18" selection-end-line="309" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="66" column="156" selection-start-line="66" selection-start-column="156" selection-end-line="66" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.blade.php" />
     <entry file="file://$PROJECT_DIR$/src/css/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="381" column="7" selection-start-line="381" selection-start-column="7" selection-end-line="381" selection-end-column="7" />
+        <state relative-caret-position="428">
+          <caret line="3723" column="11" selection-start-line="3723" selection-start-column="11" selection-end-line="3723" selection-end-column="11" />
           <folding>
             <element signature="e#1252#1383#0" expanded="false" />
             <element signature="e#1391#1615#0" expanded="false" />
@@ -727,6 +720,7 @@
             <element signature="e#4071#4259#0" expanded="false" />
             <element signature="e#4269#4932#0" expanded="false" />
             <element signature="e#4942#4997#0" expanded="false" />
+            <element signature="e#5326#11226#0" expanded="false" />
             <element signature="e#5339#5371#0" expanded="false" />
             <element signature="e#5381#5741#0" expanded="false" />
             <element signature="e#5754#6258#0" expanded="false" />
@@ -740,6 +734,7 @@
             <element signature="e#11236#11384#0" expanded="false" />
             <element signature="e#11394#11542#0" expanded="false" />
             <element signature="e#11558#11899#0" expanded="false" />
+            <element signature="e#11907#89615#0" expanded="false" />
             <element signature="e#11945#13635#0" expanded="false" />
             <element signature="e#12244#13629#0" expanded="false" />
             <element signature="e#16148#16310#0" expanded="false" />
@@ -833,8 +828,9 @@
             <element signature="e#87758#88500#0" expanded="false" />
             <element signature="e#88977#89611#0" expanded="false" />
             <element signature="e#89624#92523#0" expanded="false" />
+            <element signature="e#92544#92802#0" expanded="false" />
             <element signature="e#92822#93590#0" expanded="false" />
-            <element signature="e#93841#94654#0" expanded="false" />
+            <element signature="e#93840#94653#0" expanded="false" />
           </folding>
         </state>
       </provider>
