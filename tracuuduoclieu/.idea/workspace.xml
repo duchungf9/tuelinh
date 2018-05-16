@@ -24,7 +24,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="272">
               <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
               <folding />
             </state>
@@ -34,8 +34,8 @@
       <file leaf-file-name="home.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="512" column="26" selection-start-line="512" selection-start-column="26" selection-end-line="512" selection-end-column="26" />
+            <state relative-caret-position="261">
+              <caret line="382" column="12" selection-start-line="382" selection-start-column="12" selection-end-line="382" selection-end-column="12" />
               <folding>
                 <element signature="e#1472#1827#0" expanded="false" />
                 <element signature="e#1480#1766#0" expanded="false" />
@@ -43,29 +43,28 @@
                 <element signature="e#2086#2257#0" expanded="false" />
                 <element signature="e#2352#9313#0" expanded="false" />
                 <element signature="e#2363#2712#0" expanded="false" />
-                <element signature="e#9353#12236#0" expanded="false" />
-                <element signature="e#12265#13624#0" expanded="false" />
-                <element signature="e#15580#17831#0" expanded="false" />
-                <element signature="e#16108#16804#0" expanded="false" />
-                <element signature="e#17851#18553#0" expanded="false" />
-                <element signature="e#18564#20909#0" expanded="false" />
-                <element signature="e#20920#22429#0" expanded="false" />
-                <element signature="e#22440#27188#0" expanded="false" />
-                <element signature="e#26815#27183#0" expanded="false" />
-                <element signature="e#27425#27592#0" expanded="false" />
-                <element signature="e#27606#27731#0" expanded="false" />
-                <element signature="e#28274#28432#0" expanded="false" />
-                <element signature="e#28460#28890#0" expanded="false" />
-                <element signature="e#28899#29203#0" expanded="false" />
-                <element signature="e#29218#29621#0" expanded="false" />
-                <element signature="e#29634#31727#0" expanded="false" />
-                <element signature="e#31741#31860#0" expanded="false" />
-                <element signature="e#31888#34981#0" expanded="false" />
-                <element signature="e#35006#35762#0" expanded="false" />
-                <element signature="e#35801#36219#0" expanded="false" />
-                <element signature="e#36469#37264#0" expanded="false" />
-                <element signature="e#37886#38231#0" expanded="false" />
-                <element signature="e#38252#38956#0" expanded="false" />
+                <element signature="e#12267#13626#0" expanded="false" />
+                <element signature="e#15582#17833#0" expanded="false" />
+                <element signature="e#16110#16806#0" expanded="false" />
+                <element signature="e#17853#18555#0" expanded="false" />
+                <element signature="e#18566#20911#0" expanded="false" />
+                <element signature="e#20922#22431#0" expanded="false" />
+                <element signature="e#22442#27190#0" expanded="false" />
+                <element signature="e#26817#27185#0" expanded="false" />
+                <element signature="e#27427#27594#0" expanded="false" />
+                <element signature="e#27608#27733#0" expanded="false" />
+                <element signature="e#28276#28434#0" expanded="false" />
+                <element signature="e#28462#28892#0" expanded="false" />
+                <element signature="e#28901#29205#0" expanded="false" />
+                <element signature="e#29220#29623#0" expanded="false" />
+                <element signature="e#29636#31729#0" expanded="false" />
+                <element signature="e#31743#31862#0" expanded="false" />
+                <element signature="e#31890#34983#0" expanded="false" />
+                <element signature="e#35008#35764#0" expanded="false" />
+                <element signature="e#35803#36221#0" expanded="false" />
+                <element signature="e#36471#37266#0" expanded="false" />
+                <element signature="e#37888#38233#0" expanded="false" />
+                <element signature="e#38254#38958#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,7 +73,7 @@
       <file leaf-file-name="chitiettinduoclieu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chitiettinduoclieu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
+            <state relative-caret-position="2550">
               <caret line="150" column="66" selection-start-line="150" selection-start-column="66" selection-end-line="150" selection-end-column="66" />
               <folding />
             </state>
@@ -182,6 +181,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,13 +228,58 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tracuuduoclieu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,11 +387,12 @@
       <workItem from="1521713574082" duration="2507000" />
       <workItem from="1522140926929" duration="259000" />
       <workItem from="1526436590413" duration="1161000" />
+      <workItem from="1526439429967" duration="101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226911000" />
+    <option name="totallyTimeSpent" value="227012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -517,7 +563,7 @@
     <entry file="file://$PROJECT_DIR$/src/css/all-ie-only.scss" />
     <entry file="file://$PROJECT_DIR$/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="272">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
           <folding />
         </state>
@@ -612,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,9 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="118" column="103" selection-start-line="118" selection-start-column="103" selection-end-line="118" selection-end-column="103" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,13 +672,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chitiettinduoclieu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
+        <state relative-caret-position="2550">
           <caret line="150" column="66" selection-start-line="150" selection-start-column="66" selection-end-line="150" selection-end-column="66" />
           <folding />
         </state>
@@ -644,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="512" column="26" selection-start-line="512" selection-start-column="26" selection-end-line="512" selection-end-column="26" />
+        <state relative-caret-position="261">
+          <caret line="382" column="12" selection-start-line="382" selection-start-column="12" selection-end-line="382" selection-end-column="12" />
           <folding>
             <element signature="e#1472#1827#0" expanded="false" />
             <element signature="e#1480#1766#0" expanded="false" />
@@ -653,29 +694,28 @@
             <element signature="e#2086#2257#0" expanded="false" />
             <element signature="e#2352#9313#0" expanded="false" />
             <element signature="e#2363#2712#0" expanded="false" />
-            <element signature="e#9353#12236#0" expanded="false" />
-            <element signature="e#12265#13624#0" expanded="false" />
-            <element signature="e#15580#17831#0" expanded="false" />
-            <element signature="e#16108#16804#0" expanded="false" />
-            <element signature="e#17851#18553#0" expanded="false" />
-            <element signature="e#18564#20909#0" expanded="false" />
-            <element signature="e#20920#22429#0" expanded="false" />
-            <element signature="e#22440#27188#0" expanded="false" />
-            <element signature="e#26815#27183#0" expanded="false" />
-            <element signature="e#27425#27592#0" expanded="false" />
-            <element signature="e#27606#27731#0" expanded="false" />
-            <element signature="e#28274#28432#0" expanded="false" />
-            <element signature="e#28460#28890#0" expanded="false" />
-            <element signature="e#28899#29203#0" expanded="false" />
-            <element signature="e#29218#29621#0" expanded="false" />
-            <element signature="e#29634#31727#0" expanded="false" />
-            <element signature="e#31741#31860#0" expanded="false" />
-            <element signature="e#31888#34981#0" expanded="false" />
-            <element signature="e#35006#35762#0" expanded="false" />
-            <element signature="e#35801#36219#0" expanded="false" />
-            <element signature="e#36469#37264#0" expanded="false" />
-            <element signature="e#37886#38231#0" expanded="false" />
-            <element signature="e#38252#38956#0" expanded="false" />
+            <element signature="e#12267#13626#0" expanded="false" />
+            <element signature="e#15582#17833#0" expanded="false" />
+            <element signature="e#16110#16806#0" expanded="false" />
+            <element signature="e#17853#18555#0" expanded="false" />
+            <element signature="e#18566#20911#0" expanded="false" />
+            <element signature="e#20922#22431#0" expanded="false" />
+            <element signature="e#22442#27190#0" expanded="false" />
+            <element signature="e#26817#27185#0" expanded="false" />
+            <element signature="e#27427#27594#0" expanded="false" />
+            <element signature="e#27608#27733#0" expanded="false" />
+            <element signature="e#28276#28434#0" expanded="false" />
+            <element signature="e#28462#28892#0" expanded="false" />
+            <element signature="e#28901#29205#0" expanded="false" />
+            <element signature="e#29220#29623#0" expanded="false" />
+            <element signature="e#29636#31729#0" expanded="false" />
+            <element signature="e#31743#31862#0" expanded="false" />
+            <element signature="e#31890#34983#0" expanded="false" />
+            <element signature="e#35008#35764#0" expanded="false" />
+            <element signature="e#35803#36221#0" expanded="false" />
+            <element signature="e#36471#37266#0" expanded="false" />
+            <element signature="e#37888#38233#0" expanded="false" />
+            <element signature="e#38254#38958#0" expanded="false" />
           </folding>
         </state>
       </provider>
