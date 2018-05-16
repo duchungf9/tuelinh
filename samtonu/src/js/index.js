@@ -30,11 +30,25 @@ $(document).ready(function () {
         }
     });
 
+    if($("#slide_header").length > 0){
+        $("#slide_header").owlCarousel({
+            navigation: false,
+            pagination: true,
+            autoPlay: true,
+            autoPlaySpeed: 2000,
+            responsive: true,
+            items: 1,
+            itemsDesktop: [1153, 1],
+            itemsDesktopSmall: [1152, 1],
+            itemsTablet: [800, 1],
+            itemsMobile: [479, 1]
+        });
+    }
     if($("#block2_slider").length > 0){
         $("#block2_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: false,
+            autoPlay: true,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 3,
@@ -48,7 +62,7 @@ $(document).ready(function () {
         $("#block4_slider").owlCarousel({
             navigation: false,
             pagination: true,
-            autoPlay: true,
+            autoPlay: false,
             autoPlaySpeed: 2000,
             responsive: true,
             items: 4,

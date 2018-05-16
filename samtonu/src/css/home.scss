@@ -131,7 +131,7 @@ $hoverColor: #000000;
 .globalPattern{
   color: $globalColor;
   font-family: "vnf-belle", sans-serif;
-  font-size: 42px;
+  font-size: 36px;
   text-align: center;
   width: auto;
   position: relative;
@@ -190,7 +190,7 @@ $hoverColor: #000000;
   }
   &.type5{
     width: 100%;
-    font-size: 41px;
+    font-size: 36px;
     margin-bottom: 20px;
     @media(max-width: 960px) {
       font-size: 4.8vw;
@@ -200,7 +200,7 @@ $hoverColor: #000000;
     }
   }
   @media(max-width: 960px) {
-    font-size: 4.8vw;
+    font-size: 3vw;
   }
   @media(max-width: 600px) {
     font-size: 27px;
@@ -208,6 +208,7 @@ $hoverColor: #000000;
 }
 .wrapper{
   header{
+    z-index: 2;
     .fixCen{
       padding-top: 63px;
     }
@@ -466,6 +467,7 @@ $hoverColor: #000000;
     }
   }
   .banner{
+    z-index: 1;
     margin-top: 60px;
     @media(max-width: 1260px){
       margin-top: 43px;
@@ -473,11 +475,15 @@ $hoverColor: #000000;
     @media(max-width: 1024px){
       margin-top: 5px;
     }
+    .owl-controls{
+      margin-top: -20px;
+      z-index: 2;
+      position: relative;
+    }
   }
   .slogan{
-    font-size: 21px;
-    font-family: vnf-belle;
-    text-align: center;
+    font-size: 16px;
+    text-align: justify;
     @media(max-width: 960px) {
       font-size: 2vw !important;
     }
@@ -511,7 +517,7 @@ $hoverColor: #000000;
           margin: 10px auto;
         }
         @media(max-width: 768px) {
-          font-size: 18px !important;
+          font-size: 16px !important;
           text-align: justify;
         }
       }
@@ -574,7 +580,7 @@ $hoverColor: #000000;
       }
     }
     .block2{
-      margin-top: 20px;
+      margin: 20px 0;
       position: relative;
       z-index: 1;
       .slogan{
@@ -723,7 +729,6 @@ $hoverColor: #000000;
       background: url("../images/bg1.jpg") center top no-repeat;
       width: 100%;
       height: 508px;
-      margin-top: -20px;
       .fixCen{
         @extend %disFlex;
         -webkit-justify-content: space-between;
@@ -851,16 +856,19 @@ $hoverColor: #000000;
             .title{
               text-transform: uppercase;
               color: $globalColor;
-              font-size: 16px;
+              font-size: 14px;
               font-weight: bold;
               text-align: justify;
               margin-top: 10px;
               display: block;
+              height: 60px;
             }
             .summary{
               color: #414042;
               font-size: 14px;
-              margin-top: 20px;
+              margin-top: 10px;
+              height: 160px;
+              text-align: justify;
             }
           }
         }
@@ -896,8 +904,6 @@ $hoverColor: #000000;
         @extend %disFlex;
         -webkit-justify-content: space-between;
         justify-content: space-between;
-        -webkit-align-items: flex-end;
-        align-items: flex-end;
         border-bottom: thin solid $globalColor;
         .left{
           width: 33%;
@@ -908,7 +914,7 @@ $hoverColor: #000000;
           padding-bottom: 10px;
           .slogan{
             text-align: left;
-            font-size: 21px;
+            font-size: 16px;
             color: $globalColor;
             padding: 20px 0;
           }
@@ -933,7 +939,7 @@ $hoverColor: #000000;
           }
           .view-more{
             position: absolute;
-            bottom: 5px;
+            bottom: 20px;
             right: 0;
             background: #0092d7;
             color: #000000;
@@ -976,7 +982,7 @@ $hoverColor: #000000;
           .right{
             width: 100%;
             .slogan{
-              font-size: 18px !important;
+              font-size: 16px !important;
               text-align: justify;
             }
             .notes{
@@ -1140,8 +1146,19 @@ $hoverColor: #000000;
       background: url(../images/bg3.jpg) center 100% no-repeat;
       padding-top: 70px;
       .globalPattern{
-        width: 848px;
-        margin: 0px auto;
+        width: 757px;
+        margin: 0 auto;
+        &.type6{
+          width: 776px;
+          @media(max-width: 960px) {
+            &:before, &:after{
+              display: none;
+            }
+          }
+          @media(max-width: 800px) {
+            width: 100%;
+          }
+        }
       }
       .txt-intro{
         margin-top: 30px;
@@ -1221,9 +1238,10 @@ $hoverColor: #000000;
               top: 71%;
               right: 0;
               .name{
-                background: url("../images/line-up-right.png") 0 0 no-repeat;
-                text-align: right;
-                padding: 5% 5% 5% 0;
+                width: 80%;
+                padding: 0% 7% 5% 15%;
+                background: url(../images/line-up-right.png) 0 bottom no-repeat;
+                text-align: center;
               }
               .txt{
                 margin: 0px 0 0 5%;
@@ -1238,7 +1256,10 @@ $hoverColor: #000000;
               top: 86%;
               left: 23%;
               .name{
-                padding: 2% 0 5% 1%;
+                width: 80%;
+                padding: 0% 7% 5% 0%;
+                text-align: center;
+                background: url(../images/line-up.png) 0 bottom no-repeat;
               }
               .txt{
                 margin: 1% 0 0 0%;
@@ -1397,13 +1418,20 @@ $hoverColor: #000000;
     .block9 {
       background: url(../images/bg5.jpg) center top no-repeat, #f4f8e2;
       border-top: thin dashed #bababb;
-
       padding-top: 70px;
       .globalPattern {
-        width: 730px;
-        margin: 0px auto;
+        width: 600px;
+        margin: 0 auto;
+        span{
+          display: block;
+        }
         &:before {
-          margin-left: 3%;
+          margin-left: 0;
+          left: -16%;
+        }
+        &:after{
+          margin-right: 0;
+          right: -17%;
         }
       }
       .txt-intro {
@@ -1921,6 +1949,11 @@ $hoverColor: #000000;
           width: 25%;
           text-align: center;
           padding: 0%;
+        }
+        .title{
+          width: 100%;
+          font-size: 20px;
+          margin-bottom: 20px;
         }
         .left{
           max-width: 110px;
@@ -3591,6 +3624,11 @@ $hoverColor: #000000;
       }
       .right{
         width: 30%;
+        @extend %disFlex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
         a{
           margin-bottom: 15px;
           display: block;
@@ -3628,6 +3666,8 @@ $hoverColor: #000000;
           width: 100%;
           text-align: center;
           margin-top: 10px;
+          -webkit-justify-content: center;
+          justify-content: center;
           a{
             display: inline-block;
           }
