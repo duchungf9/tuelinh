@@ -1,7 +1,5 @@
 $(document).ready(function () {
     closeHotline('#close-hotline');
-    clickChangeVideo('.video-group a', ".video-group .data");
-    clickShowPopupVideo('.thumb-video a', '.popup-video');
     menu('.open-main-nav');
     bannerAdsSide();
     changeContentTab('.tab-pro a', '.des-pro .tab-content');
@@ -18,9 +16,7 @@ $(document).ready(function () {
         itemsTablet: [768, 2],
         itemsMobile: [479, 1]
     });
-
-    if( $('#sidebar').length )
-    {
+    if( $('#sidebar').length ){
         var h =  $("#sidebar").height();
         var e = $("#sidebar").offset().top + h + 100;
         $(window).scroll(function () {
@@ -34,6 +30,9 @@ $(document).ready(function () {
     }), $(".show-form-phone h4").on("click", function (n) {
         n.preventDefault(), $(".show-form-phone").hide();
     });
+
+    showPopup('.btn-regis, .link-regis','.popup-regis');
+    showPopup('.btn-login, .link-login','.popup-login');
 });
 $(".parentMenu>a").on('click', function () {
     var parentMenu = $(this).parent();
@@ -85,11 +84,11 @@ function menu(btnClick) {
         var menu = $(this).data('menu');
         if (click == 0) {
             $(menu).addClass('transX0');
-            $(this).css({'background': 'url("http://www.duoclieutuelinh.vn/frontend/images/menu-close.png")'});
+            $(this).css({'background': 'url("http://shop.duoclieutuelinh.vn/frontend/images/menu-close.png")'});
             click++;
         } else {
             $(menu).removeClass('transX0');
-            $(this).css({'background': 'url("http://www.duoclieutuelinh.vn/frontend/images/menu-open.png")'});
+            $(this).css({'background': 'url("http://shop.duoclieutuelinh.vn/frontend/images/menu-open.png")'});
             click--;
         }
     });
@@ -115,22 +114,11 @@ function notify(message) {
         $(".popup").fadeOut();
     });
 }
-function login() {
-    $(".popup-dn").fadeIn();
-    $(".close-popup").click(function () {
-        $(".popup-dn").fadeOut();
-    });
-    $(".popup-dn .btn-dk").click(function () {
-        $(".popup-dn").fadeOut();
-        $(".popup-dk").fadeIn();
-        $(".popup-dk .close-popup").click(function () {
-            $(".popup-dk").fadeOut();
+function showPopup(btn, popupname) {
+    $(btn).click(function () {
+        $(popupname).fadeIn();
+        $(popupname + " .close-popup").click(function () {
+            $(popupname).fadeOut();
         });
-    });
-}
-function register() {
-    $(".popup-dk").fadeIn();
-    $(".close-popup").click(function () {
-        $(".popup-dk").fadeOut();
     });
 }
