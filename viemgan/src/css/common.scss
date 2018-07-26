@@ -2264,6 +2264,7 @@ footer{
     font-weight: bold;
   }
 }
+
 .others{
   background: #7e7d7b;
   padding: 40px 0;
@@ -2297,13 +2298,13 @@ footer{
       }
     }
     .left{
-      width: 60%;
+      width: 100%;
       .info{
         margin-bottom: 10px;
       }
     }
     .right{
-      width: 35%;
+      width: 100%;
     }
     @media(max-width: 767px) {
       font-size: 14px;
@@ -2341,7 +2342,7 @@ footer{
     top: 210px;
     right: 13%;
     height: 283px;
-    z-index: 2;
+    z-index: 3;
     a {
       display: block;
       margin-bottom: 10px
